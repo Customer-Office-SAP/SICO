@@ -269,9 +269,7 @@ entity Evaluacion : cuid, managed {
 }
 
 entity Relacion : cuid, managed {
-  SAP     : String;
-  Partner : String;
-  Cliente : String;
+  nombre     : String;
 }
 
 entity EstadoAccion : cuid, managed {
