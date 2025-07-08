@@ -1,1 +1,11 @@
 ID,r1,r2,r3,r4,r5,r6,r7,ACV,TCV,createdAt,createdBy,modifiedAt,modifiedBy
+infoBas-001,False,False,False,True,False,False,False,60903,83349,2025-06-30T00:00:00Z,maria.zapata,2025-07-01T00:00:00Z,juan.garcia
+infoBas-002,True,False,False,False,False,False,False,61951,68360,2025-06-30T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,juan.garcia
+infoBas-003,False,False,True,False,False,False,False,18641,29243,2025-06-29T00:00:00Z,maria.zapata,2025-07-01T00:00:00Z,ana.lopez
+infoBas-004,False,False,False,False,True,False,False,61795,96295,2025-07-01T00:00:00Z,carlos.ramos,2025-07-02T00:00:00Z,ana.lopez
+infoBas-005,False,False,False,False,True,False,False,75711,84922,2025-06-28T00:00:00Z,carlos.ramos,2025-06-30T00:00:00Z,ana.lopez
+infoBas-006,False,True,False,False,False,False,False,47581,95070,2025-06-28T00:00:00Z,juan.garcia,2025-06-30T00:00:00Z,carlos.ramos
+infoBas-007,False,False,False,True,False,False,False,82182,86629,2025-06-29T00:00:00Z,ana.lopez,2025-07-01T00:00:00Z,ana.lopez
+infoBas-008,False,False,False,False,False,True,False,89414,93355,2025-06-30T00:00:00Z,juan.garcia,2025-07-01T00:00:00Z,maria.zapata
+infoBas-009,False,False,False,False,False,False,True,79296,93855,2025-06-29T00:00:00Z,ana.lopez,2025-06-30T00:00:00Z,carlos.ramos
+infoBas-010,False,True,False,False,False,False,False,38580,41844,2025-07-01T00:00:00Z,juan.garcia,2025-07-02T00:00:00Z,ana.lopez
