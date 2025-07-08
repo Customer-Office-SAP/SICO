@@ -1,1 +1,11 @@
 ID,tipoPlan_code,pilar_ID,riesgo_ID,createdAt,createdBy,modifiedAt,modifiedBy
+plan-001,Mitigacion,pilarco-003,riesgo-004,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,juan.garcia
+plan-002,Remediacion,pilarco-008,riesgo-001,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,carlos.ramos
+plan-003,Remediacion,pilarco-005,riesgo-002,2025-07-01T00:00:00Z,ana.lopez,2025-07-06T00:00:00Z,maria.zapata
+plan-004,Remediacion,pilarco-002,riesgo-001,2025-07-01T00:00:00Z,maria.zapata,2025-07-06T00:00:00Z,maria.zapata
+plan-005,Mitigacion,pilarco-008,riesgo-005,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,juan.garcia
+plan-006,Mitigacion,pilarco-001,riesgo-003,2025-07-01T00:00:00Z,carlos.ramos,2025-07-06T00:00:00Z,juan.garcia
+plan-007,Remediacion,pilarco-010,riesgo-002,2025-07-01T00:00:00Z,maria.zapata,2025-07-06T00:00:00Z,maria.zapata
+plan-008,Mitigacion,pilarco-006,riesgo-005,2025-07-01T00:00:00Z,ana.lopez,2025-07-06T00:00:00Z,ana.lopez
+plan-009,Mitigacion,pilarco-004,riesgo-004,2025-07-01T00:00:00Z,carlos.ramos,2025-07-06T00:00:00Z,juan.garcia
+plan-010,Remediacion,pilarco-009,riesgo-003,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,maria.zapata

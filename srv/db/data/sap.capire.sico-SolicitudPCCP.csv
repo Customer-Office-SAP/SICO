@@ -1,1 +1,11 @@
 ID,link,partner_ID,pilar_ID,cliente_ID,informacionBasica_ID,informacionMinimaObligatoria_ID,informacionAdicional_ID,solucionesSAPenScope_ID,milestones_ID,createdAt,createdBy,modifiedAt,modifiedBy
+solicitud-001,https://sap.com/pccp/solicitud-001,partner-001,pilarco-001,cliente-001,infoBas-001,infoMin-001,infoAdi-001,producto-001,milestone-001,2025-07-01T00:00:00Z,ana.lopez,2025-07-06T00:00:00Z,juan.garcia
+solicitud-002,https://sap.com/pccp/solicitud-002,partner-002,pilarco-002,cliente-002,infoBas-002,infoMin-002,infoAdi-002,producto-002,milestone-002,2025-07-01T00:00:00Z,maria.zapata,2025-07-06T00:00:00Z,maria.zapata
+solicitud-003,https://sap.com/pccp/solicitud-003,partner-003,pilarco-003,cliente-003,infoBas-003,infoMin-003,infoAdi-003,producto-003,milestone-003,2025-07-01T00:00:00Z,carlos.ramos,2025-07-06T00:00:00Z,carlos.ramos
+solicitud-004,https://sap.com/pccp/solicitud-004,partner-004,pilarco-004,cliente-004,infoBas-004,infoMin-004,infoAdi-004,producto-004,milestone-004,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,carlos.ramos
+solicitud-005,https://sap.com/pccp/solicitud-005,partner-005,pilarco-005,cliente-005,infoBas-005,infoMin-005,infoAdi-005,producto-005,milestone-005,2025-07-01T00:00:00Z,ana.lopez,2025-07-06T00:00:00Z,carlos.ramos
+solicitud-006,https://sap.com/pccp/solicitud-006,partner-006,pilarco-006,cliente-006,infoBas-006,infoMin-006,infoAdi-006,producto-006,milestone-006,2025-07-01T00:00:00Z,carlos.ramos,2025-07-06T00:00:00Z,juan.garcia
+solicitud-007,https://sap.com/pccp/solicitud-007,partner-007,pilarco-007,cliente-007,infoBas-007,infoMin-007,infoAdi-007,producto-007,milestone-007,2025-07-01T00:00:00Z,maria.zapata,2025-07-06T00:00:00Z,ana.lopez
+solicitud-008,https://sap.com/pccp/solicitud-008,partner-008,pilarco-008,cliente-008,infoBas-008,infoMin-008,infoAdi-008,producto-008,milestone-008,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,carlos.ramos
+solicitud-009,https://sap.com/pccp/solicitud-009,partner-009,pilarco-009,cliente-009,infoBas-009,infoMin-009,infoAdi-009,producto-009,milestone-009,2025-07-01T00:00:00Z,ana.lopez,2025-07-06T00:00:00Z,maria.zapata
+solicitud-010,https://sap.com/pccp/solicitud-010,partner-010,pilarco-010,cliente-010,infoBas-010,infoMin-010,infoAdi-010,producto-010,milestone-010,2025-07-01T00:00:00Z,maria.zapata,2025-07-06T00:00:00Z,maria.zapata

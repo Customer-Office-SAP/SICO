@@ -1,1 +1,11 @@
 ID,metodologia,enfoqueSAPS4HANA,infraestAdoptada,estrategiaProyecto,tipoContrato,createdAt,createdBy,modifiedAt,modifiedBy
+infoAdi-001,Agile,Greenfield,Azure,Transformación Digital,Fijo,2025-06-29T00:00:00Z,ana.lopez,2025-06-30T00:00:00Z,maria.zapata
+infoAdi-002,Waterfall,Brownfield,AWS,Crecimiento Sostenible,Tiempo y Materiales,2025-06-30T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,carlos.ramos
+infoAdi-003,Hybrid,Selective Data Transition,GCP,Optimización de Costos,Basado en Resultados,2025-06-26T00:00:00Z,juan.garcia,2025-06-27T00:00:00Z,maria.zapata
+infoAdi-004,DevOps,Central Finance,SAP HEC,Estandarización,Ágil,2025-06-28T00:00:00Z,maria.zapata,2025-06-30T00:00:00Z,ana.lopez
+infoAdi-005,Design Thinking,Landscape Transformation,On-prem,Expansión Regional,Modular,2025-06-27T00:00:00Z,ana.lopez,2025-06-29T00:00:00Z,ana.lopez
+infoAdi-006,SCRUM,Modular Transformation,Híbrida,Mejora de la Experiencia,Licenciamiento Perpetuo,2025-06-28T00:00:00Z,juan.garcia,2025-06-29T00:00:00Z,juan.garcia
+infoAdi-007,SAFe,Cloud Adoption,Multi-cloud,Consolidación de Sistemas,SaaS,2025-06-27T00:00:00Z,ana.lopez,2025-06-29T00:00:00Z,carlos.ramos
+infoAdi-008,Lean,On-prem Strategy,IBM Cloud,Automatización,Outsourcing,2025-06-26T00:00:00Z,maria.zapata,2025-06-28T00:00:00Z,ana.lopez
+infoAdi-009,PMI,Fit-to-standard,SAP BTP,Gobierno de Datos,Proyecto Cerrado,2025-06-30T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,maria.zapata
+infoAdi-010,Kanban,RISE with SAP,Aliyun,Escalabilidad,Soporte Evolutivo,2025-06-29T00:00:00Z,juan.garcia,2025-06-30T00:00:00Z,juan.garcia
