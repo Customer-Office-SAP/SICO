@@ -208,12 +208,7 @@ entity Condicion : cuid, managed {
 entity PilarFase : cuid, managed {
   pilar           : Association to PilarCO;
   fase            : Association to Fase;
-  BTP             : String;
-  SuccessFactors  : String;
-  Ariba           : String;
-  Concur          : String;
-  Fieldglass      : String;
-  Otros           : String;
+  nombre             : String;
 }
 
 entity InformacionBasica : cuid, managed {
