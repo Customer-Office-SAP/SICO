@@ -1,64 +1,33 @@
 using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
 
-namespace sap.capire.proyecto;
+namespace sap.capire.sico;
 
 /**
- * Tabla Producto
+ * Enumeraciones
+ */
+entity TipoIntervencion : CodeList {
+  key code : String enum { Proyecto = 'Proyecto'; Operacion = 'Operacion'; };
+}
+
+entity TipoPilar : CodeList {
+  key code : String enum { PCCP; PS; RenevuneRescue; RevenueProtection; NPS };
+}
+
+entity Fase : CodeList {
+  key code : String enum { Discover; Prepare; Explore; Realize; Deploy; Run };
+}
+
+entity TipoPlan : CodeList {
+  key code : String enum { Mitigacion; Remediacion };
+}
+
+/**
+ * Entidades principales
  */
 entity Producto : cuid, managed {
   nombreProducto : String;
 }
 
-/**
- * Tabla Prioridad como CodeList ENUM
- */
-entity Prioridad : CodeList {
-  key code : String enum {
-    MuyAlto = 'MuyAlto';
-    Alto = 'Alto';
-    Medio = 'Medio';
-    Bajo = 'Bajo';
-  };
-}
-
-/**
- * Tabla EstadoAccion como CodeList ENUM
- */
-entity EstadoAccion : CodeList {
-  key code : String enum {
-    SinIniciar = 'SinIniciar';
-    EnProceso = 'EnProceso';
-    Cubierto = 'Cubierto';
-    Anulado = 'Anulado';
-  };
-}
-
-/**
- * Tabla Flag como CodeList ENUM
- */
-entity Flag : CodeList {
-  key code : String enum {
-    Verde = 'Verde';
-    Amarillo = 'Amarillo';
-    Rojo = 'Rojo';
-  };
-}
-
-/**
- * Tipo de Pilar como CodeList ENUM
- */
-entity TipoPilar : CodeList {
-  key code : String enum {
-    PCCP = 'PCCP';
-    PS = 'PS';
-    ProactiveCHURN = 'Proactive CHURN';
-    RecoverCHURN = 'Recover CHURN';
-  };
-}
-
-/**
- * Tabla Localización
- */
 entity Localizacion : cuid, managed {
   region     : String;
   ciudad     : String;
@@ -66,25 +35,6 @@ entity Localizacion : cuid, managed {
   direccion  : String;
 }
 
-/**
- * Tabla Partner
- */
-entity Partner : cuid, managed {
-  nombrePartner : String;
-  localizacion  : Association to Localizacion;
-}
-
-/**
- * Tabla Cliente
- */
-entity Cliente : cuid, managed {
-  localizacion : Association to Localizacion;
-  contactos    : Composition of many Contacto on contactos.cliente = $self;
-}
-
-/**
- * Tabla Contacto
- */
 entity Contacto : cuid, managed {
   nombre    : String;
   email     : String;
@@ -92,13 +42,28 @@ entity Contacto : cuid, managed {
   rol       : String;
   relacion  : String;
   cliente   : Association to Cliente;
+  SAP       : Association to SAP;
 }
 
-/**
- * Tabla PilarCO
- */
+entity Cliente : cuid, managed {
+  localizacion : Association to Localizacion;
+  calificacion : String;
+  contactos    : Composition of many Contacto on contactos.cliente = $self;
+}
+
+entity SAP : cuid, managed {
+  localizacion : Association to Localizacion;
+  contactos    : Composition of many Contacto on contactos.SAP = $self;
+}
+
+entity Partner : cuid, managed {
+  nombrePartner : String;
+  localizacion  : Association to Localizacion;
+  escalacionAnterior : Boolean;
+}
+
 entity PilarCO : cuid, managed {
-  tipoIntervencion : String;
+  tipoIntervencion : Association to TipoIntervencion;
   nombre           : String;
   cliente          : Association to Cliente;
   implementadorTercero : Association to Partner;
@@ -107,7 +72,12 @@ entity PilarCO : cuid, managed {
   tipoPilar        : Association to TipoPilar;
   fechaInicio      : Date;
   fechaFin         : Date;
+  fechaGoLivePlaneada : Date;
+  fechaGoLiveReal     : Date;
   estado           : String;
+  qGate            : Boolean;
+  antecedente      : Association to Antecedente;
+  serviciosEscenciales : Association to Servicios;
   matrizRiesgos    : Association to MatrizRiesgos;
   equipoGeneral    : Composition of many Contacto;
   equipoCliente    : Composition of many Contacto;
@@ -116,44 +86,37 @@ entity PilarCO : cuid, managed {
   equipoSoporte    : Composition of many Contacto;
 }
 
-/**
- * Tabla SAP
- */
-entity SAP : cuid, managed {
-  localizacion : Association to Localizacion;
-  contactos    : Composition of many Contacto;
+entity Servicios : cuid, managed {
+  pilar   : Association to PilarCO;
+  nombre  : String;
 }
 
-/**
- * Tabla MatrizRiesgos
- */
+entity Antecedente : cuid, managed {
+  actividad    : Association to Actividad;
+  contactos    : Composition of many Contacto;
+  descripcion  : String;
+  duracion     : Date;
+  estado       : String;
+  observaciones: String;
+}
+
 entity MatrizRiesgos : cuid, managed {
-  tipoRiesgo               : String;
+  tipoRiesgo                : String;
   descripcion              : String;
   probabilidad             : String;
   frecuencia               : String;
   impactoCualitativo       : String;
   impactoCuantitativoDolares : Decimal(18,2);
-  impactoCuantitativoDias    : Integer;
-  impactoCuantitativoEsfuerzo: String;
+  impactoCuantitativoDias  : Integer;
+  impactoCuantitativoEsfuerzo : String;
   estadoRiesgo             : String;
   fechaInicio              : Date;
   fechaFin                 : Date;
-  dueDate                 : Date;
+  dueDate                  : Date;
   issue                    : Boolean;
   dueno                    : Composition of many Contacto;
 }
 
-/**
- * Tabla TipoActividad
- */
-entity TipoActividad : cuid, managed {
-  nombre : String;
-}
-
-/**
- * Tabla Actividad
- */
 entity Actividad : cuid, managed {
   nombre        : String;
   flag          : Association to Flag;
@@ -165,173 +128,170 @@ entity Actividad : cuid, managed {
   acciones      : Composition of many Accion on acciones.actividad = $self;
 }
 
-/**
- * Tabla Acción
- */
 entity Accion : cuid, managed {
-  actividad   : Association to Actividad;
-  dueno       : String;
-  descripcion : String;
-  duracion    : Date;
-  estado      : Association to EstadoAccion;
+  actividad     : Association to Actividad;
+  dueno         : Association to Contacto;
+  descripcion   : String;
+  duracion      : Date;
+  estado        : String;
   observaciones : String;
 }
 
-/**
- * Tabla Incidente
- */
-entity Incidente : cuid, managed {
-  estado      : String;
-  evento      : String;
-  descripcion : String;
-  fechaInicio : Date;
-  fechaFin    : Date;
-  fechaCorte  : Date;
-  prioridad   : Association to Prioridad;
-  responsables: Composition of many Contacto;
+entity TipoActividad : cuid, managed {
+  nombre : String;
 }
 
-/**
- * Tabla Escalación
- */
 entity Escalacion : cuid, managed {
   incidente    : Association to Incidente;
   fecha        : Date;
   escaladoPor  : Association to Contacto;
   escaladoPara : Association to Contacto;
-  estado       : Association to EstadoAccion;
+  estado       : String;
   comentarios  : String;
   responsables : Composition of many Contacto;
 }
 
-/**
- * Tabla Plan
- */
+entity Incidente : cuid, managed {
+  estado        : String;
+  evento        : String;
+  descripcion   : String;
+  fechaInicio   : Date;
+  fechaFin      : Date;
+  fechaCorte    : Date;
+  prioridad     : String;
+  responsables  : Composition of many Contacto;
+}
+
 entity Plan : cuid, managed {
-  tipo          : String;
-  pilar         : Association to PilarCO;
-  riesgo        : Association to MatrizRiesgos;
-  actividades   : Composition of many Actividad;
+  tipoPlan        : Association to TipoPlan;
+  pilar           : Association to PilarCO;
+  riesgo          : Association to MatrizRiesgos;
+  listaActividades: Composition of many Actividad;
 }
 
-/**
- * Tabla Estado
- */
-entity Estado : CodeList {
-  key code : String;
-  nombre   : String;
-}
-
-/**
- * Tabla TipoRiesgo
- */
-entity TipoRiesgo : CodeList {
-  key code : String;
-  nombre   : String;
-}
-
-/**
- * Tabla Acta
- */
 entity Acta : cuid, managed {
   participantes : Composition of many Contacto;
   resumen       : String;
   link          : String;
 }
 
-/**
- * Tabla Evaluacion
- */
-entity Evaluacion : cuid, managed {
-  evaluador         : String;
-  solicitante       : String;
-  aprobadoMD        : Boolean;
-  segundoAprobador  : Boolean;
-}
-
-/**
- * Tabla CartaPCCP
- */
 entity CartaPCCP : cuid, managed {
-  link        : String;
-  cliente     : Association to Cliente;
-  partner     : Association to Partner;
-  proyecto    : String;
-  pais        : String;
-  firmaDigital: String;
+  pilar        : Association to PilarCO;
+  fecha        : Date;
+  link         : String;
+  cliente      : Association to Cliente;
+  partner      : Association to Partner;
+  representanteLegal : Association to Contacto;
+  representanteSAP   : Association to Contacto;
+  pais         : String;
+  firmaDigital : String;
 }
 
-/**
- * Tabla Ticket
- */
+entity Estado : cuid, managed {
+  nombre : String;
+}
+
 entity Ticket : cuid, managed {
   responsable : String;
   estado      : String;
   dueDate     : Date;
 }
 
-/**
- * Tabla SolicitudPCCP
- */
-entity SolicitudPCCP : cuid, managed {
-  link     : String;
-  partner  : Association to Partner;
-  evento   : String;
-}
-
-/**
- * Tabla Antecedente
- */
-entity Antecedente : cuid, managed {
-  actividad     : Association to Actividad;
-  dueno         : String;
-  descripcion   : String;
-  duracion      : Date;
-  estado        : Association to EstadoAccion;
-  observaciones : String;
-}
-
-/**
- * Tabla PilarFase
- */
-entity PilarFase : cuid, managed {
-  pilar      : Association to PilarCO;
-  fase       : String;
-  BTP        : String;
-  SuccessFactors : String;
-  Ariba      : String;
-  Concur     : String;
-  Fieldglass : String;
-  Otros      : String;
-}
-
-/**
- * Tabla PasosSiguientes
- */
 entity PasosSiguientes : cuid, managed {
   Contenido : String;
 }
 
-/**
- * Tabla TipoIntervencion
- */
-entity TipoIntervencion : CodeList {
-  key code : String;
-  descripcion : String;
+entity Condicion : cuid, managed {
+  nombre : String;
 }
 
-/**
- * Tabla TipoPlan
- */
-entity TipoPlan : CodeList {
-  key code : String;
-  descripcion : String;
+entity PilarFase : cuid, managed {
+  pilar           : Association to PilarCO;
+  fase            : Association to Fase;
+  BTP             : String;
+  SuccessFactors  : String;
+  Ariba           : String;
+  Concur          : String;
+  Fieldglass      : String;
+  Otros           : String;
 }
 
-/**
- * Tabla Fase
- */
-entity Fase : CodeList {
+entity InformacionBasica : cuid, managed {
+  r1 : Boolean;
+  r2 : Boolean;
+  r3 : Boolean;
+  r4 : Boolean;
+  r5 : Boolean;
+  r6 : Boolean;
+  r7 : Boolean;
+  ACV: Integer;
+  TCV: Integer;
+}
+
+entity InformacionMinimaObligatoria : cuid, managed {
+  soporteOfrecidoPor : Composition of many Contacto;
+  tipoSoporte        : String;
+  consultoriaSAP     : Boolean;
+}
+
+entity InformacionAdicional : cuid, managed {
+  metodologia        : String;
+  enfoqueSAPS4HANA   : String;
+  infraestAdoptada   : String;
+  estrategiaProyecto : String;
+  tipoContrato       : String;
+}
+
+entity Milestones : cuid, managed {
+  kickOff               : Date;
+  incioPlaneamiento     : Date;
+  inicioDiseño          : Date;
+  inicioRealizacion     : Date;
+  inicioCutOver         : Date;
+  inicioTestIntegrados  : Date;
+  inicioEntrenamiento   : Date;
+  goLive                : Date;
+  infoDetallada         : Date;
+}
+
+entity SolicitudPCCP : cuid, managed {
+  link                         : String;
+  partner                      : Association to Partner;
+  pilar                        : Association to PilarCO;
+  cliente                      : Association to Cliente;
+  informacionBasica            : Association to InformacionBasica;
+  informacionMinimaObligatoria: Association to InformacionMinimaObligatoria;
+  informacionAdicional         : Association to InformacionAdicional;
+  solucionesSAPenScope         : Association to Producto;
+  milestones                   : Association to Milestones;
+}
+
+entity Evaluacion : cuid, managed {
+  evaluador        : String;
+  solicitante      : String;
+  aprobadoMD       : Boolean;
+  segundoAprobador : Boolean;
+}
+
+entity Relacion : cuid, managed {
+  SAP     : String;
+  Partner : String;
+  Cliente : String;
+}
+
+entity EstadoAccion : cuid, managed {
+  nombre : String;
+}
+
+entity Prioridad : cuid, managed {
+  nombre : String;
+}
+
+entity TipoRiesgo : CodeList {
   key code : String;
-  descripcion : String;
+  nombre   : String;
+}
+
+entity Flag : cuid, managed {
+  nombre : String;
 }

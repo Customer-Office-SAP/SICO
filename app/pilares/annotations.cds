@@ -1,4 +1,4 @@
-using sap.capire.proyecto.ProjectService as service from '../../srv/services';
+using sap.capire.sico as service from '../../srv/services';
 annotate service.PilarCO with @(
     UI.FieldGroup #GeneratedGroup : {
         $Type : 'UI.FieldGroupType',
@@ -70,6 +70,11 @@ annotate service.PilarCO with @(
             Value : fechaFin,
         },
     ],
+    UI.SelectionFields : [
+        nombre,
+        cliente_ID,
+        estado,
+    ],
 );
 
 annotate service.PilarCO with {
@@ -118,5 +123,17 @@ annotate service.PilarCO with {
             },
         ],
     }
+};
+
+annotate service.PilarCO with {
+    nombre @Common.Label : 'nombre'
+};
+
+annotate service.PilarCO with {
+    cliente @Common.Label : 'cliente_ID'
+};
+
+annotate service.PilarCO with {
+    estado @Common.Label : 'estado'
 };
 

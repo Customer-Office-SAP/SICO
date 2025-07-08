@@ -1,81 +1,60 @@
-using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
-using { sap.capire.proyecto as my } from '../db/schema';
+using { sap.capire.sico as my } from '../db/schema';
 
-namespace sap.capire.proyecto;
-
-service ProjectService {
-
-  entity Producto as projection on my.Producto;
-
-  @com.sap.vocabularies.UI.v1.LineItem: [
-    { Value: nombre, Label: 'Nombre del Pilar' },
-    { Value: tipoIntervencion, Label: 'Tipo de Intervención' },
-    { Value: fechaInicio, Label: 'Fecha de Inicio' },
-    { Value: fechaFin, Label: 'Fecha de Fin' },
-    { Value: estado, Label: 'Estado' }
-  ]
-  @com.sap.vocabularies.UI.v1.SelectionFields: [ nombre, tipoIntervencion, fechaInicio, fechaFin, estado ]
-  entity PilarCO as projection on my.PilarCO;
-
-  entity Actividad     as projection on my.Actividad;
-  entity Accion        as projection on my.Accion;
-  entity Incidente     as projection on my.Incidente;
-  entity Escalacion    as projection on my.Escalacion;
-  entity Plan          as projection on my.Plan;
-  entity MatrizRiesgos as projection on my.MatrizRiesgos;
-  entity CartaPCCP     as projection on my.CartaPCCP;
+/**
+ * Servicio para gestión operativa del sistema SICO.
+ */
+service SICOService {
+  entity Producto           as projection on my.Producto;
+  entity PilarCO            as projection on my.PilarCO;
+  entity Cliente            as projection on my.Cliente;
+  entity Partner            as projection on my.Partner;
+  entity SAP                as projection on my.SAP;
+  entity Incidente          as projection on my.Incidente;
+  entity Escalacion         as projection on my.Escalacion;
+  entity Actividad          as projection on my.Actividad;
+  entity Accion             as projection on my.Accion;
+  entity Plan               as projection on my.Plan;
+  entity CartaPCCP          as projection on my.CartaPCCP;
+  entity Acta               as projection on my.Acta;
+  entity Ticket             as projection on my.Ticket;
+  entity Evaluacion         as projection on my.Evaluacion;
+  entity SolicitudPCCP      as projection on my.SolicitudPCCP;
+  entity Servicios          as projection on my.Servicios;
+  entity Antecedente        as projection on my.Antecedente;
+  entity MatrizRiesgos      as projection on my.MatrizRiesgos;
+  entity Contacto           as projection on my.Contacto;
+  entity PilarFase          as projection on my.PilarFase;
+  entity InformacionBasica  as projection on my.InformacionBasica;
+  entity InformacionMinimaObligatoria as projection on my.InformacionMinimaObligatoria;
+  entity InformacionAdicional         as projection on my.InformacionAdicional;
+  entity Milestones         as projection on my.Milestones;
+  entity PasosSiguientes    as projection on my.PasosSiguientes;
 }
 
-
-service AdminService {
-  entity Cliente          as projection on my.Cliente;
-  entity Partner          as projection on my.Partner;
-  entity SAP              as projection on my.SAP;
-  entity Localizacion     as projection on my.Localizacion;
-  entity Contacto         as projection on my.Contacto;
-  entity Evaluacion       as projection on my.Evaluacion;
-  entity SolicitudPCCP    as projection on my.SolicitudPCCP;
-  entity Estado           as projection on my.Estado;
-  entity TipoRiesgo       as projection on my.TipoRiesgo;
-  entity TipoActividad    as projection on my.TipoActividad;
-  entity TipoPilar        as projection on my.TipoPilar;
-  entity TipoPlan         as projection on my.TipoPlan;
-  entity Flag             as projection on my.Flag;
-  entity EstadoAccion     as projection on my.EstadoAccion;
-  entity Prioridad        as projection on my.Prioridad;
-  entity TipoIntervencion as projection on my.TipoIntervencion;
-  entity Fase             as projection on my.Fase;
-  entity PilarFase        as projection on my.PilarFase;
-  entity Acta             as projection on my.Acta;
-  entity PasosSiguientes  as projection on my.PasosSiguientes;
-  entity Antecedente      as projection on my.Antecedente;
-  entity Ticket           as projection on my.Ticket;
-}
-
-
-service ReadOnlyService {
-
+/**
+ * Servicio de sólo lectura para catálogos y listas maestras.
+ */
+service ReferenceCatalogService {
   @readonly
-  entity Cliente      as projection on my.Cliente;
-
+  entity TipoIntervencion   as projection on my.TipoIntervencion;
   @readonly
-  entity Producto     as projection on my.Producto;
-
+  entity TipoPilar          as projection on my.TipoPilar;
   @readonly
-  entity Estado       as projection on my.Estado;
-
+  entity TipoPlan           as projection on my.TipoPlan;
   @readonly
-  entity TipoRiesgo   as projection on my.TipoRiesgo;
-
+  entity TipoRiesgo         as projection on my.TipoRiesgo;
   @readonly
-  entity TipoPilar    as projection on my.TipoPilar;
-
+  entity TipoActividad      as projection on my.TipoActividad;
   @readonly
-  entity Flag         as projection on my.Flag;
-
+  entity Estado             as projection on my.Estado;
   @readonly
-  entity EstadoAccion as projection on my.EstadoAccion;
-
+  entity EstadoAccion       as projection on my.EstadoAccion;
   @readonly
-  entity Prioridad    as projection on my.Prioridad;
+  entity Prioridad          as projection on my.Prioridad;
+  @readonly
+  entity Flag               as projection on my.Flag;
+  @readonly
+  entity Fase               as projection on my.Fase;
+  @readonly
+  entity Localizacion       as projection on my.Localizacion;
 }
