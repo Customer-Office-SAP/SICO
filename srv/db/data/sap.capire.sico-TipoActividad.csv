@@ -1,1 +1,11 @@
 ID,nombre,createdAt,createdBy,modifiedAt,modifiedBy
+tipoactividad-001,Planeación,2025-07-01T08:30:00Z,jorge.pena,2025-07-08T09:00:00Z,soraida.ledesma
+tipoactividad-002,Ejecución,2025-07-01T09:00:00Z,raul.ruiz,2025-07-08T09:30:00Z,eugenia.dayoub
+tipoactividad-003,Seguimiento,2025-07-01T09:30:00Z,soraida.ledesma,2025-07-08T10:00:00Z,giuliana.volpi
+tipoactividad-004,Documentación,2025-07-01T10:00:00Z,eugenia.dayoub,2025-07-08T10:30:00Z,raul.ruiz
+tipoactividad-005,Capacitación,2025-07-01T10:30:00Z,giuliana.volpi,2025-07-08T11:00:00Z,jorge.pena
+tipoactividad-006,Validación,2025-07-01T11:00:00Z,jorge.ruiz,2025-07-08T11:30:00Z,soraida.ledesma
+tipoactividad-007,Revisión técnica,2025-07-01T11:30:00Z,raul.ruiz,2025-07-08T12:00:00Z,giuliana.volpi
+tipoactividad-008,Análisis funcional,2025-07-01T12:00:00Z,soraida.ledesma,2025-07-08T12:30:00Z,jorge.pena
+tipoactividad-009,Acompañamiento,2025-07-01T12:30:00Z,eugenia.dayoub,2025-07-08T13:00:00Z,raul.ruiz
+tipoactividad-010,Pruebas de usuario,2025-07-01T13:00:00Z,giuliana.volpi,2025-07-08T13:30:00Z,eugenia.dayoub

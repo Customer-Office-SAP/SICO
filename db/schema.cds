@@ -58,7 +58,7 @@ entity PilarCO : cuid, managed {
   estado           : String;
   qGate            : Boolean;
   antecedente      : Association to Antecedente;
-  serviciosEscenciales : Association to Servicios;
+  serviciosEscenciales : Association to Servicio;
   matrizRiesgos    : Association to MatrizRiesgos;
   equipoGeneral    : Composition of many Contacto;
   equipoCliente    : Composition of many Contacto;
@@ -67,7 +67,7 @@ entity PilarCO : cuid, managed {
   equipoSoporte    : Composition of many Contacto;
 }
 
-entity Servicios : cuid, managed {
+entity Servicio : cuid, managed {
   pilar   : Association to PilarCO;
   nombre  : String;
 }

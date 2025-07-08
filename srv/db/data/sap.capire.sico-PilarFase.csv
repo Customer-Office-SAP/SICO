@@ -1,1 +1,11 @@
-ID,pilar_ID,fase_code,createdAt,createdBy,modifiedAt,modifiedBy
+ID,pilar_ID,fase_code,nombre,createdAt,createdBy,modifiedAt,modifiedBy
+pilarfase-001,pilarco-001,fase1,BTP,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
+pilarfase-002,pilarco-001,fase1,SuccessFactors,2025-03-08T10:23:45Z,jorge.pena,2025-07-10T10:23:45Z,soraida.ledesma
+pilarfase-003,pilarco-001,fase2,Ariba,2025-03-12T10:23:45Z,raul.ruiz,2025-07-12T10:23:45Z,soraida.ledesma
+pilarfase-004,pilarco-001,fase2,Concur,2025-03-12T10:23:45Z,eugenia.dayoub,2025-07-12T10:23:45Z,giuliana.volpi
+pilarfase-005,pilarco-002,fase3,Fieldglass,2025-03-12T10:23:45Z,raul.ruiz,2025-07-12T10:23:45Z,giuliana.volpi
+pilarfase-006,pilarco-004,fase3,Otros,2025-03-12T10:23:45Z,jorge.ruiz,2025-07-12T10:23:45Z,eugenia.dayoub
+pilarfase-007,pilarco-003,fase2,BTP,2025-04-15T14:45:20Z,eugenia.dayoub,2025-07-08T16:00:00Z,raul.ruiz
+pilarfase-008,pilarco-002,fase1,BTP,2025-05-10T12:00:00Z,raul.ruiz,2025-07-08T18:20:30Z,giuliana.volpi
+pilarfase-009,pilarco-003,fase3,Ariba,2025-06-01T10:05:00Z,giuliana.volpi,2025-07-08T20:00:00Z,eugenia.dayoub
+pilarfase-010,pilarco-001,fase2,SuccessFactors,2025-06-20T08:30:45Z,soraida.ledesma,2025-07-08T22:10:00Z,jorge.pena

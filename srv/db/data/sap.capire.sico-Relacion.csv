@@ -1,1 +1,4 @@
 ID,nombre,createdAt,createdBy,modifiedAt,modifiedBy
+relacion-001,SAP,2025-03-12T10:23:45Z,raul.ruiz,2025-07-12T10:23:45Z,eugenia.dayoub
+relacion-002,Partner,2025-03-12T10:23:45Z,eugenia.dayoub,2025-07-12T10:23:45Z,giuliana.volpi
+relacion-003,Cliente,2025-03-12T10:23:45Z,giuliana.volpi,2025-07-12T10:23:45Z,raul.ruiz

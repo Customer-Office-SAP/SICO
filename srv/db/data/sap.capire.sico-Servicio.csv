@@ -1,0 +1,11 @@
+ID,pilar_ID,nombre,createdAt,createdBy,modifiedAt,modifiedBy
+servicio-001,pilar-001,Ayuda inmediata,2025-07-08T09:15:00Z,jorge.pena,2025-07-08T10:00:00Z,soraida.ledesma
+servicio-002,pilar-002,Capacitación técnica,2025-07-07T11:00:00Z,raul.ruiz,2025-07-08T10:30:00Z,giuliana.volpi
+servicio-003,pilar-003,Soporte funcional,2025-07-06T14:20:00Z,eugenia.dayoub,2025-07-08T11:00:00Z,jorge.pena
+servicio-004,pilar-001,Acompañamiento en pruebas,2025-07-05T08:45:00Z,soraida.ledesma,2025-07-08T11:30:00Z,eugenia.dayoub
+servicio-005,pilar-004,Gestión del cambio,2025-07-04T16:10:00Z,giuliana.volpi,2025-07-08T12:00:00Z,raul.ruiz
+servicio-006,pilar-002,Mesa de ayuda,2025-07-03T10:00:00Z,jorge.ruiz,2025-07-08T12:30:00Z,soraida.ledesma
+servicio-007,pilar-003,Consultoría estratégica,2025-07-02T13:25:00Z,raul.ruiz,2025-07-08T13:00:00Z,eugenia.dayoub
+servicio-008,pilar-001,Automatización de procesos,2025-07-01T09:50:00Z,eugenia.dayoub,2025-07-08T13:30:00Z,jorge.pena
+servicio-009,pilar-004,Análisis de brechas,2025-06-30T15:15:00Z,giuliana.volpi,2025-07-08T14:00:00Z,soraida.ledesma
+servicio-010,pilar-002,Definición de KPIs,2025-06-29T17:40:00Z,jorge.pena,2025-07-08T14:30:00Z,raul.ruiz

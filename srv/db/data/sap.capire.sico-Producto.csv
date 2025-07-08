@@ -1,1 +1,10 @@
 ID,nombreProducto,createdAt,createdBy,modifiedAt,modifiedBy
+producto-001,S/4HANA Cloud,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
+producto-002,S/4HANA,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
+producto-003,Costumer Experience,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
+producto-004,BTP,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
+producto-005,SuccessFactors,2025-03-08T10:23:45Z,jorge.pena,2025-07-10T10:23:45Z,soraida.ledesma
+producto-006,Ariba,2025-03-12T10:23:45Z,raul.ruiz,2025-07-12T10:23:45Z,soraida.ledesma
+producto-007,Concur,2025-03-12T10:23:45Z,eugenia.dayoub,2025-07-12T10:23:45Z,giuliana.volpi
+producto-008,Fieldglass,2025-03-12T10:23:45Z,raul.ruiz,2025-07-12T10:23:45Z,giuliana.volpi
+producto-009,Otros,2025-03-12T10:23:45Z,jorge.ruiz,2025-07-12T10:23:45Z,eugenia.dayoub
