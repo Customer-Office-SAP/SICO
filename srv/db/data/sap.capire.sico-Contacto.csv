@@ -1,1 +1,11 @@
 ID,nombre,email,compania,rol,relacion,cliente_ID,SAP_ID,createdAt,createdBy,modifiedAt,modifiedBy
+contacto-001,"Ana María López","ana.lopez@acme.co","Acme Corp","Project Sponsor",relacion-002,cliente-001,sap-001,2025-01-10T10:00:00Z,ana.lopez,2025-01-15T12:00:00Z,ana.lopez
+contacto-002,"Carlos Pérez","carlos.perez@acme.co","Acme Corp","Key User",relacion-001,cliente-001,sap-002,2025-01-12T09:30:00Z,maria.zapata,2025-01-18T11:45:00Z,maria.zapata
+contacto-003,"Laura Gutiérrez","laura.gutierrez@globex.com","Globex Inc","Project Manager",relacion-002,cliente-002,sap-003,2025-01-22T14:10:00Z,carlos.ortiz,2025-01-25T16:20:00Z,carlos.ortiz
+contacto-004,"Miguel Santos","miguel.santos@globex.com","Globex Inc","Business Analyst",relacion-001,cliente-002,sap-004,2025-01-24T08:50:00Z,luisa.mendez,2025-01-30T10:05:00Z,luisa.mendez
+contacto-005,"Elena Ramírez","elena.ramirez@initech.io","Initech LLC","Technical Lead",relacion-002,cliente-003,sap-005,2025-02-06T11:25:00Z,juan.suarez,2025-02-10T13:40:00Z,juan.suarez
+contacto-006,"José Martínez","jose.martinez@initech.io","Initech LLC","Key User",relacion-001,cliente-003,sap-006,2025-02-08T10:15:00Z,ana.lopez,2025-02-12T12:30:00Z,ana.lopez
+contacto-007,"Valentina Silva","valentina.silva@hooli.tech","Hooli Technologies","CIO",relacion-003,cliente-004,sap-007,2025-02-18T09:05:00Z,maria.zapata,2025-02-22T11:10:00Z,maria.zapata
+contacto-008,"Roberto Díaz","roberto.diaz@hooli.tech","Hooli Technologies","Project Coordinator",relacion-003,cliente-004,sap-008,2025-02-20T13:35:00Z,carlos.ortiz,2025-02-26T15:25:00Z,carlos.ortiz
+contacto-009,"Isabela Ortega","isabela.ortega@soylent.mx","Soylent S.A.","Operations Manager",relacion-002,cliente-005,sap-009,2025-03-02T08:40:00Z,luisa.mendez,2025-03-06T10:55:00Z,luisa.mendez
+contacto-010,"Pedro Rojas","pedro.rojas@soylent.mx","Soylent S.A.","IT Support",relacion-001,cliente-005,sap-010,2025-03-04T14:45:00Z,juan.suarez,2025-03-08T16:00:00Z,juan.suarez

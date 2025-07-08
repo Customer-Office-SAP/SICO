@@ -1,1 +1,4 @@
 ID,nombre,createdAt,createdBy,modifiedAt,modifiedBy
+condicion-001,OportunidadMejora,2025-01-02T09:00:00Z,ana.lopez,2025-01-02T09:00:00Z,ana.lopez
+condicion-002,Acierto,2025-01-02T09:05:00Z,maria.zapata,2025-01-02T09:05:00Z,maria.zapata
+condicion-003,Inmodificable,2025-01-02T09:10:00Z,carlos.ortiz,2025-01-02T09:10:00Z,carlos.ortiz

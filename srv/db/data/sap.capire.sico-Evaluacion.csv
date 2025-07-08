@@ -1,1 +1,11 @@
 ID,evaluador,solicitante,aprobadoMD,segundoAprobador,createdAt,createdBy,modifiedAt,modifiedBy
+evaluacion-001,carlos.perez,ana.lopez,true,true,2025-01-20T09:00:00Z,ana.lopez,2025-01-21T10:15:00Z,maria.zapata
+evaluacion-002,laura.gutierrez,elena.ramirez,false,false,2025-02-05T11:30:00Z,maria.zapata,2025-02-05T15:45:00Z,maria.zapata
+evaluacion-003,miguel.santos,laura.gutierrez,true,true,2025-02-15T14:20:00Z,carlos.ortiz,2025-02-16T09:10:00Z,carlos.ortiz
+evaluacion-004,jose.martinez,roberto.diaz,true,true,2025-03-10T10:40:00Z,luisa.mendez,2025-03-10T12:00:00Z,luisa.mendez
+evaluacion-005,valentina.silva,isabela.ortega,false,false,2025-03-25T13:05:00Z,juan.suarez,2025-03-25T17:30:00Z,juan.suarez
+evaluacion-006,ana.lopez,jose.martinez,true,true,2025-04-05T08:50:00Z,ana.lopez,2025-04-05T09:30:00Z,maria.zapata
+evaluacion-007,elena.ramirez,miguel.santos,true,true,2025-04-18T16:20:00Z,carlos.ortiz,2025-04-19T10:15:00Z,carlos.ortiz
+evaluacion-008,roberto.diaz,pedro.rojas,false,false,2025-05-02T11:45:00Z,luisa.mendez,2025-05-02T12:10:00Z,luisa.mendez
+evaluacion-009,isabela.ortega,valentina.silva,true,true,2025-05-15T14:10:00Z,ana.lopez,2025-05-15T15:00:00Z,ana.lopez
+evaluacion-010,pedro.rojas,carlos.perez,false,false,2025-06-01T09:25:00Z,juan.suarez,2025-06-01T11:40:00Z,juan.suarez

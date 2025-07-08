@@ -1,1 +1,11 @@
 ID,region,ciudad,pais,direccion,createdAt,createdBy,modifiedAt,modifiedBy
+loc-001,América del Sur,Bogotá,Colombia,Cra 7 # 45-85,2025-06-29T00:00:00Z,maria.zapata,2025-06-30T00:00:00Z,juan.garcia
+loc-002,Norteamérica,Medellín,Colombia,Cll 10 # 20-30,2025-06-30T00:00:00Z,juan.garcia,2025-07-02T00:00:00Z,maria.zapata
+loc-003,Europa,Cali,Colombia,Av. Las Américas 123,2025-06-30T00:00:00Z,maria.zapata,2025-07-01T00:00:00Z,carlos.ramos
+loc-004,Asia,Cartagena,Colombia,Transversal 25 # 60-40,2025-06-30T00:00:00Z,maria.zapata,2025-07-01T00:00:00Z,juan.garcia
+loc-005,Oceanía,Barranquilla,Colombia,Calle 72 # 5-15,2025-07-01T00:00:00Z,maria.zapata,2025-07-02T00:00:00Z,ana.lopez
+loc-006,África,Quito,Ecuador,Av. Naciones Unidas 456,2025-06-30T00:00:00Z,carlos.ramos,2025-07-02T00:00:00Z,ana.lopez
+loc-007,Caribe,Lima,Perú,Av. Javier Prado 2301,2025-06-30T00:00:00Z,carlos.ramos,2025-07-02T00:00:00Z,ana.lopez
+loc-008,Centroamérica,Buenos Aires,Argentina,Florida 100,2025-06-29T00:00:00Z,juan.garcia,2025-07-01T00:00:00Z,ana.lopez
+loc-009,Andina,Montevideo,Uruguay,Av. 18 de Julio 2025,2025-06-29T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,ana.lopez
+loc-010,Cono Sur,Santiago,Chile,Providencia 1234,2025-06-30T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,ana.lopez

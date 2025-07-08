@@ -1,1 +1,11 @@
 ID,actividad_ID,descripcion,duracion,estado,observaciones,createdAt,createdBy,modifiedAt,modifiedBy
+antecedente-001,actividad-001,"Alcance definitorio generó gaps no previstos",2025-02-05,condicion-001,"Requiere ajustar historias de usuario",2025-01-22T11:15:00Z,ana.lopez,2025-01-22T12:00:00Z,ana.lopez
+antecedente-002,actividad-001,"Eficiente colaboración del equipo de requisitos",2025-01-30,condicion-002,"Buen uso de tableros Scrum",2025-01-23T09:40:00Z,maria.zapata,2025-01-23T10:30:00Z,maria.zapata
+antecedente-003,actividad-002,"Plazo de entrega del ambiente no negociable",2025-02-01,condicion-003,"Ajustar cronograma dependiente",2025-01-26T14:00:00Z,maria.zapata,2025-01-26T15:10:00Z,maria.zapata
+antecedente-004,actividad-003,"Transformación de datos generó cuellos de botella",2025-02-18,condicion-001,"Añadir recursos al equipo ETL",2025-02-06T08:35:00Z,carlos.ortiz,2025-02-06T09:05:00Z,carlos.ortiz
+antecedente-005,actividad-004,"Prototipo UX recibió comentarios positivos",2025-02-22,condicion-002,"Prototipo aprobado sin cambios",2025-02-10T16:20:00Z,luisa.mendez,2025-02-10T17:00:00Z,luisa.mendez
+antecedente-006,actividad-005,"Fallas recurrentes durante pruebas integradas",2025-02-26,condicion-001,"Revisar estrategia de pruebas",2025-02-20T11:50:00Z,ana.lopez,2025-02-20T12:40:00Z,ana.lopez
+antecedente-007,actividad-006,"Sesiones de capacitación superaron expectativas",2025-03-05,condicion-002,"Usuarios con alta disponibilidad",2025-03-04T10:10:00Z,juan.suarez,2025-03-04T10:50:00Z,juan.suarez
+antecedente-008,actividad-007,"Secuencia de cut-over validada por el cliente",2025-04-30,condicion-003,"Alto riesgo si se cambia",2025-04-29T21:30:00Z,carlos.ortiz,2025-04-30T08:00:00Z,carlos.ortiz
+antecedente-009,actividad-008,"Soporte inicial requirió horas extra",2025-05-10,condicion-001,"Considerar soporte extendido",2025-05-04T09:45:00Z,maria.zapata,2025-05-04T10:15:00Z,maria.zapata
+antecedente-010,actividad-010,"Cierre administrativo sin incidencias",2025-06-11,condicion-002,"Archivo completo en repositorio",2025-06-07T13:00:00Z,juan.suarez,2025-06-07T13:45:00Z,juan.suarez

@@ -1,1 +1,11 @@
 ID,localizacion_ID,createdAt,createdBy,modifiedAt,modifiedBy
+sap-001,loc-010,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,ana.lopez
+sap-002,loc-001,2025-07-01T00:00:00Z,carlos.ramos,2025-07-06T00:00:00Z,ana.lopez
+sap-003,loc-001,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,juan.garcia
+sap-004,loc-010,2025-07-01T00:00:00Z,ana.lopez,2025-07-06T00:00:00Z,maria.zapata
+sap-005,loc-003,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,maria.zapata
+sap-006,loc-008,2025-07-01T00:00:00Z,carlos.ramos,2025-07-06T00:00:00Z,juan.garcia
+sap-007,loc-007,2025-07-01T00:00:00Z,maria.zapata,2025-07-06T00:00:00Z,ana.lopez
+sap-008,loc-009,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,carlos.ramos
+sap-009,loc-004,2025-07-01T00:00:00Z,ana.lopez,2025-07-06T00:00:00Z,maria.zapata
+sap-010,loc-006,2025-07-01T00:00:00Z,maria.zapata,2025-07-06T00:00:00Z,carlos.ramos

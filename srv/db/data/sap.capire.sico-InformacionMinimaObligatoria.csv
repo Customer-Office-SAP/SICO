@@ -1,1 +1,11 @@
 ID,tipoSoporte,consultoriaSAP,createdAt,createdBy,modifiedAt,modifiedBy
+infoMin-001,Soporte Técnico,True,2025-06-29T00:00:00Z,carlos.ramos,2025-06-30T00:00:00Z,carlos.ramos
+infoMin-002,Consultoría Funcional,True,2025-07-01T00:00:00Z,juan.garcia,2025-07-02T00:00:00Z,carlos.ramos
+infoMin-003,Capacitación,True,2025-06-30T00:00:00Z,juan.garcia,2025-07-02T00:00:00Z,ana.lopez
+infoMin-004,Mantenimiento,False,2025-06-28T00:00:00Z,maria.zapata,2025-06-30T00:00:00Z,maria.zapata
+infoMin-005,Soporte 24/7,False,2025-06-28T00:00:00Z,ana.lopez,2025-06-30T00:00:00Z,maria.zapata
+infoMin-006,Desarrollo a Medida,True,2025-06-29T00:00:00Z,ana.lopez,2025-06-30T00:00:00Z,juan.garcia
+infoMin-007,Mejoras Continuas,False,2025-06-30T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,ana.lopez
+infoMin-008,Migración de Datos,True,2025-06-28T00:00:00Z,juan.garcia,2025-06-30T00:00:00Z,juan.garcia
+infoMin-009,Infraestructura,False,2025-06-29T00:00:00Z,maria.zapata,2025-07-01T00:00:00Z,carlos.ramos
+infoMin-010,Actualización de Versiones,True,2025-06-30T00:00:00Z,ana.lopez,2025-07-01T00:00:00Z,ana.lopez

@@ -1,1 +1,11 @@
 ID,estado,evento,descripcion,fechaInicio,fechaFin,fechaCorte,prioridad,createdAt,createdBy,modifiedAt,modifiedBy
+inc-001,Escalado,pilar-001,"Error en integración con SuccessFactors",2025-07-02,2025-07-05,2025-07-07,Alta,2025-06-30T00:00:00Z,ana.lopez,2025-07-02T00:00:00Z,carlos.ramos
+inc-002,Cerrado,pilar-002,"Cliente reporta fallo en facturación",2025-07-04,2025-07-06,2025-07-07,Alta,2025-07-03T00:00:00Z,maria.zapata,2025-07-04T00:00:00Z,carlos.ramos
+inc-003,Nuevo,pilar-003,"Sistema no permite cierre de mes",2025-07-06,2025-07-08,2025-07-09,Media,2025-07-03T00:00:00Z,juan.garcia,2025-07-05T00:00:00Z,carlos.ramos
+inc-004,En Proceso,pilar-004,"Solicitud de creación de nuevo usuario",2025-07-02,2025-07-05,2025-07-07,Media,2025-07-01T00:00:00Z,carlos.ramos,2025-07-02T00:00:00Z,ana.lopez
+inc-005,Cerrado,pilar-005,"Alerta por inconsistencia en datos maestros",2025-07-05,2025-07-08,2025-07-09,Alta,2025-07-03T00:00:00Z,maria.zapata,2025-07-04T00:00:00Z,maria.zapata
+inc-006,Cerrado,pilar-006,"Requiere validación de datos migrados",2025-07-02,2025-07-03,2025-07-05,Baja,2025-06-29T00:00:00Z,juan.garcia,2025-07-01T00:00:00Z,juan.garcia
+inc-007,Nuevo,pilar-007,"Fallo de conectividad en VPN",2025-07-03,2025-07-04,2025-07-06,Alta,2025-07-01T00:00:00Z,ana.lopez,2025-07-02T00:00:00Z,carlos.ramos
+inc-008,En Proceso,pilar-008,"Ajuste de parámetros en entorno QA",2025-07-05,2025-07-07,2025-07-08,Media,2025-07-02T00:00:00Z,maria.zapata,2025-07-03T00:00:00Z,maria.zapata
+inc-009,Escalado,pilar-009,"Problema con roles asignados",2025-07-01,2025-07-04,2025-07-05,Baja,2025-06-29T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,juan.garcia
+inc-010,En Proceso,pilar-010,"Revisión de logs por errores inesperados",2025-07-06,2025-07-08,2025-07-09,Alta,2025-07-03T00:00:00Z,ana.lopez,2025-07-05T00:00:00Z,ana.lopez
