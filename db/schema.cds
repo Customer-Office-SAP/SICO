@@ -3,25 +3,6 @@ using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
 namespace sap.capire.sico;
 
 /**
- * Enumeraciones
- */
-entity TipoIntervencion : CodeList {
-  key code : String enum { Proyecto = 'Proyecto'; Operacion = 'Operacion'; };
-}
-
-entity TipoPilar : CodeList {
-  key code : String enum { PCCP; PS; RenevuneRescue; RevenueProtection; NPS };
-}
-
-entity Fase : CodeList {
-  key code : String enum { Discover; Prepare; Explore; Realize; Deploy; Run };
-}
-
-entity TipoPlan : CodeList {
-  key code : String enum { Mitigacion; Remediacion };
-}
-
-/**
  * Entidades principales
  */
 entity Producto : cuid, managed {
@@ -287,4 +268,24 @@ entity TipoRiesgo : CodeList {
 
 entity Flag : cuid, managed {
   nombre : String;
+}
+
+entity TipoIntervencion : CodeList {
+  key code : String;
+  nombre: String; 
+}
+
+entity TipoPilar : CodeList {
+  key code : String;
+  nombre: String; 
+}
+
+entity Fase : CodeList {
+  key code : String;
+  nombre: String; 
+}
+
+entity TipoPlan : CodeList {
+  key code : String;
+  nombre: String; 
 }
