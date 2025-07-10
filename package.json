@@ -10,6 +10,8 @@
   "sapux": [
     "app/pilares",
     "app/project1",
-    "app/pilarco"
+    "app/pilarco",
+    "app/pilar",
+    "app/contacto"
   ]
 }

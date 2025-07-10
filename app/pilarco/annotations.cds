@@ -100,3 +100,20 @@ annotate service.PilarCO with {
         Common.ValueListWithFixedValues : true,
 )};
 
+annotate service.PilarCO with {
+    estado @(
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'PilarCO',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : estado,
+                    ValueListProperty : 'estado',
+                },
+            ],
+            Label : 'Estado',
+        },
+        Common.ValueListWithFixedValues : true,
+        )};
+

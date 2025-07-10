@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "pilarco",
+    "id": "pilar",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "3f688d68-5abb-4f4f-8185-71a71d3f1415"
+      "toolsId": "8588ea7d-01cf-4cb9-9ba8-de4a821c831a"
     },
     "dataSources": {
       "mainService": {
@@ -60,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "pilarco.i18n.i18n"
+          "bundleName": "pilar.i18n.i18n"
         }
       },
       "": {
@@ -87,6 +87,16 @@
           "pattern": ":?query:",
           "name": "PilarCOList",
           "target": "PilarCOList"
+        },
+        {
+          "pattern": "PilarCO({key}):?query:",
+          "name": "PilarCOObjectPage",
+          "target": "PilarCOObjectPage"
+        },
+        {
+          "pattern": "PilarCO({key})/equipoGeneral({key2}):?query:",
+          "name": "ContactoObjectPage",
+          "target": "ContactoObjectPage"
         }
       ],
       "targets": {
@@ -98,15 +108,49 @@
             "settings": {
               "contextPath": "/PilarCO",
               "variantManagement": "Page",
-              "navigation": {},
+              "navigation": {
+                "PilarCO": {
+                  "detail": {
+                    "route": "PilarCOObjectPage"
+                  }
+                }
+              },
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
                     "type": "ResponsiveTable"
                   }
                 }
-              },
-              "initialLoad": "Enabled"
+              }
+            }
+          }
+        },
+        "PilarCOObjectPage": {
+          "type": "Component",
+          "id": "PilarCOObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/PilarCO",
+              "navigation": {
+                "equipoGeneral": {
+                  "detail": {
+                    "route": "ContactoObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ContactoObjectPage": {
+          "type": "Component",
+          "id": "ContactoObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/PilarCO/equipoGeneral"
             }
           }
         }

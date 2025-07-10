@@ -2,6 +2,9 @@ using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
 
 namespace sap.capire.sico;
 
+entity Producto : cuid {
+  nombre : String;
+}
 
 entity InformacionBasica : cuid, managed {
   r1 : Boolean;
@@ -48,6 +51,23 @@ entity Cliente : cuid, managed {
   contactos    : Composition of many Contacto;
 }
 
+entity Servicio : cuid, managed {
+  nombre : String;
+}
+
+entity TipoPilar : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity TipoIntervencion : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity Estado : cuid {
+  nombre : String;
+}
 
 entity Contacto : cuid, managed {
   nombre    : String;
@@ -57,6 +77,9 @@ entity Contacto : cuid, managed {
   relacion  : Association to Relacion;
 }
 
+entity Relacion : cuid {
+  nombre : String;
+}
 
 entity Partner : cuid, managed {
   nombrePartner       : String;
@@ -95,6 +118,18 @@ entity MatrizRiesgos : cuid, managed {
   issue                      : Boolean;
 }
 
+entity EstadoAccion : cuid, managed {
+  nombre : String;
+}
+
+entity Flag : cuid, managed {
+  nombre : String;
+}
+
+entity TipoActividad : cuid {
+  nombre : String;
+}
+
 entity Accion : cuid, managed {
   actividad     : Association to Actividad;
   dueno         : Association to Contacto;
@@ -104,7 +139,7 @@ entity Accion : cuid, managed {
   observaciones : String;
 }
 
-entity Actividad : cuid, managed {
+entity Actividad : cuid {
   nombre          : String;
   flag            : Association to Flag;
   tipoActividad   : Association to TipoActividad;
