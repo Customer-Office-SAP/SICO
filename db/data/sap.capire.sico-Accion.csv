@@ -1,11 +1,11 @@
 ID,actividad_ID,dueno_ID,descripcion,duracion,estado,observaciones,createdAt,createdBy,modifiedAt,modifiedBy
-accion-001,actividad-001,contacto-002,"Analizar requisitos con equipo funcional",2025-01-25,estadoAccion-001,"Sesión inicial con stakeholders clave",2025-01-18T09:00:00Z,ana.lopez,2025-01-19T11:30:00Z,ana.lopez
-accion-002,actividad-002,contacto-001,"Instalar base SAP S/4HANA",2025-01-29,estadoAccion-002,"Entorno DEV listo para configuración",2025-01-24T13:20:00Z,maria.zapata,2025-01-29T16:45:00Z,maria.zapata
-accion-003,actividad-002,contacto-004,"Parametrizar módulos FI-CO",2025-02-02,estadoAccion-002,"Avance 60 %, pendiente validar cuentas",2025-01-27T10:15:00Z,carlos.ortiz,2025-02-01T14:05:00Z,luisa.mendez
-accion-004,actividad-003,contacto-006,"Extraer datos maestros de clientes",2025-02-12,estadoAccion-003,"Bloqueado por formato de CSV",2025-02-05T08:40:00Z,luisa.mendez,2025-02-08T09:55:00Z,luisa.mendez
-accion-005,actividad-004,contacto-005,"Diseñar wireframes de interfaz",2025-02-18,estadoAccion-004,"Prototipo UX aprobado",2025-02-07T15:10:00Z,juan.suarez,2025-02-18T12:20:00Z,juan.suarez
-accion-006,actividad-005,contacto-003,"Ejecutar pruebas E2E ciclo 1",2025-02-24,estadoAccion-002,"15 defectos abiertos",2025-02-12T11:45:00Z,ana.lopez,2025-02-20T17:30:00Z,maria.zapata
-accion-007,actividad-006,contacto-009,"Preparar material de capacitación",2025-03-04,estadoAccion-001,"Temario pendiente aprobación",2025-02-28T09:05:00Z,carlos.ortiz,2025-03-01T10:25:00Z,carlos.ortiz
-accion-008,actividad-007,contacto-001,"Crear plan detallado de cut-over",2025-04-22,estadoAccion-001,"Se requiere validar con TI",2025-04-15T14:30:00Z,luisa.mendez,2025-04-18T16:10:00Z,luisa.mendez
-accion-009,actividad-008,contacto-008,"Monitorear incidencias post Go-Live",2025-05-07,estadoAccion-002,"Reportados 5 tickets críticos",2025-05-03T10:50:00Z,ana.lopez,2025-05-05T09:40:00Z,ana.lopez
-accion-010,actividad-009,contacto-007,"Optimizar parámetros de rendimiento",2025-05-20,estadoAccion-004,"Tiempo de respuesta mejoró 30 %",2025-05-13T15:25:00Z,maria.zapata,2025-05-20T11:15:00Z,juan.suarez
+accion-001,actividad-001,contacto-002,"Analizar requisitos con equipo funcional",2025-01-25,estadoaccion-001,"Sesión inicial con stakeholders clave",2025-01-18T09:00:00Z,ana.lopez,2025-01-19T11:30:00Z,ana.lopez
+accion-002,actividad-002,contacto-001,"Instalar base SAP S/4HANA",2025-01-29,estadoaccion-002,"Entorno DEV listo para configuración",2025-01-24T13:20:00Z,maria.zapata,2025-01-29T16:45:00Z,maria.zapata
+accion-003,actividad-002,contacto-004,"Parametrizar módulos FI-CO",2025-02-02,estadoaccion-002,"Avance 60 %, pendiente validar cuentas",2025-01-27T10:15:00Z,carlos.ortiz,2025-02-01T14:05:00Z,luisa.mendez
+accion-004,actividad-003,contacto-006,"Extraer datos maestros de clientes",2025-02-12,estadoaccion-003,"Bloqueado por formato de CSV",2025-02-05T08:40:00Z,luisa.mendez,2025-02-08T09:55:00Z,luisa.mendez
+accion-005,actividad-004,contacto-005,"Diseñar wireframes de interfaz",2025-02-18,estadoaccion-004,"Prototipo UX aprobado",2025-02-07T15:10:00Z,juan.suarez,2025-02-18T12:20:00Z,juan.suarez
+accion-006,actividad-005,contacto-003,"Ejecutar pruebas E2E ciclo 1",2025-02-24,estadoaccion-002,"15 defectos abiertos",2025-02-12T11:45:00Z,ana.lopez,2025-02-20T17:30:00Z,maria.zapata
+accion-007,actividad-006,contacto-009,"Preparar material de capacitación",2025-03-04,estadoaccion-001,"Temario pendiente aprobación",2025-02-28T09:05:00Z,carlos.ortiz,2025-03-01T10:25:00Z,carlos.ortiz
+accion-008,actividad-007,contacto-001,"Crear plan detallado de cut-over",2025-04-22,estadoaccion-001,"Se requiere validar con TI",2025-04-15T14:30:00Z,luisa.mendez,2025-04-18T16:10:00Z,luisa.mendez
+accion-009,actividad-008,contacto-008,"Monitorear incidencias post Go-Live",2025-05-07,estadoaccion-002,"Reportados 5 tickets críticos",2025-05-03T10:50:00Z,ana.lopez,2025-05-05T09:40:00Z,ana.lopez
+accion-010,actividad-009,contacto-007,"Optimizar parámetros de rendimiento",2025-05-20,estadoaccion-004,"Tiempo de respuesta mejoró 30 %",2025-05-13T15:25:00Z,maria.zapata,2025-05-20T11:15:00Z,juan.suarez

@@ -1,0 +1,1 @@
+ID,tipoIntervencion_code,nombre,cliente_ID,implementadorTercero_ID,implementadorSAP_ID,producto_ID,tipoPilar_code,fechaInicio,fechaFin,fechaGoLivePlaneada,fechaGoLiveReal,estado_ID,qGate,antecedente_ID,serviciosEscenciales_ID,matrizRiesgos_ID,reporteSemanal_ID,createdAt,createdBy,modifiedAt,modifiedBy

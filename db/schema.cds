@@ -93,10 +93,8 @@ entity SAP : cuid, managed {
 }
 
 entity TipoPlan : CodeList {
-
-      key code : String;
-      nombre   : String;
-
+    key code : String;
+    nombre   : String;
 }
 
 entity TipoRiesgo : cuid, managed {
