@@ -1,4 +1,3 @@
-//La calificacion es un supuesto
 ID,localizacion_ID,calificacion,createdAt,createdBy,modifiedAt,modifiedBy
 cliente-001,localizacion-001,5,2025-01-10T09:00:00Z,ana.lopez,2025-01-25T11:20:00Z,maria.zapata
 cliente-002,localizacion-002,4,2025-01-20T14:15:00Z,maria.zapata,2025-01-30T16:40:00Z,maria.zapata
