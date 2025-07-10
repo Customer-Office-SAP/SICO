@@ -1,4 +1,4 @@
-ID,nombre
-flag-001,Rojo
-flag-002,Amarillo
-flag-003,Verde
+code,nombre,name,descr
+flag-001,Rojo,Red,Rojo
+flag-002,Amarillo,Yellow,Amarillo
+flag-003,Verde,Green,Verde

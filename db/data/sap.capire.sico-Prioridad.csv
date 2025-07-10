@@ -1,4 +1,4 @@
-ID,nombre
-prioridad-001,Alta
-prioridad-002,Media
-prioridad-003,Baja
+code,nombre,name,descr
+prioridad-001,Alta,High,Prioridad Alta
+prioridad-002,Media,Medium, Prioridad Media
+prioridad-003,Baja,Low,Prioridad Baja

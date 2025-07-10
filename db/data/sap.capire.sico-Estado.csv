@@ -1,3 +1,3 @@
-ID,nombre
-estado-001,Abierto
-estado-002,Cerrado
+code,nombre,name,descr
+estado-001,Abierto,Open,Estado Abierto
+estado-002,Cerrado,Closed,Estado Cerrado

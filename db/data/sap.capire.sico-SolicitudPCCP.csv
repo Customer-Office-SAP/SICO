@@ -1,4 +1,4 @@
-ID,link,partner_ID,pilar_ID,cliente_ID,informacionBasica_ID,informacionMinimaObligatoria_ID,informacionAdicional_ID,solucionesSAPenScope_ID,milestones_ID,createdAt,createdBy,modifiedAt,modifiedBy
+ID,link,partner_ID,pilar_ID,cliente_ID,informacionBasica_ID,informacionMinimaObligatoria_ID,informacionAdicional_ID,solucionesSAPenScope_code,milestones_ID,createdAt,createdBy,modifiedAt,modifiedBy
 solicitud-001,https://sap.com/pccp/solicitud-001,partner-001,pilarco-001,cliente-001,infoBas-001,infoMin-001,infoAdi-001,producto-001,milestone-001,2025-07-01T00:00:00Z,ana.lopez,2025-07-06T00:00:00Z,juan.garcia
 solicitud-002,https://sap.com/pccp/solicitud-002,partner-002,pilarco-002,cliente-002,infoBas-002,infoMin-002,infoAdi-002,producto-002,milestone-002,2025-07-01T00:00:00Z,maria.zapata,2025-07-06T00:00:00Z,maria.zapata
 solicitud-003,https://sap.com/pccp/solicitud-003,partner-003,pilarco-003,cliente-003,infoBas-003,infoMin-003,infoAdi-003,producto-003,milestone-003,2025-07-01T00:00:00Z,carlos.ramos,2025-07-06T00:00:00Z,carlos.ramos

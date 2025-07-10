@@ -1,4 +1,4 @@
-ID,incidente_ID,fecha,escaladoPor_ID,escaladoPara_ID,estado,comentarios,createdAt,createdBy,modifiedAt,modifiedBy
+ID,incidente_ID,fecha,escaladoPor_ID,escaladoPara_ID,estado_code,comentarios,createdAt,createdBy,modifiedAt,modifiedBy
 escalacion-001,incidente-001,2025-02-01,contacto-002,contacto-004,estado-001,"Prioridad alta: falla en entorno DEV",2025-02-01T09:45:00Z,maria.zapata,2025-02-01T09:45:00Z,maria.zapata
 escalacion-002,incidente-002,2025-02-10,contacto-006,contacto-001,estado-001,"Error de carga de datos maestros",2025-02-10T11:30:00Z,ana.lopez,2025-02-10T11:30:00Z,ana.lopez
 escalacion-003,incidente-003,2025-02-20,contacto-008,contacto-007,estado-001,"Rendimiento lento en pruebas integradas",2025-02-20T14:05:00Z,carlos.ortiz,2025-02-20T14:05:00Z,carlos.ortiz

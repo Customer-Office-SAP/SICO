@@ -1,4 +1,4 @@
-ID,nombre,flag_ID,tipoActividad_ID,fechaInicio,fechaFin,dueDate,descripcion,createdAt,createdBy,modifiedAt,modifiedBy
+ID,nombre,flag_code,tipoActividad_code,fechaInicio,fechaFin,dueDate,descripcion
 actividad-001,"Definición de alcance Sprint 1",flag-002,tipoActividad-001,2025-01-20,2025-02-10,2025-02-05,"Reunir requerimientos y definir historias de usuario para el primer sprint",2025-01-18T10:00:00Z,ana.lopez,2025-01-19T15:30:00Z,ana.lopez
 actividad-002,"Configuración ambiente de Desarrollo",flag-001,tipoActividad-002,2025-01-25,2025-02-03,2025-02-01,"Instalar y parametrizar instancias SAP S/4HANA para el equipo",2025-01-24T08:45:00Z,maria.zapata,2025-01-24T12:00:00Z,maria.zapata
 actividad-003,"Carga inicial de datos maestros",flag-003,tipoActividad-002,2025-02-05,2025-02-20,2025-02-18,"Extraer y transformar datos para la migración inicial",2025-02-04T11:00:00Z,carlos.ortiz,2025-02-05T09:20:00Z,luisa.mendez

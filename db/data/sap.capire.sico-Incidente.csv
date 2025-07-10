@@ -1,4 +1,4 @@
-ID,estado,evento,descripcion,fechaInicio,fechaFin,fechaCorte,prioridad,createdAt,createdBy,modifiedAt,modifiedBy
+ID,estado_code,evento_ID,descripcion,fechaInicio,fechaFin,fechaCorte,prioridad_code,createdAt,createdBy,modifiedAt,modifiedBy
 inc-001,Escalado,pilar-001,"Error en integración con SuccessFactors",2025-07-02,2025-07-05,2025-07-07,Alta,2025-06-30T00:00:00Z,ana.lopez,2025-07-02T00:00:00Z,carlos.ramos
 inc-002,Cerrado,pilar-002,"Cliente reporta fallo en facturación",2025-07-04,2025-07-06,2025-07-07,Alta,2025-07-03T00:00:00Z,maria.zapata,2025-07-04T00:00:00Z,carlos.ramos
 inc-003,Nuevo,pilar-003,"Sistema no permite cierre de mes",2025-07-06,2025-07-08,2025-07-09,Media,2025-07-03T00:00:00Z,juan.garcia,2025-07-05T00:00:00Z,carlos.ramos

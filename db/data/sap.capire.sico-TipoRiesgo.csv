@@ -1,11 +1,11 @@
-code;nombre;name;descr
-tiporiesgo-001;Tecnológico;Technological;Riesgo asociado al uso-fallos o brechas tecnológicas.
-tiporiesgo-002;Operativo;Operational;Riesgo por fallas en procesos internos o humanos.
-tiporiesgo-003;Legal;Legal;Riesgo por incumplimiento de leyes o regulaciones.
-tiporiesgo-004;Financiero;Financial;Riesgo relacionado con pérdidas monetarias o fluctuaciones.
-tiporiesgo-005;Reputacional;Reputational;Riesgo que afecta la percepción pública de la organización.
-tiporiesgo-006;Estrategico;Strategic;Riesgo que impacta la dirección o metas del negocio.
-tiporiesgo-007;Regulatorio;Regulatory;Riesgo derivado de cambios o incumplimiento normativo.
-tiporiesgo-008;Ambiental;Environmental;Riesgo por factores ambientales o climáticos.
-tiporiesgo-009;De Seguridad;Security;Riesgo relacionado con accesos datos o infraestructura crítica.
-tiporiesgo-010;De Proveedores;Supplier;Riesgo por fallas o dependencia de terceros o proveedores.
+code,nombre,name,descr
+tiporiesgo-001,Tecnológico,Technological,Riesgo asociado al uso-fallos o brechas tecnológicas.
+tiporiesgo-002,Operativo,Operational,Riesgo por fallas en procesos internos o humanos.
+tiporiesgo-003,Legal,Legal,Riesgo por incumplimiento de leyes o regulaciones.
+tiporiesgo-004,Financiero,Financial,Riesgo relacionado con pérdidas monetarias o fluctuaciones.
+tiporiesgo-005,Reputacional,Reputational,Riesgo que afecta la percepción pública de la organización.
+tiporiesgo-006,Estrategico,Strategic,Riesgo que impacta la dirección o metas del negocio.
+tiporiesgo-007,Regulatorio,Regulatory,Riesgo derivado de cambios o incumplimiento normativo.
+tiporiesgo-008,Ambiental,Environmental,Riesgo por factores ambientales o climáticos.
+tiporiesgo-009,De Seguridad,Security,Riesgo relacionado con accesos datos o infraestructura crítica.
+tiporiesgo-010,De Proveedores,Supplier,Riesgo por fallas o dependencia de terceros o proveedores.

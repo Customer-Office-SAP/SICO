@@ -1,4 +1,4 @@
-ID,actividad_ID,descripcion,duracion,estado,observaciones,createdAt,createdBy,modifiedAt,modifiedBy
+ID,actividad_ID,descripcion,duracion,estado_code,observaciones,createdAt,createdBy,modifiedAt,modifiedBy
 antecedente-001,actividad-001,"Alcance definitorio generó gaps no previstos",2025-02-05,condicion-001,"Requiere ajustar historias de usuario",2025-01-22T11:15:00Z,ana.lopez,2025-01-22T12:00:00Z,ana.lopez
 antecedente-002,actividad-001,"Eficiente colaboración del equipo de requisitos",2025-01-30,condicion-002,"Buen uso de tableros Scrum",2025-01-23T09:40:00Z,maria.zapata,2025-01-23T10:30:00Z,maria.zapata
 antecedente-003,actividad-002,"Plazo de entrega del ambiente no negociable",2025-02-01,condicion-003,"Ajustar cronograma dependiente",2025-01-26T14:00:00Z,maria.zapata,2025-01-26T15:10:00Z,maria.zapata

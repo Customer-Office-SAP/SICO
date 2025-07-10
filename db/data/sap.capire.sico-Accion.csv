@@ -1,4 +1,4 @@
-ID,actividad_ID,dueno_ID,descripcion,duracion,estado,observaciones,createdAt,createdBy,modifiedAt,modifiedBy
+ID,actividad_ID,dueno_ID,descripcion,duracion,estado_code,observaciones,createdAt,createdBy,modifiedAt,modifiedBy
 accion-001,actividad-001,contacto-002,"Analizar requisitos con equipo funcional",2025-01-25,estadoaccion-001,"Sesión inicial con stakeholders clave",2025-01-18T09:00:00Z,ana.lopez,2025-01-19T11:30:00Z,ana.lopez
 accion-002,actividad-002,contacto-001,"Instalar base SAP S/4HANA",2025-01-29,estadoaccion-002,"Entorno DEV listo para configuración",2025-01-24T13:20:00Z,maria.zapata,2025-01-29T16:45:00Z,maria.zapata
 accion-003,actividad-002,contacto-004,"Parametrizar módulos FI-CO",2025-02-02,estadoaccion-002,"Avance 60 %, pendiente validar cuentas",2025-01-27T10:15:00Z,carlos.ortiz,2025-02-01T14:05:00Z,luisa.mendez

@@ -1,4 +1,4 @@
-ID,nombre
-relacion-001,SAP
-relacion-002,Partner
-relacion-003,cliente
+code,nombre,name,descr
+relacion-001,SAP,SAP,SAP
+relacion-002,Partner,Partner,Partner
+relacion-003,Cliente,Client,Cliente

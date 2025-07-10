@@ -1,10 +1,10 @@
-ID,nombreProducto
-producto-001,S/4HANA Cloud
-producto-002,S/4HANA
-producto-003,Costumer Experience
-producto-004,BTP
-producto-005,SuccessFactors
-producto-006,Ariba
-producto-007,Concur
-producto-008,Fieldglass
-producto-009,Otros
+code,nombre,name,descr
+producto-001,S/4HANA Cloud,S/4HANA Cloud,S/4HANA Cloud
+producto-002,S/4HANA,S/4HANA,S/4HANA
+producto-003,Costumer Experience,Costumer Experience,Costumer Experience
+producto-004,BTP,BTP,BTP
+producto-005,SuccessFactors,SuccessFactors,SuccessFactors
+producto-006,Ariba,Ariba,Ariba
+producto-007,Concur,Concur,Concur
+producto-008,Fieldglass,Fieldglass,Fieldglass
+producto-009,Otros,Otros,Otros

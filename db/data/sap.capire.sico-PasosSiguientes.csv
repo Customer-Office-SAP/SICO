@@ -1,11 +1,11 @@
-ID,Contenido,createdAt,createdBy,modifiedAt,modifiedBy
-paso-001,Realizar reunión de seguimiento con cliente,2025-07-01T00:00:00Z,juan.garcia,2025-07-03T00:00:00Z,maria.zapata
-paso-002,Actualizar cronograma del proyecto,2025-07-02T00:00:00Z,carlos.ramos,2025-07-04T00:00:00Z,juan.garcia
-paso-003,Enviar informe de avance,2025-07-03T00:00:00Z,carlos.ramos,2025-07-04T00:00:00Z,juan.garcia
-paso-004,Definir plan de mitigación,2025-07-04T00:00:00Z,ana.lopez,2025-07-05T00:00:00Z,maria.zapata
-paso-005,Revisar feedback del equipo,2025-07-05T00:00:00Z,carlos.ramos,2025-07-06T00:00:00Z,carlos.ramos
-paso-006,Preparar próxima entrega,2025-07-06T00:00:00Z,juan.garcia,2025-07-08T00:00:00Z,maria.zapata
-paso-007,Validar entregables con el cliente,2025-07-07T00:00:00Z,maria.zapata,2025-07-08T00:00:00Z,ana.lopez
-paso-008,Organizar sesión de entrenamiento,2025-07-08T00:00:00Z,juan.garcia,2025-07-09T00:00:00Z,ana.lopez
-paso-009,Actualizar documentación técnica,2025-07-09T00:00:00Z,ana.lopez,2025-07-10T00:00:00Z,juan.garcia
-paso-010,Revisar presupuesto del proyecto,2025-07-10T00:00:00Z,maria.zapata,2025-07-11T00:00:00Z,carlos.ramos
+code,nombre,name,descr
+paso-001,Realizar reunión de seguimiento con cliente,Realizar reunión de seguimiento con cliente,Realizar reunión de seguimiento con cliente
+paso-002,Actualizar cronograma del proyecto,Actualizar cronograma del proyecto,Actualizar cronograma del proyecto
+paso-003,Enviar informe de avance,Enviar informe de avance,Enviar informe de avance
+paso-004,Definir plan de mitigación,Definir plan de mitigación,Definir plan de mitigación
+paso-005,Revisar feedback del equipo,Revisar feedback del equipo,Revisar feedback del equipo
+paso-006,Preparar próxima entrega,Preparar próxima entrega,Preparar próxima entrega
+paso-007,Validar entregables con el cliente,Validar entregables con el cliente,Validar entregables con el cliente
+paso-008,Organizar sesión de entrenamiento,Organizar sesión de entrenamiento,Organizar sesión de entrenamiento
+paso-009,Actualizar documentación técnica,Actualizar documentación técnica,Actualizar documentación técnica
+paso-010,Revisar presupuesto del proyecto,Revisar presupuesto del proyecto,Revisar presupuesto del proyecto

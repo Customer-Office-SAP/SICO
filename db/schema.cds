@@ -57,7 +57,6 @@ entity Contacto : cuid, managed {
   relacion  : Association to Relacion;
 }
 
-
 entity Partner : cuid, managed {
   nombrePartner       : String;
   localizacion        : Association to Localizacion;

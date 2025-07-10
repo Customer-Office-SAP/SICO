@@ -1,5 +1,5 @@
-ID,nombre,createdAt,createdBy,modifiedAt,modifiedBy
-estadoaccion-001,Sin Iniciar,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
-estadoaccion-002,En Proceso,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
-estadoaccion-003,Cubierto,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
-estadoaccion-004,anulado,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
+code,nombre,name,descr
+estadoaccion-001,Sin Iniciar,Sin Iniciar,Estado Sin iniciar
+estadoaccion-002,En Proceso,En Proceso,Estado En proceso
+estadoaccion-003,Cubierto,Cubierto,Estado Cubierto
+estadoaccion-004,Anulado,Anulado,Estado Anulado

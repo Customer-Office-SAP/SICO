@@ -1,0 +1,11 @@
+ID,proyecto_ID,entregadoPor_ID,recibidoPor_ID,fecha,criterios,createdAt,createdBy,modifiedAt,modifiedBy
+handover-001,pilarco-001,contacto-001,contacto-002,2023-01-15,Documentación completa entregada,2023-01-15T09:00:00Z,ana.gomez,2023-01-16T10:00:00Z,ana.gomez
+handover-002,pilarco-002,contacto-003,contacto-004,2023-03-12,Transferencia de conocimiento validada,2023-03-12T11:30:00Z,julian.moreno,2023-03-13T12:00:00Z,julian.moreno
+handover-003,pilarco-003,contacto-005,contacto-006,2023-05-08,Checklist técnico y funcional aprobado,2023-05-08T08:00:00Z,sara.perez,2023-05-09T09:30:00Z,sara.perez
+handover-004,pilarco-004,contacto-007,contacto-008,2023-07-20,Acta de cierre firmada,2023-07-20T10:00:00Z,camilo.rios,2023-07-21T11:00:00Z,camilo.rios
+handover-005,pilarco-005,contacto-009,contacto-010,2023-09-01,Checklist de soporte completado,2023-09-01T13:00:00Z,laura.martinez,2023-09-01T15:00:00Z,laura.martinez
+handover-006,pilarco-006,contacto-011,contacto-012,2023-10-10,Documentos de pruebas y validación,2023-10-10T10:30:00Z,felipe.mendez,2023-10-11T09:45:00Z,felipe.mendez
+handover-007,pilarco-007,contacto-013,contacto-014,2024-01-05,Transferencia a operación ejecutada,2024-01-05T14:00:00Z,carolina.lopez,2024-01-06T14:30:00Z,carolina.lopez
+handover-008,pilarco-008,contacto-015,contacto-016,2024-02-28,Cierre técnico y operativo aprobado,2024-02-28T09:10:00Z,juan.vera,2024-02-29T10:00:00Z,juan.vera
+handover-009,pilarco-009,contacto-017,contacto-018,2024-04-14,Acta firmada con todos los criterios,2024-04-14T10:15:00Z,daniela.rojas,2024-04-15T11:00:00Z,daniela.rojas
+handover-010,pilarco-010,contacto-019,contacto-020,2024-06-01,Entrega validada por equipo SAP,2024-06-01T08:45:00Z,mateo.sandoval,2024-06-02T09:30:00Z,mateo.sandoval

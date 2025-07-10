@@ -1,0 +1,11 @@
+ID,anio,quarter,calificacion,createdAt,createdBy,modifiedAt,modifiedBy
+nps-001,2023,1,Promotor,2023-02-01T09:00:00Z,ana.gomez,2023-03-01T09:00:00Z,ana.gomez
+nps-002,2023,2,Neutro,2023-05-01T10:00:00Z,julian.moreno,2023-05-30T10:00:00Z,julian.moreno
+nps-003,2023,3,Detractor,2023-08-01T08:30:00Z,sara.perez,2023-08-28T08:30:00Z,sara.perez
+nps-004,2023,4,Promotor,2023-11-01T12:15:00Z,camilo.rios,2023-11-20T12:15:00Z,camilo.rios
+nps-005,2024,1,Neutro,2024-02-05T09:45:00Z,laura.martinez,2024-03-01T09:45:00Z,laura.martinez
+nps-006,2024,2,Promotor,2024-05-03T11:00:00Z,felipe.mendez,2024-05-25T11:00:00Z,felipe.mendez
+nps-007,2024,3,Detractor,2024-08-07T13:20:00Z,carolina.lopez,2024-08-30T13:20:00Z,carolina.lopez
+nps-008,2024,4,Neutro,2024-11-09T14:00:00Z,juan.vera,2024-11-30T14:00:00Z,juan.vera
+nps-009,2025,1,Promotor,2025-01-15T10:30:00Z,daniela.rojas,2025-01-31T10:30:00Z,daniela.rojas
+nps-010,2025,2,Detractor,2025-04-12T09:10:00Z,mateo.sandoval,2025-04-30T09:10:00Z,mateo.sandoval
