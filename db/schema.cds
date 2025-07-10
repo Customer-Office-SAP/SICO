@@ -289,3 +289,16 @@ entity TipoPlan : CodeList {
   key code : String;
   nombre: String; 
 }
+
+entity ReporteSemanal : cuid, managed {
+  pilar                    : Association to PilarCO;
+  matrizRiesgos           : Association to MatrizRiesgos;
+  fecha                   : Date;
+  estadoTopicosRelevantes: String;
+  gestionRecursos         : String;
+  aspectosClaveActivate   : String;
+  consideracionesRelevantes : String;
+  incidenciasRelevantes   : String;
+  recomendaciones         : String;
+  otrosTemasRelacionados  : String;
+}

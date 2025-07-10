@@ -19,7 +19,7 @@ service SICOService {
   entity Ticket             as projection on my.Ticket;
   entity Evaluacion         as projection on my.Evaluacion;
   entity SolicitudPCCP      as projection on my.SolicitudPCCP;
-  entity Servicios          as projection on my.Servicios;
+  entity Servicios          as projection on my.Servicio;
   entity Antecedente        as projection on my.Antecedente;
   entity MatrizRiesgos      as projection on my.MatrizRiesgos;
   entity Contacto           as projection on my.Contacto;
@@ -29,6 +29,7 @@ service SICOService {
   entity InformacionAdicional         as projection on my.InformacionAdicional;
   entity Milestones         as projection on my.Milestones;
   entity PasosSiguientes    as projection on my.PasosSiguientes;
+  entity ReporteSemanal     as projection on my.ReporteSemanal;
 }
 
 /**
