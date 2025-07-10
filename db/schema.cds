@@ -2,9 +2,6 @@ using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
 
 namespace sap.capire.sico;
 
-entity Producto : cuid {
-  nombre : String;
-}
 
 entity InformacionBasica : cuid, managed {
   r1 : Boolean;
@@ -51,23 +48,6 @@ entity Cliente : cuid, managed {
   contactos    : Composition of many Contacto;
 }
 
-entity Servicio : cuid, managed {
-  nombre : String;
-}
-
-entity TipoPilar : CodeList {
-  key code : String;
-  nombre   : String;
-}
-
-entity TipoIntervencion : CodeList {
-  key code : String;
-  nombre   : String;
-}
-
-entity Estado : cuid {
-  nombre : String;
-}
 
 entity Contacto : cuid, managed {
   nombre    : String;
@@ -77,9 +57,6 @@ entity Contacto : cuid, managed {
   relacion  : Association to Relacion;
 }
 
-entity Relacion : cuid {
-  nombre : String;
-}
 
 entity Partner : cuid, managed {
   nombrePartner       : String;
@@ -97,13 +74,6 @@ entity TipoPlan : CodeList {
     nombre   : String;
 }
 
-entity TipoRiesgo : cuid, managed {
-  nombre : String;
-}
-
-entity Prioridad : cuid, managed {
-  nombre : String;
-}
 
 entity MatrizRiesgos : cuid, managed {
   tipoRiesgo                   : Association to TipoRiesgo;
@@ -121,18 +91,6 @@ entity MatrizRiesgos : cuid, managed {
   dueDate                    : Date;
   fechaSeguimientoPCC        : Date;
   issue                      : Boolean;
-}
-
-entity EstadoAccion : cuid, managed {
-  nombre : String;
-}
-
-entity Flag : cuid, managed {
-  nombre : String;
-}
-
-entity TipoActividad : cuid {
-  nombre : String;
 }
 
 entity Accion : cuid, managed {
@@ -293,20 +251,79 @@ entity Acta : cuid, managed {
   link          : String;
 }
 
-entity PasosSiguientes : cuid, managed {
-  Contenido : String;
-}
-
-entity Condicion : cuid, managed {
-  nombre : String;
-}
-
-entity Fase : cuid, managed {
-  nombre : String;
-}
 
 entity PilarFase : cuid, managed {
   pilar  : Association to PilarCO;
   fase   : Association to Fase;
   nombre : String;
+}
+
+entity Servicio : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity Producto : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity TipoPilar : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity TipoIntervencion : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity Estado : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity Relacion : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity TipoRiesgo : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity Prioridad : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity EstadoAccion : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity Flag : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity TipoActividad : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity PasosSiguientes : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity Condicion : CodeList {
+  key code : String;
+  nombre   : String;
+}
+
+entity Fase : CodeList {
+  key code : String;
+  nombre   : String;
 }
