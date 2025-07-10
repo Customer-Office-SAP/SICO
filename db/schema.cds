@@ -46,16 +46,16 @@ entity Partner : cuid, managed {
 entity PilarCO : cuid, managed {
   tipoIntervencion : Association to TipoIntervencion;
   nombre           : String;
-  cliente          : Association to Cliente;
-  implementadorTercero : Association to Partner;
-  implementadorSAP     : Association to SAP;
+  cliente          : Association to Contacto;
+  implementadorTercero : Association to Contacto;
+  implementadorSAP     : Association to Contacto;
   producto         : Association to Producto;
   tipoPilar        : Association to TipoPilar;
   fechaInicio      : Date;
   fechaFin         : Date;
   fechaGoLivePlaneada : Date;
   fechaGoLiveReal     : Date;
-  estado           : String;
+  estado           : Association to Estado;
   qGate            : Boolean;
   antecedente      : Association to Antecedente;
   serviciosEscenciales : Association to Servicio;
