@@ -25,8 +25,8 @@ annotate service.Contacto with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'relacion',
-                Value : relacion,
+                Label : 'relacion_code',
+                Value : relacion_code,
             },
         ],
     },
@@ -61,41 +61,9 @@ annotate service.Contacto with @(
         },
         {
             $Type : 'UI.DataField',
-            Label : 'relacion',
-            Value : relacion,
+            Label : 'relacion_code',
+            Value : relacion_code,
         },
     ],
 );
-
-annotate service.Contacto with {
-    cliente @Common.ValueList : {
-        $Type : 'Common.ValueListType',
-        CollectionPath : 'Cliente',
-        Parameters : [
-            {
-                $Type : 'Common.ValueListParameterInOut',
-                LocalDataProperty : cliente_ID,
-                ValueListProperty : 'ID',
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'calificacion',
-            },
-        ],
-    }
-};
-
-annotate service.Contacto with {
-    SAP @Common.ValueList : {
-        $Type : 'Common.ValueListType',
-        CollectionPath : 'SAP',
-        Parameters : [
-            {
-                $Type : 'Common.ValueListParameterInOut',
-                LocalDataProperty : SAP_ID,
-                ValueListProperty : 'ID',
-            },
-        ],
-    }
-};
 

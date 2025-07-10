@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "ac641137-301a-4cb2-8f4e-242a22369943"
+      "toolsId": "a34a1941-07e4-47ed-8d7b-5b4d0d59ed2c"
     },
     "dataSources": {
       "mainService": {

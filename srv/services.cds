@@ -4,15 +4,70 @@ using { sap.capire.sico as my } from '../db/schema';
  * Servicio para gestión operativa del sistema SICO.
  */
 service SICOService {
-  entity Producto           as projection on my.Producto;
-  entity PilarCO            as projection on my.PilarCO;
+
+  @UI: {
+    LineItem: [
+      { Value: nombre },
+      { Value: tipoIntervencion_code },
+      { Value: estado_code },
+      { Value: fechaInicio },
+      { Value: fechaFin },
+      { Value: qGate }
+    ],
+    SelectionFields: [ nombre, tipoIntervencion_code, estado_code ]
+  }
+  entity PilarCO as projection on my.PilarCO;
+
+  @UI: {
+    LineItem: [
+      { Value: nombre }
+    ]
+  }
+  entity Producto as projection on my.Producto;
+
+  @UI: {
+    LineItem: [
+      { Value: nombre },
+      { Value: email },
+      { Value: compania },
+      { Value: rol },
+      { Value: relacion_code}
+    ],
+    SelectionFields: [ nombre, rol ]
+  }
+  entity Contacto as projection on my.Contacto;
+
+  @UI: {
+    LineItem: [
+      { Value: descripcion },
+      { Value: estado_code },
+      { Value: actividad_ID },
+      { Value: dueno_ID },
+      { Value: duracion },
+      { Value: observaciones }
+    ]
+  }
+  entity Accion as projection on my.Accion;
+
+  @UI: {
+    LineItem: [
+      { Value: nombre },
+      { Value: tipoActividad_code },
+      { Value: flag_code },
+      { Value: fechaInicio},
+      { Value: fechaFin },
+      { Value: dueDate },
+      { Value: descripcion}
+    ]
+  }
+  entity Actividad as projection on my.Actividad;
+
+  // Las demás entidades las dejamos sin UI por simplicidad, pero puedes extenderlas si lo necesitas:
   entity Cliente            as projection on my.Cliente;
   entity Partner            as projection on my.Partner;
   entity SAP                as projection on my.SAP;
   entity Incidente          as projection on my.Incidente;
   entity Escalacion         as projection on my.Escalacion;
-  entity Actividad          as projection on my.Actividad;
-  entity Accion             as projection on my.Accion;
   entity Plan               as projection on my.Plan;
   entity CartaPCCP          as projection on my.CartaPCCP;
   entity Acta               as projection on my.Acta;
@@ -22,7 +77,6 @@ service SICOService {
   entity Servicios          as projection on my.Servicio;
   entity Antecedente        as projection on my.Antecedente;
   entity MatrizRiesgos      as projection on my.MatrizRiesgos;
-  entity Contacto           as projection on my.Contacto;
   entity PilarFase          as projection on my.PilarFase;
   entity InformacionBasica  as projection on my.InformacionBasica;
   entity InformacionMinimaObligatoria as projection on my.InformacionMinimaObligatoria;
