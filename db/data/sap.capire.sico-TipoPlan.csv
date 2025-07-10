@@ -1,3 +1,3 @@
-code,nombre,name,descr
-tipoplan-001,Mitigacion,Mitigacion,Mitigacion
-tipoplan-002,Remediacion,Remediacion,Remediacion
+code;nombre;name;descr
+tipoplan-001;Mitigacion;Mitigacion;Mitigacion
+tipoplan-002;Remediacion;Remediacion;Remediacion
