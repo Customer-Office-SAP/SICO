@@ -335,3 +335,34 @@ entity Fase : CodeList {
   key code : String;
   nombre   : String;
 }
+
+
+// VISTAS
+
+view vista_reporte_semanal as select from ReporteSemanal {
+  key ID,
+  fecha,
+  fechaGoLiveActual,
+  salidaProductivo,
+  descripcionFase,
+  comentariosImplementador,
+  resumen,
+  estadoTopicosRelevantes,
+  gestionRecursos,
+  aspectosClaveActivate,
+  consideracionesRelevantes,
+  incidenciasRelevantes,
+  recomendaciones,
+  otrosTemasRelacionados,
+  createdAt,
+  createdBy,
+  modifiedAt,
+  modifiedBy,
+
+  pilar,
+  matrizRiesgos,
+  fase,
+  estado,
+  nombre,
+  cliente
+}
