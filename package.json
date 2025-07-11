@@ -17,5 +17,10 @@
     "app/pilarco",
     "app/contacto",
     "app/reportesemanal"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "workzone": true
+    }
+  }
 }

@@ -17,11 +17,23 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/SICOService/",
+        "uri": "odata/v4/SICOService/",
         "type": "OData",
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "reportesemanal-display": {
+          "semanticObject": "reportesemanal",
+          "action": "display",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
         }
       }
     }
@@ -106,5 +118,9 @@
       }
     }
   },
-  "sap.fiori": {}
+  "sap.fiori": {},
+  "sap.cloud": {
+    "public": true,
+    "service": "sico.service"
+  }
 }

@@ -1,5 +1,7 @@
 using { sap.capire.sico as my } from '../db/schema';
 
+annotate SICOService.Contacto with @odata.draft.enabled; 
+
 /**
  * Servicio para gestión operativa del sistema SICO.
  */
