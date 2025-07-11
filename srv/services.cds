@@ -83,6 +83,24 @@ annotate SICOService.Contacto with @odata.draft.enabled;
   }
   entity Actividad as projection on my.Actividad;
 
+  @UI: {
+    LineItem: [
+      { Value: ID },
+      { Value: pilar_ID },
+      { Value: fecha },
+      { Value: fase_ID },
+      { Value: estado_ID },
+      { Value: salidaProductivo },
+      { Value: descripcionFase },
+      { Value: resumen }
+    ],
+    SelectionFields: [
+      ID, pilar_ID, fecha, fase_ID, estado_ID
+    ]
+  }
+  entity ReporteSemanal as projection on my.ReporteSemanal;
+
+
   // Las demás entidades las dejamos sin UI por simplicidad, pero puedes extenderlas si lo necesitas:
   entity Cliente            as projection on my.Cliente;
   entity Partner            as projection on my.Partner;
@@ -104,7 +122,7 @@ annotate SICOService.Contacto with @odata.draft.enabled;
   entity InformacionAdicional         as projection on my.InformacionAdicional;
   entity Milestones         as projection on my.Milestones;
   entity PasosSiguientes    as projection on my.PasosSiguientes;
-  entity ReporteSemanal     as projection on my.ReporteSemanal;
+  //entity ReporteSemanal     as projection on my.ReporteSemanal;
 }
 
 /**

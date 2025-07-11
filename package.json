@@ -15,6 +15,7 @@
     "app/pilar",
     "app/contacto",
     "app/pilarco",
-    "app/contacto"
+    "app/contacto",
+    "app/reportesemanal"
   ]
 }
