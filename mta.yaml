@@ -28,6 +28,7 @@ modules:
     requires:
       - name: sico-destination
       - name: sico-auth
+      - name: sico-db
 
   - name: sico-app-deployer
     type: com.sap.application.content
@@ -103,6 +104,18 @@ modules:
               ServiceKeyName: sico-auth-key
               sap.cloud.service: sico.service
 
+  - name: sico-db-deployer
+    type: hdb
+    path: db
+    parameters:
+      buildpack: nodejs_buildpack
+    build-parameters:
+      builder: custom
+      commands:
+        - npm run build
+    requires:
+      - name: sico-db
+
 resources:
   - name: sico-destination
     type: org.cloudfoundry.managed-service
@@ -154,3 +167,8 @@ resources:
       config:
         xsappname: sico-${org}-${space}
         tenant-mode: dedicated
+  - name: sico-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
