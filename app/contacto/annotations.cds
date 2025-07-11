@@ -37,6 +37,13 @@ annotate service.Contacto with @(
             Label : 'General Information',
             Target : '@UI.FieldGroup#GeneratedGroup',
         },
+        {
+            $Type : 'UI.CollectionFacet',
+            Label : '{i18n>Overview}',
+            ID : 'i18nOverview',
+            Facets : [
+            ],
+        },
     ],
     UI.LineItem : [
         {
@@ -64,6 +71,36 @@ annotate service.Contacto with @(
             Label : 'relacion_code',
             Value : relacion_code,
         },
+        {
+            $Type : 'UI.DataField',
+            Value : relacion.nombre,
+            Label : 'nombre',
+        },
     ],
+    UI.HeaderInfo : {
+        Title : {
+            $Type : 'UI.DataField',
+            Value : nombre,
+        },
+        TypeName : '',
+        TypeNamePlural : '',
+    },
 );
+
+annotate service.Contacto with {
+    nombre @(
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Contacto',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : nombre,
+                    ValueListProperty : 'nombre',
+                },
+            ],
+            Label : 'Nombre',
+        },
+        Common.ValueListWithFixedValues : true,
+)};
 

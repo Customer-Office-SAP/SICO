@@ -1,19 +1,30 @@
 {
-  "name": "contacto",
-  "version": "0.0.1",
-  "description": "An SAP Fiori application.",
-  "keywords": [
-    "ui5",
-    "openui5",
-    "sapui5"
-  ],
-  "main": "webapp/index.html",
-  "dependencies": {},
+  "name": "sico",
+  "version": "1.0.0",
+  "description": "Proyecto SICO con CAP y Fiori",
+  "scripts": {
+    "start": "cds-serve",
+    "build": "cds build --clean"
+  },
+  "dependencies": {
+    "@sap/cds": "6.11.0",            
+    "@sap/cds-rls": "^2.1.0",     
+    "@sap/xsenv": "^4.3.0",             
+    "@sap/hana-client": "^2.15.20",     
+    "express": "^4.18.2"
+  },
   "devDependencies": {
     "@ui5/cli": "^4.0.16",
-    "@sap/ux-ui5-tooling": "1"
+    "@sap/ux-ui5-tooling": "1",
+    "@sap/cds-dk": "^9.0.6"
   },
-  "scripts": {
-    "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
-  }
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "sap",
+    "cap",
+    "fiori",
+    "sico"
+  ]
 }

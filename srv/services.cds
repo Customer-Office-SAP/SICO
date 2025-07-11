@@ -6,17 +6,38 @@ using { sap.capire.sico as my } from '../db/schema';
 service SICOService {
 
   @UI: {
-    LineItem: [
-      { Value: nombre },
-      { Value: tipoIntervencion_code },
-      { Value: estado_code },
-      { Value: fechaInicio },
-      { Value: fechaFin },
-      { Value: qGate }
-    ],
-    SelectionFields: [ nombre, tipoIntervencion_code, estado_code ]
-  }
-  entity PilarCO as projection on my.PilarCO;
+  LineItem: [
+    { Value: nombre, Label: 'Nombre del Pilar' },
+    { Value: tipoIntervencion_code, Label: 'Tipo de Intervención' },
+    { Value: tipoPilar_code, Label: 'Tipo de Pilar' },
+    { Value: estado_code, Label: 'Estado' },
+    { Value: producto_code, Label: 'Producto' },
+    { Value: cliente_ID, Label: 'Cliente' },
+    { Value: implementadorTercero_ID, Label: 'Impl. Tercero' },
+    { Value: implementadorSAP_ID, Label: 'Impl. SAP' },
+    { Value: fechaInicio, Label: 'Fecha Inicio' },
+    { Value: fechaFin, Label: 'Fecha Fin' },
+    { Value: fechaGoLivePlaneada, Label: 'Go Live Planeado' },
+    { Value: fechaGoLiveReal, Label: 'Go Live Real' },
+    { Value: qGate, Label: 'Q-Gate' },
+    { Value: antecedente_ID, Label: 'Antecedente' },
+    { Value: serviciosEscenciales_code, Label: 'Servicio Escencial' },
+    { Value: matrizRiesgos_ID, Label: 'Matriz de Riesgos' },
+    { Value: reporteSemanal_ID, Label: 'Último Reporte' }
+  ],
+  SelectionFields: [
+    nombre,
+    tipoIntervencion_code,
+    tipoPilar_code,
+    estado_code,
+    producto_code,
+    cliente_ID,
+    fechaInicio,
+    fechaGoLiveReal
+  ]
+} 
+entity PilarCO as projection on my.PilarCO;
+annotate SICOService.Contacto with @odata.draft.enabled;
 
   @UI: {
     LineItem: [
