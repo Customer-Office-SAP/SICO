@@ -150,6 +150,15 @@ entity ReporteSemanal : cuid, managed {
   pilar                    : Association to PilarCO;
   matrizRiesgos           : Association to MatrizRiesgos;
   fecha                   : Date;
+  fase                   : Association to PilarCO;
+  estado                   : Association to PilarCO;
+  nombre                   : Association to PilarCO;
+  cliente                   : Association to PilarCO;
+  descripcionFase           : String;
+  fechaGoLiveActual          : Date;
+  salidaProductivo          : Boolean;
+  comentariosImplementador   : String;
+  resumen                       : String;
   estadoTopicosRelevantes: String;
   gestionRecursos         : String;
   aspectosClaveActivate   : String;
