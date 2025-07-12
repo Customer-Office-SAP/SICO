@@ -124,7 +124,7 @@ annotate SICOService.Contacto with @odata.draft.enabled;
   entity InformacionAdicional         as projection on my.InformacionAdicional;
   entity Milestones         as projection on my.Milestones;
   entity PasosSiguientes    as projection on my.PasosSiguientes;
-  //entity ReporteSemanal     as projection on my.ReporteSemanal;
+  entity ReporteSemanal     as projection on my.ReporteSemanal;
 }
 
 /**
