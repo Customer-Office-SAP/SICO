@@ -16,7 +16,7 @@ entity InformacionBasica : cuid, managed {
 }
 
 entity InformacionMinimaObligatoria : cuid, managed {
-  soporteOfrecidoPor : Composition of many Contacto;
+  soporteOfrecidoPor : Composition of many Contacto on soporteOfrecidoPor.ID != '';
   tipoSoporte        : String;
   consultoriaSAP     : Boolean;
 }
@@ -45,9 +45,8 @@ entity NPS : cuid, managed {
 entity Cliente : cuid, managed {
   localizacion : Association to Localizacion;
   calificacion : Association to NPS;
-  contactos    : Composition of many Contacto;
+  contactos    : Composition of many Contacto on contactos.ID != '';
 }
-
 
 entity Contacto : cuid, managed {
   nombre    : String;
@@ -65,7 +64,7 @@ entity Partner : cuid, managed {
 
 entity SAP : cuid, managed {
   localizacion : Association to Localizacion;
-  contactos    : Composition of many Contacto;
+  contactos    : Composition of many Contacto on contactos.ID != '';
 }
 
 entity TipoPlan : CodeList {
@@ -84,7 +83,7 @@ entity MatrizRiesgos : cuid, managed {
   impactoCuantitativoDias     : Integer;
   impactoCuantitativoEsfuerzo : String;
   estadoRiesgo                : Association to Estado;
-  dueno                      : Composition of many Contacto;
+  dueno                      : Composition of many Contacto on dueno.ID != '';
   fechaInicio                : Date;
   fechaFin                   : Date;
   dueDate                    : Date;
@@ -105,7 +104,7 @@ entity Actividad : cuid {
   nombre          : String;
   flag            : Association to Flag;
   tipoActividad   : Association to TipoActividad;
-  listaAcciones   : Composition of many Accion;
+  listaAcciones   : Composition of many Accion on listaAcciones.ID != '';
   fechaInicio     : Date;
   fechaFin        : Date;
   dueDate         : Date;
@@ -114,7 +113,7 @@ entity Actividad : cuid {
 
 entity Antecedente : cuid, managed {
   actividad     : Association to Actividad;
-  contacto      : Composition of many Contacto;
+  contacto      : Composition of many Contacto on contacto.ID != '';
   descripcion   : String;
   duracion      : Date;
   estado        : Association to Estado;
@@ -138,11 +137,11 @@ entity PilarCO : cuid, managed {
   antecedente          : Association to Antecedente;
   serviciosEscenciales : Association to Servicio;
   matrizRiesgos        : Association to MatrizRiesgos;
-  equipoGeneral        : Composition of many Contacto;
-  equipoCliente        : Composition of many Contacto;
-  equipoPartner        : Composition of many Contacto;
-  equipoSAP            : Composition of many Contacto;
-  equipoSoporte        : Composition of many Contacto;
+  equipoGeneral        : Composition of many Contacto on equipoGeneral.ID != '';
+  equipoCliente        : Composition of many Contacto on equipoCliente.ID != '';
+  equipoPartner        : Composition of many Contacto on equipoPartner.ID != '';
+  equipoSAP            : Composition of many Contacto on equipoSAP.ID != '';
+  equipoSoporte        : Composition of many Contacto on equipoSoporte.ID != '';
   reporteSemanal       : Association to ReporteSemanal;
 }
 
@@ -196,7 +195,7 @@ entity Plan : cuid, managed {
   tipoPlan         : Association to TipoPlan;
   pilar            : Association to PilarCO;
   riesgo           : Association to MatrizRiesgos;
-  listaActividades : Composition of many Actividad;
+  listaActividades : Composition of many Actividad on listaActividades.ID != '';
 }
 
 entity Evaluacion : cuid, managed {
@@ -227,7 +226,7 @@ entity Ticket : cuid, managed {
 entity Incidente : cuid, managed {
   estado       : Association to Estado;
   evento       : Association to PilarCO;
-  responsable  : Composition of many Contacto;
+  responsable  : Composition of many Contacto on responsable.ID != '';
   descripcion  : String;
   fechaInicio  : Date;
   fechaFin     : Date;
@@ -240,7 +239,7 @@ entity Escalacion : cuid, managed {
   fecha         : Date;
   escaladoPor   : Association to Contacto;
   escaladoPara  : Association to Contacto;
-  responsable   : Composition of many Contacto;
+  responsable   : Composition of many Contacto on responsable.ID != '';
   estado        : Association to Estado;
   comentarios   : String;
 }
@@ -254,7 +253,7 @@ entity Handover : cuid, managed {
 }
 
 entity Acta : cuid, managed {
-  participantes : Composition of many Contacto;
+  participantes : Composition of many Contacto on participantes.ID != '';
   resumen       : String;
   link          : String;
 }
