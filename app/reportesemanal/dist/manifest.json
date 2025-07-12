@@ -1,9 +1,14 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "contacto",
+    "id": "reportesemanal",
     "type": "application",
-    "i18n": "i18n/i18n.properties",
+    "i18n": {
+      "bundleUrl": "i18n/i18n.properties",
+      "supportedLocales": [
+        ""
+      ]
+    },
     "applicationVersion": {
       "version": "0.0.1"
     },
@@ -11,13 +16,13 @@
     "description": "{{appDescription}}",
     "resources": "resources.json",
     "sourceTemplate": {
-      "id": "@sap/generator-fiori:lrop",
+      "id": "@sap/generator-fiori:fpm",
       "version": "1.18.2",
-      "toolsId": "a34a1941-07e4-47ed-8d7b-5b4d0d59ed2c"
+      "toolsId": "c89a5dc1-b916-4623-99c3-1fc459e2ab6f"
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/SICOService/",
+        "uri": "odata/v4/SICOService/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -61,7 +66,8 @@
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
-        "sap.fe.templates": {}
+        "sap.fe.core": {},
+        "sap.fe.macros": {}
       }
     },
     "contentDensities": {
@@ -72,7 +78,10 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "contacto.i18n.i18n"
+          "bundleName": "reportesemanal.i18n.i18n",
+          "supportedLocales": [
+            ""
+          ]
         }
       },
       "": {
@@ -86,7 +95,12 @@
       },
       "@i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
-        "uri": "i18n/i18n.properties"
+        "uri": "i18n/i18n.properties",
+        "settings": {
+          "supportedLocales": [
+            ""
+          ]
+        }
       }
     },
     "resources": {
@@ -96,75 +110,28 @@
       "config": {},
       "routes": [
         {
+          "name": "ReporteSemanalMain",
           "pattern": ":?query:",
-          "name": "ContactoList",
-          "target": "ContactoList"
-        },
-        {
-          "pattern": "Contacto({key}):?query:",
-          "name": "ContactoObjectPage",
-          "target": "ContactoObjectPage"
+          "target": "ReporteSemanalMain"
         }
       ],
       "targets": {
-        "ContactoList": {
+        "ReporteSemanalMain": {
           "type": "Component",
-          "id": "ContactoList",
-          "name": "sap.fe.templates.ListReport",
+          "id": "ReporteSemanalMain",
+          "name": "sap.fe.core.fpm",
           "options": {
             "settings": {
-              "contextPath": "/Contacto",
-              "variantManagement": "Page",
-              "navigation": {
-                "Contacto": {
-                  "detail": {
-                    "route": "ContactoObjectPage"
-                  }
-                }
-              },
-              "controlConfiguration": {
-                "@com.sap.vocabularies.UI.v1.LineItem": {
-                  "tableSettings": {
-                    "type": "ResponsiveTable"
-                  }
-                }
-              },
-              "initialLoad": "Enabled"
-            }
-          }
-        },
-        "ContactoObjectPage": {
-          "type": "Component",
-          "id": "ContactoObjectPage",
-          "name": "sap.fe.templates.ObjectPage",
-          "options": {
-            "settings": {
-              "editableHeaderContent": false,
-              "contextPath": "/Contacto",
-              "content": {
-                "body": {
-                  "sections": {
-                    "i18nOverview": {
-                      "subSections": {
-                        "Contacto": {
-                          "template": "contacto.ext.fragment.Contacto",
-                          "title": "Contacto"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+              "navigation": {},
+              "contextPath": "/ReporteSemanal",
+              "viewName": "reportesemanal.ext.main.Main"
             }
           }
         }
       }
     }
   },
-  "sap.fiori": {
-    "registrationIds": [],
-    "archeType": "transactional"
-  },
+  "sap.fiori": {},
   "sap.cloud": {
     "public": true,
     "service": "sico.service"
