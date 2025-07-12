@@ -39,7 +39,6 @@ service SICOService {
   ]
 } 
 entity PilarCO as projection on my.PilarCO;
-annotate SICOService.Contacto with @odata.draft.enabled;
 
   @UI: {
     LineItem: [
