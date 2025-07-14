@@ -27,7 +27,6 @@ modules:
           srv-url: ${default-url}
     requires:
       - name: sico-destination
-      - name: sico-auth
       - name: sico-db
 
   - name: sico-app-deployer
@@ -75,10 +74,6 @@ modules:
   - name: sico-destinations
     type: com.sap.application.content
     requires:
-      - name: sico-auth
-        parameters:
-          service-key:
-            name: sico-auth-key
       - name: sico-html5-repo-host
         parameters:
           service-key:
@@ -98,12 +93,7 @@ modules:
               ServiceInstanceName: sico-html5-repo-host
               ServiceKeyName: sico-html5-repo-host-key
               sap.cloud.service: sico.service
-            - Name: sico-auth
-              Authentication: OAuth2UserTokenExchange
-              ServiceInstanceName: sico-auth
-              ServiceKeyName: sico-auth-key
-              sap.cloud.service: sico.service
-
+            
   - name: sico-db-deployer
     type: hdb
     path: db
@@ -158,15 +148,6 @@ resources:
     parameters:
       service: html5-apps-repo
       service-plan: app-runtime
-  - name: sico-auth
-    type: org.cloudfoundry.managed-service
-    parameters:
-      service: xsuaa
-      service-plan: application
-      path: ./xs-security.json
-      config:
-        xsappname: sico-${org}-${space}
-        tenant-mode: dedicated
   - name: sico-db
     type: com.sap.xs.hdi-container
     parameters:
