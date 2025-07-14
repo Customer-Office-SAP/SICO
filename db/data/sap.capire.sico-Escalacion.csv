@@ -1,11 +1,11 @@
-ID,incidente_ID,fecha,escaladoPor_ID,escaladoPara_ID,estado_code,comentarios,createdAt,createdBy,modifiedAt,modifiedBy
-escalacion-001,incidente-001,2025-02-01,contacto-002,contacto-004,estado-001,"Prioridad alta: falla en entorno DEV",2025-02-01T09:45:00Z,maria.zapata,2025-02-01T09:45:00Z,maria.zapata
-escalacion-002,incidente-002,2025-02-10,contacto-006,contacto-001,estado-001,"Error de carga de datos maestros",2025-02-10T11:30:00Z,ana.lopez,2025-02-10T11:30:00Z,ana.lopez
-escalacion-003,incidente-003,2025-02-20,contacto-008,contacto-007,estado-001,"Rendimiento lento en pruebas integradas",2025-02-20T14:05:00Z,carlos.ortiz,2025-02-20T14:05:00Z,carlos.ortiz
-escalacion-004,incidente-001,2025-02-03,contacto-004,contacto-001,estado-002,"Incidente resuelto: reinicio de servidor",2025-02-03T16:20:00Z,luisa.mendez,2025-02-04T09:00:00Z,luisa.mendez
-escalacion-005,incidente-004,2025-03-01,contacto-003,contacto-005,estado-001,"Solicitud de recursos adicionales ETL",2025-03-01T10:10:00Z,juan.suarez,2025-03-01T10:10:00Z,juan.suarez
-escalacion-006,incidente-005,2025-03-18,contacto-007,contacto-009,estado-001,"Problema de licencias de usuario",2025-03-18T15:45:00Z,maria.zapata,2025-03-18T15:45:00Z,maria.zapata
-escalacion-007,incidente-006,2025-03-22,contacto-009,contacto-002,estado-002,"Horas extra aprobadas y tickets cerrados",2025-03-22T12:30:00Z,luisa.mendez,2025-03-23T08:20:00Z,luisa.mendez
-escalacion-008,incidente-007,2025-04-05,contacto-005,contacto-008,estado-001,"Falla en interfaces de pago",2025-04-05T09:15:00Z,ana.lopez,2025-04-05T09:15:00Z,ana.lopez
-escalacion-009,incidente-008,2025-04-20,contacto-001,contacto-007,estado-002,"Actualización de paquete completada",2025-04-20T17:40:00Z,carlos.ortiz,2025-04-21T10:00:00Z,carlos.ortiz
-escalacion-010,incidente-009,2025-05-10,contacto-010,contacto-006,estado-001,"Soporte requerido para cut-over",2025-05-10T08:00:00Z,juan.suarez,2025-05-10T08:00:00Z,juan.suarez
+ID,incidente_ID,fecha,escaladoPor_ID,escaladoPara_ID,responsable_ID,estado_code,comentarios,createdAt,createdBy,modifiedAt,modifiedBy
+escalacion-001,incidente-001,2025-02-01,contacto-002,contacto-004,contacto-004,estado-001,"Prioridad alta: falla en entorno DEV",2025-02-01T09:45:00Z,maria.zapata,2025-02-01T09:45:00Z,maria.zapata
+escalacion-002,incidente-002,2025-02-10,contacto-006,contacto-001,contacto-001,estado-001,"Error de carga de datos maestros",2025-02-10T11:30:00Z,ana.lopez,2025-02-10T11:30:00Z,ana.lopez
+escalacion-003,incidente-003,2025-02-20,contacto-008,contacto-007,contacto-007,estado-001,"Rendimiento lento en pruebas integradas",2025-02-20T14:05:00Z,carlos.ortiz,2025-02-20T14:05:00Z,carlos.ortiz
+escalacion-004,incidente-001,2025-02-03,contacto-004,contacto-001,contacto-001,estado-002,"Incidente resuelto: reinicio de servidor",2025-02-03T16:20:00Z,luisa.mendez,2025-02-04T09:00:00Z,luisa.mendez
+escalacion-005,incidente-004,2025-03-01,contacto-003,contacto-005,contacto-005,estado-001,"Solicitud de recursos adicionales ETL",2025-03-01T10:10:00Z,juan.suarez,2025-03-01T10:10:00Z,juan.suarez
+escalacion-006,incidente-005,2025-03-18,contacto-007,contacto-009,contacto-009,estado-001,"Problema de licencias de usuario",2025-03-18T15:45:00Z,maria.zapata,2025-03-18T15:45:00Z,maria.zapata
+escalacion-007,incidente-006,2025-03-22,contacto-009,contacto-002,contacto-002,estado-002,"Horas extra aprobadas y tickets cerrados",2025-03-22T12:30:00Z,luisa.mendez,2025-03-23T08:20:00Z,luisa.mendez
+escalacion-008,incidente-007,2025-04-05,contacto-005,contacto-008,contacto-008,estado-001,"Falla en interfaces de pago",2025-04-05T09:15:00Z,ana.lopez,2025-04-05T09:15:00Z,ana.lopez
+escalacion-009,incidente-008,2025-04-20,contacto-001,contacto-007,contacto-007,estado-002,"Actualización de paquete completada",2025-04-20T17:40:00Z,carlos.ortiz,2025-04-21T10:00:00Z,carlos.ortiz
+escalacion-010,incidente-009,2025-05-10,contacto-010,contacto-006,contacto-006,estado-001,"Soporte requerido para cut-over",2025-05-10T08:00:00Z,juan.suarez,2025-05-10T08:00:00Z,juan.suarez

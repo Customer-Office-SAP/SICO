@@ -1,135 +1,412 @@
 using SICOService as service from '../../srv/services';
-using from '../../db/schema';
-
 annotate service.ReporteSemanal with @(
-    UI.SelectionFields #filterBarMacro : [
-        cliente.nombre,
-        fase.nombre,
+    UI.FieldGroup #GeneratedGroup : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : matrizRiesgos_ID,
+                Label : '{i18n>IdMatrizDeRiesgos}',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : pilar_ID,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : fase_ID,
+                Label : '{i18n>IdFase}',
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>DescripcionFase}',
+                Value : descripcionFase,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : estado_ID,
+                Label : '{i18n>IdEstado}',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : pilar.nombre,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>FechaGoliveActual}',
+                Value : fechaGoLiveActual,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>SalidaProductivo}',
+                Value : salidaProductivo,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>Fecha}',
+                Value : fecha,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : cliente_ID,
+                Label : 'ID Cliente',
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>ComentariosImplementador}',
+                Value : comentariosImplementador,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>Resumen}',
+                Value : resumen,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>EstadoTpicosRelevantes}',
+                Value : estadoTopicosRelevantes,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>GestinRecursos}',
+                Value : gestionRecursos,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>AspectosClaveActivate}',
+                Value : aspectosClaveActivate,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>ConsideracionesRelevantes}',
+                Value : consideracionesRelevantes,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>IncidenciasRelevantes}',
+                Value : incidenciasRelevantes,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>Recomendaciones}',
+                Value : recomendaciones,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : '{i18n>OtrosTemasRelacionados}',
+                Value : otrosTemasRelacionados,
+            },
+        ],
+    },
+    UI.Facets : [
+        {
+            $Type : 'UI.ReferenceFacet',
+            ID : 'GeneratedFacet1',
+            Label : 'General Information',
+            Target : '@UI.FieldGroup#GeneratedGroup',
+        },
+    ],
+    UI.LineItem : [
+        {
+            $Type : 'UI.DataField',
+            Value : matrizRiesgos_ID,
+            Label : '{i18n>IdMatrizDeRiesgos}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : pilar_ID,
+            Label : '{i18n>IdPilar}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : '{i18n>DescripcinFase}',
+            Value : descripcionFase,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : estado_ID,
+            Label : '{i18n>IdEstado}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : cliente_ID,
+            Label : '{i18n>IdCliente}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : '{i18n>Fecha}',
+            Value : fecha,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : '{i18n>FechaGoliveActual}',
+            Value : fechaGoLiveActual,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : '{i18n>SalidaProductivo}',
+            Value : salidaProductivo,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : '{i18n>ComentariosImplementador}',
+            Value : comentariosImplementador,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : aspectosClaveActivate,
+            Label : '{i18n>AspectosClaveActivate}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : consideracionesRelevantes,
+            Label : '{i18n>ConsideracionesRelevantes}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : estadoTopicosRelevantes,
+            Label : '{i18n>EstadoTpicosRelevantes}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : gestionRecursos,
+            Label : '{i18n>GestinRecursos}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : incidenciasRelevantes,
+            Label : '{i18n>InidenciasRelevantes}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : otrosTemasRelacionados,
+            Label : '{i18n>OtrosTemasRelacionados}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : recomendaciones,
+            Label : '{i18n>Recomendaciones}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : resumen,
+            Label : '{i18n>Resumen}',
+        },
+    ],
+    UI.SelectionFields : [
         pilar_ID,
-    ]
+        pilar.nombre,
+        fecha,
+    ],
+    UI.HeaderInfo : {
+        TypeName : 'Reporte Semanal',
+        TypeNamePlural : '',
+    },
 );
+
+annotate service.ReporteSemanal with {
+    pilar @(
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'PilarCO',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : pilar_ID,
+                    ValueListProperty : 'ID',
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'tipoIntervencion_code',
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'nombre',
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'producto_code',
+                },
+                {
+                    $Type : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty : 'tipoPilar_code',
+                },
+            ],
+        },
+        Common.Label : '{i18n>IdPilar}',
+    )
+};
+
+annotate service.ReporteSemanal with {
+    matrizRiesgos @Common.ValueList : {
+        $Type : 'Common.ValueListType',
+        CollectionPath : 'MatrizRiesgos',
+        Parameters : [
+            {
+                $Type : 'Common.ValueListParameterInOut',
+                LocalDataProperty : matrizRiesgos_ID,
+                ValueListProperty : 'ID',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'tipoRiesgo_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'descripcion',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'probabilidad_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'frecuencia_code',
+            },
+        ],
+    }
+};
+
+annotate service.ReporteSemanal with {
+    fase @Common.ValueList : {
+        $Type : 'Common.ValueListType',
+        CollectionPath : 'PilarCO',
+        Parameters : [
+            {
+                $Type : 'Common.ValueListParameterInOut',
+                LocalDataProperty : fase_ID,
+                ValueListProperty : 'ID',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'tipoIntervencion_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'nombre',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'producto_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'tipoPilar_code',
+            },
+        ],
+    }
+};
+
+annotate service.ReporteSemanal with {
+    estado @Common.ValueList : {
+        $Type : 'Common.ValueListType',
+        CollectionPath : 'PilarCO',
+        Parameters : [
+            {
+                $Type : 'Common.ValueListParameterInOut',
+                LocalDataProperty : estado_ID,
+                ValueListProperty : 'ID',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'tipoIntervencion_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'nombre',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'producto_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'tipoPilar_code',
+            },
+        ],
+    }
+};
+
+annotate service.ReporteSemanal with {
+    nombre @Common.ValueList : {
+        $Type : 'Common.ValueListType',
+        CollectionPath : 'PilarCO',
+        Parameters : [
+            {
+                $Type : 'Common.ValueListParameterInOut',
+                LocalDataProperty : nombre_ID,
+                ValueListProperty : 'ID',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'tipoIntervencion_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'nombre',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'producto_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'tipoPilar_code',
+            },
+        ],
+    }
+};
+
+annotate service.ReporteSemanal with {
+    cliente @Common.ValueList : {
+        $Type : 'Common.ValueListType',
+        CollectionPath : 'PilarCO',
+        Parameters : [
+            {
+                $Type : 'Common.ValueListParameterInOut',
+                LocalDataProperty : cliente_ID,
+                ValueListProperty : 'ID',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'tipoIntervencion_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'nombre',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'producto_code',
+            },
+            {
+                $Type : 'Common.ValueListParameterDisplayOnly',
+                ValueListProperty : 'tipoPilar_code',
+            },
+        ],
+    }
+};
 
 annotate service.PilarCO with {
     nombre @(
-        Common.Label : '{i18n>Cliente}',
+        Common.Label : '{i18n>Estado}',
         Common.ValueList : {
             $Type : 'Common.ValueListType',
-            CollectionPath : 'PilarFase',
+            CollectionPath : 'Estado',
             Parameters : [
                 {
                     $Type : 'Common.ValueListParameterInOut',
                     LocalDataProperty : nombre,
-                    ValueListProperty : 'nombre',
+                    ValueListProperty : 'name',
                 },
             ],
-            Label : '{i18n>Fase}',
+            Label : 'Estado',
         },
         Common.ValueListWithFixedValues : true,
     )
 };
 
 annotate service.ReporteSemanal with {
-    pilar @Common.Label : '{i18n>Pilar}'
+    fecha @Common.Label : '{i18n>Fecha}'
 };
-
-annotate service.PilarFase with {
-    nombre @Common.Text : fase_code
-};
-
-annotate service.MatrizRiesgos with @(
-    UI.LineItem #tableMacro : [
-        {
-            $Type : 'UI.DataField',
-            Value : descripcion,
-            Label : '{i18n>Descripcion}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : dueDate,
-            Label : '{i18n>Duedate}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : fechaFin,
-            Label : '{i18n>FechaFin}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : fechaInicio,
-            Label : '{i18n>FechaInicio}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : fechaSeguimientoPCC,
-            Label : '{i18n>FechaSeguimientoPcc}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : ID,
-            Label : 'ID',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : impactoCualitativo,
-            Label : '{i18n>ImpactoCualitativo}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : impactoCuantitativoDias,
-            Label : '{i18n>ImpactoCuantitativoDias}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : impactoCuantitativoDolares,
-            Label : '{i18n>ImpactoCuantitativoDolares}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : impactoCuantitativoEsfuerzo,
-            Label : '{i18n>ImpactoCuantitativoEsfuerzo}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : issue,
-            Label : '{i18n>Issue}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : estadoRiesgo.nombre,
-            Label : '{i18n>EstadoRiesgo}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : frecuencia.nombre,
-            Label : '{i18n>Frecuencia}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : tipoRiesgo.nombre,
-            Label : '{i18n>TipoRiesgo}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : probabilidad.nombre,
-            Label : '{i18n>Probabilidad}',
-        },
-    ]
-);
-
-annotate service.Estado with {
-    nombre @(
-        Common.ValueList : {
-            $Type : 'Common.ValueListType',
-            CollectionPath : 'MatrizRiesgos',
-            Parameters : [
-                {
-                    $Type : 'Common.ValueListParameterInOut',
-                    LocalDataProperty : nombre,
-                    ValueListProperty : 'estadoRiesgo_code',
-                },
-            ],
-            Label : '{i18n>EstadoRiesgo}',
-        },
-        Common.ValueListWithFixedValues : true,
-)};
 

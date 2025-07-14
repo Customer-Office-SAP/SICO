@@ -86,6 +86,23 @@ entity PilarCO as projection on my.PilarCO;
 
   @UI: {
     LineItem: [
+      { Value: pilar_ID, Label: 'Pilar' },
+      { Value: fecha, Label: 'Fecha' },
+      { Value: link, Label: 'Enlace Documento' },
+      { Value: cliente_ID, Label: 'Cliente' },
+      { Value: partner_ID, Label: 'Partner' },
+      { Value: representanteLegal_ID, Label: 'Rep. Legal' },
+      { Value: representanteSAP_ID, Label: 'Rep. SAP' },
+      { Value: pais, Label: 'País' },
+      { Value: firmaDigital, Label: 'Firma Digital' }
+    ],
+    SelectionFields: [ pilar_ID, cliente_ID, partner_ID, fecha, pais ]
+  }
+  @odata.draft.enabled
+  entity CartaPCCP as projection on my.CartaPCCP;
+
+  @UI: {
+    LineItem: [
       { Value: ID },
       { Value: pilar_ID },
       { Value: fecha },
@@ -107,12 +124,14 @@ entity PilarCO as projection on my.PilarCO;
   entity Partner            as projection on my.Partner;
   entity SAP                as projection on my.SAP;
   entity Incidente          as projection on my.Incidente;
+  @odata.draft.enabled
   entity Escalacion         as projection on my.Escalacion;
   entity Plan               as projection on my.Plan;
-  entity CartaPCCP          as projection on my.CartaPCCP;
+  //entity CartaPCCP          as projection on my.CartaPCCP;
   entity Acta               as projection on my.Acta;
   entity Ticket             as projection on my.Ticket;
   entity Evaluacion         as projection on my.Evaluacion;
+  @odata.draft.enabled
   entity SolicitudPCCP      as projection on my.SolicitudPCCP;
   entity Servicios          as projection on my.Servicio;
   entity Antecedente        as projection on my.Antecedente;
@@ -123,8 +142,11 @@ entity PilarCO as projection on my.PilarCO;
   entity InformacionAdicional         as projection on my.InformacionAdicional;
   entity Milestones         as projection on my.Milestones;
   entity PasosSiguientes    as projection on my.PasosSiguientes;
+  @odata.draft.enabled
   entity ReporteSemanal     as projection on my.ReporteSemanal;
 }
+
+
 
 /**
  * Servicio de sólo lectura para catálogos y listas maestras.

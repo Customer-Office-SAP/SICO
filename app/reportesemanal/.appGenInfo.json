@@ -1,6 +1,6 @@
 {
   "generationParameters": {
-    "generationDate": "Fri Jul 11 2025 17:14:27 GMT+0000 (Coordinated Universal Time)",
+    "generationDate": "Mon Jul 14 2025 17:04:01 GMT+0000 (Coordinated Universal Time)",
     "generatorPlatform": "SAP Business Application Studio",
     "serviceType": "Local Cap",
     "metadataFilename": "",
@@ -15,7 +15,7 @@
     "enableEslint": false,
     "showMockDataInfo": false,
     "generatorVersion": "1.18.2",
-    "template": "Custom Page V4",
+    "template": "List Report Page V4",
     "generatorName": "SAP Fiori Application Generator",
     "entityRelatedConfig": [
       {

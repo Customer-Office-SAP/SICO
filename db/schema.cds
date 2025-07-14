@@ -215,6 +215,7 @@ entity CartaPCCP : cuid, managed {
   representanteSAP   : Association to Contacto;
   pais               : String;
   firmaDigital       : String;
+  instrucciones      : String;
 }
 
 entity Ticket : cuid, managed {
@@ -239,7 +240,7 @@ entity Escalacion : cuid, managed {
   fecha         : Date;
   escaladoPor   : Association to Contacto;
   escaladoPara  : Association to Contacto;
-  responsable   : Composition of many Contacto on responsable.ID != '';
+  responsable   : Association to Contacto;
   estado        : Association to Estado;
   comentarios   : String;
 }

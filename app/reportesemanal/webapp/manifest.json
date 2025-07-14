@@ -11,29 +11,17 @@
     "description": "{{appDescription}}",
     "resources": "resources.json",
     "sourceTemplate": {
-      "id": "@sap/generator-fiori:fpm",
+      "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "c89a5dc1-b916-4623-99c3-1fc459e2ab6f"
+      "toolsId": "7314f3a3-6182-4d3b-a6ab-ea980e44b306"
     },
     "dataSources": {
       "mainService": {
-        "uri": "odata/v4/SICOService/",
+        "uri": "/odata/v4/SICOService/",
         "type": "OData",
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
-        }
-      }
-    },
-    "crossNavigation": {
-      "inbounds": {
-        "reportesemanal-display": {
-          "semanticObject": "reportesemanal",
-          "action": "display",
-          "signature": {
-            "parameters": {},
-            "additionalParameters": "allowed"
-          }
         }
       }
     }
@@ -61,8 +49,7 @@
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
-        "sap.fe.core": {},
-        "sap.fe.macros": {}
+        "sap.fe.templates": {}
       }
     },
     "contentDensities": {
@@ -97,28 +84,75 @@
       "config": {},
       "routes": [
         {
-          "name": "ReporteSemanalMain",
           "pattern": ":?query:",
-          "target": "ReporteSemanalMain"
+          "name": "ReporteSemanalList",
+          "target": "ReporteSemanalList"
+        },
+        {
+          "pattern": "ReporteSemanal({key}):?query:",
+          "name": "ReporteSemanalObjectPage",
+          "target": "ReporteSemanalObjectPage"
         }
       ],
       "targets": {
-        "ReporteSemanalMain": {
+        "ReporteSemanalList": {
           "type": "Component",
-          "id": "ReporteSemanalMain",
-          "name": "sap.fe.core.fpm",
+          "id": "ReporteSemanalList",
+          "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "navigation": {},
               "contextPath": "/ReporteSemanal",
-              "viewName": "reportesemanal.ext.main.Main"
+              "variantManagement": "Page",
+              "navigation": {
+                "ReporteSemanal": {
+                  "detail": {
+                    "route": "ReporteSemanalObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  },
+                  "columns": {
+                    "DataField::incidenciasRelevantes": {
+                      "availability": "Default"
+                    },
+                    "DataField::otrosTemasRelacionados": {
+                      "availability": "Default"
+                    },
+                    "DataField::recomendaciones": {
+                      "availability": "Default"
+                    },
+                    "DataField::resumen": {
+                      "availability": "Default"
+                    }
+                  }
+                }
+              },
+              "initialLoad": "Enabled"
+            }
+          }
+        },
+        "ReporteSemanalObjectPage": {
+          "type": "Component",
+          "id": "ReporteSemanalObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/ReporteSemanal"
             }
           }
         }
       }
     }
   },
-  "sap.fiori": {},
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  },
   "sap.cloud": {
     "public": true,
     "service": "sico.service"

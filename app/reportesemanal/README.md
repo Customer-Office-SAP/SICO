@@ -1,11 +1,11 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Fri Jul 11 2025 17:14:27 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Mon Jul 14 2025 17:04:01 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>SAP Fiori Application Generator|
 |**App Generator Version**<br>1.18.2|
 |**Generation Platform**<br>SAP Business Application Studio|
-|**Template Used**<br>Custom Page V4|
+|**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/odata/v4/SICOService/|
 |**Module Name**<br>reportesemanal|

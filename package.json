@@ -6,7 +6,9 @@
   "repository": "<Add your repository here>",
   "devDependencies": {
     "@sap/cds": "^9.1.0",
-    "@sap/cds-dk": "^9.0.4"
+    "@sap/cds-dk": "^9.0.4",
+    "rimraf": "^5.0.5",
+    "mbt": "^1.2.29"
   },
   "sapux": [
     "app/pilares",
@@ -16,11 +18,20 @@
     "app/contacto",
     "app/pilarco",
     "app/contacto",
-    "app/reportesemanal"
+    "app/reportesemanal",
+    "app/cartapccp",
+    "app/reportesemanal",
+    "app/escalacion",
+    "app/solicitudpccp"
   ],
   "cds": {
     "requires": {
       "workzone": true
     }
+  },
+  "scripts": {
+    "undeploy": "cf undeploy sico --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
   }
 }

@@ -140,21 +140,7 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Contacto",
-              "content": {
-                "body": {
-                  "sections": {
-                    "i18nOverview": {
-                      "subSections": {
-                        "Contacto": {
-                          "template": "contacto.ext.fragment.Contacto",
-                          "title": "Contacto"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+              "contextPath": "/Contacto"
             }
           }
         }
