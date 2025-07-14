@@ -107,6 +107,11 @@ annotate service.Escalacion with @(
     UI.HeaderInfo : {
         TypeName : 'Escalación',
         TypeNamePlural : 'Escalaciones',
+        Title : {
+            $Type : 'UI.DataField',
+            Value : comentarios,
+            Label : 'Escalación'
+        },
     },
 );
 

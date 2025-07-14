@@ -14,12 +14,11 @@ annotate service.SolicitudPCCP with @(
             },
             {
                 $Type : 'UI.DataField',
-                Value : pilar.ID,
-                Label : '{i18n>IdPilar}',
+                Value : pilar_ID,
             },
             {
                 $Type : 'UI.DataField',
-                Value : partner.ID,
+                Value : partner_ID,
                 Label : '{i18n>IdPartner}',
             },
             {
@@ -34,8 +33,7 @@ annotate service.SolicitudPCCP with @(
             },
             {
                 $Type : 'UI.DataField',
-                Value : cliente.ID,
-                Label : '{i18n>IdCliente}',
+                Value : cliente_ID,
             },
             {
                 $Type : 'UI.DataField',
@@ -146,6 +144,17 @@ annotate service.SolicitudPCCP with @(
         cliente_ID,
         pilar_ID,
     ],
+
+    UI.HeaderInfo : {
+            TypeName : 'SolicitudPCCP',
+            TypeNamePlural : 'Solicitudes PCCP',
+                Title : {
+                $Type : 'UI.DataField',
+                Value : link,
+                Label : 'Solicitud PCCP'
+            },  
+        },
+
     UI.FieldGroup #InformacinBsica : {
         $Type : 'UI.FieldGroupType',
         Data : [

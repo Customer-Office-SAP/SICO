@@ -201,6 +201,11 @@ annotate service.ReporteSemanal with @(
     UI.HeaderInfo : {
         TypeName : 'Reporte Semanal',
         TypeNamePlural : '',
+        Title : {
+            $Type : 'UI.DataField',
+            Value : descripcionFase,
+            Label : 'Reporte Semanal'
+        },
     },
 );
 

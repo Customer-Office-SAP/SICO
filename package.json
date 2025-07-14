@@ -22,7 +22,9 @@
     "app/cartapccp",
     "app/reportesemanal",
     "app/escalacion",
-    "app/solicitudpccp"
+    "app/solicitudpccp",
+    "app/actividad",
+    "app/incidente"
   ],
   "cds": {
     "requires": {
