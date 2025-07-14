@@ -1,8 +1,8 @@
 code,nombre,name,descr
-tipoactividad-001,Planeación,Planeación,Definición de objetivos, cronograma y recursos necesarios.
+tipoactividad-001,Planeación,Planeación,Definición de objetivos - cronograma y recursos necesarios.
 tipoactividad-002,Ejecución,Ejecución,Implementación de las tareas planificadas.
 tipoactividad-003,Seguimiento,Seguimiento,Monitoreo del avance y cumplimiento de actividades.
-tipoactividad-004,Documentación,Documentación,Registro detallado de procesos, decisiones y entregables.
+tipoactividad-004,Documentación,Documentación,Registro detallado de procesos - decisiones y entregables.
 tipoactividad-005,Capacitación,Capacitación,Formación del equipo en herramientas o procesos clave.
 tipoactividad-006,Validación,Validación,Verificación del cumplimiento de requisitos establecidos.
 tipoactividad-007,Revisión técnica,Revisión técnica,Evaluación experta de soluciones desde el punto de vista técnico.
