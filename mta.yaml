@@ -13,7 +13,6 @@ modules:
     requires:
       - name: sico-destination
       - name: sico-db
-      - name: sico-auth
     provides:
       - name: srv-api
         properties:
@@ -72,8 +71,6 @@ modules:
       builder: custom
       commands:
         - npm install
-        - npm run build:cf
-        - npm ci
         - npm run build
       supported-platforms:
         []
@@ -85,8 +82,6 @@ modules:
       builder: custom
       commands:
         - npm install
-        - npm run build:cf
-        - npm ci
         - npm run build
       supported-platforms:
         []
@@ -131,8 +126,6 @@ modules:
       builder: custom
       commands:
         - npm install
-        - npm run build:cf
-        - npm ci
         - npm run build
       supported-platforms:
         []
@@ -144,8 +137,6 @@ modules:
       builder: custom
       commands:
         - npm install
-        - npm run build:cf
-        - npm ci
         - npm run build
       supported-platforms:
         []
@@ -235,15 +226,6 @@ resources:
     parameters:
       service: hana
       service-plan: hdi-shared
-  - name: sico-auth
-    type: org.cloudfoundry.managed-service
-    parameters:
-      service: xsuaa
-      service-plan: application
-      path: ./xs-security.json
-      config:
-        xsappname: sico-${org}-${space}
-        tenant-mode: dedicated
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true

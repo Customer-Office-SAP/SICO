@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "reportesemanal",
+    "id": "solicitudpccp",
     "type": "application",
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
@@ -18,7 +18,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "7314f3a3-6182-4d3b-a6ab-ea980e44b306"
+      "toolsId": "2060def1-fac8-4de5-8562-a84dbfe7ffe3"
     },
     "dataSources": {
       "mainService": {
@@ -77,7 +77,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "reportesemanal.i18n.i18n",
+          "bundleName": "solicitudpccp.i18n.i18n",
           "supportedLocales": [
             ""
           ]
@@ -110,28 +110,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "ReporteSemanalList",
-          "target": "ReporteSemanalList"
+          "name": "SolicitudPCCPList",
+          "target": "SolicitudPCCPList"
         },
         {
-          "pattern": "ReporteSemanal({key}):?query:",
-          "name": "ReporteSemanalObjectPage",
-          "target": "ReporteSemanalObjectPage"
+          "pattern": "SolicitudPCCP({key}):?query:",
+          "name": "SolicitudPCCPObjectPage",
+          "target": "SolicitudPCCPObjectPage"
         }
       ],
       "targets": {
-        "ReporteSemanalList": {
+        "SolicitudPCCPList": {
           "type": "Component",
-          "id": "ReporteSemanalList",
+          "id": "SolicitudPCCPList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/ReporteSemanal",
+              "contextPath": "/SolicitudPCCP",
               "variantManagement": "Page",
               "navigation": {
-                "ReporteSemanal": {
+                "SolicitudPCCP": {
                   "detail": {
-                    "route": "ReporteSemanalObjectPage"
+                    "route": "SolicitudPCCPObjectPage"
                   }
                 }
               },
@@ -139,20 +139,6 @@
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
                     "type": "ResponsiveTable"
-                  },
-                  "columns": {
-                    "DataField::incidenciasRelevantes": {
-                      "availability": "Default"
-                    },
-                    "DataField::otrosTemasRelacionados": {
-                      "availability": "Default"
-                    },
-                    "DataField::recomendaciones": {
-                      "availability": "Default"
-                    },
-                    "DataField::resumen": {
-                      "availability": "Default"
-                    }
                   }
                 }
               },
@@ -160,14 +146,14 @@
             }
           }
         },
-        "ReporteSemanalObjectPage": {
+        "SolicitudPCCPObjectPage": {
           "type": "Component",
-          "id": "ReporteSemanalObjectPage",
+          "id": "SolicitudPCCPObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/ReporteSemanal"
+              "contextPath": "/SolicitudPCCP"
             }
           }
         }

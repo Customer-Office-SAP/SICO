@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "reportesemanal",
+    "id": "cartapccp",
     "type": "application",
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
@@ -18,7 +18,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "7314f3a3-6182-4d3b-a6ab-ea980e44b306"
+      "toolsId": "857b28b9-c62f-4210-9691-4ec01b9a9e63"
     },
     "dataSources": {
       "mainService": {
@@ -77,7 +77,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "reportesemanal.i18n.i18n",
+          "bundleName": "cartapccp.i18n.i18n",
           "supportedLocales": [
             ""
           ]
@@ -110,28 +110,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "ReporteSemanalList",
-          "target": "ReporteSemanalList"
+          "name": "CartaPCCPList",
+          "target": "CartaPCCPList"
         },
         {
-          "pattern": "ReporteSemanal({key}):?query:",
-          "name": "ReporteSemanalObjectPage",
-          "target": "ReporteSemanalObjectPage"
+          "pattern": "CartaPCCP({key}):?query:",
+          "name": "CartaPCCPObjectPage",
+          "target": "CartaPCCPObjectPage"
         }
       ],
       "targets": {
-        "ReporteSemanalList": {
+        "CartaPCCPList": {
           "type": "Component",
-          "id": "ReporteSemanalList",
+          "id": "CartaPCCPList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/ReporteSemanal",
+              "contextPath": "/CartaPCCP",
               "variantManagement": "Page",
               "navigation": {
-                "ReporteSemanal": {
+                "CartaPCCP": {
                   "detail": {
-                    "route": "ReporteSemanalObjectPage"
+                    "route": "CartaPCCPObjectPage"
                   }
                 }
               },
@@ -141,16 +141,59 @@
                     "type": "ResponsiveTable"
                   },
                   "columns": {
-                    "DataField::incidenciasRelevantes": {
+                    "DataField::representanteSAP::nombre": {
+                      "availability": "Hidden"
+                    },
+                    "DataField::cliente::contactos::nombre": {
+                      "availability": "Hidden"
+                    },
+                    "DataField::cliente::localizacion_ID": {
+                      "availability": "Default",
+                      "widthIncludingColumnHeader": true
+                    },
+                    "DataField::cliente::contactos::rol": {
+                      "availability": "Hidden"
+                    },
+                    "DataField::partner::nombrePartner": {
                       "availability": "Default"
                     },
-                    "DataField::otrosTemasRelacionados": {
+                    "DataField::partner::localizacion_ID": {
                       "availability": "Default"
                     },
-                    "DataField::recomendaciones": {
+                    "DataField::partner::escalacionAnterior": {
                       "availability": "Default"
                     },
-                    "DataField::resumen": {
+                    "DataField::cliente::contactos::relacion_code": {
+                      "availability": "Hidden"
+                    },
+                    "DataField::representanteLegal::nombre": {
+                      "availability": "Hidden"
+                    },
+                    "DataField::ID": {
+                      "availability": "Default"
+                    },
+                    "DataField::pais": {
+                      "availability": "Default"
+                    },
+                    "DataField::fecha": {
+                      "availability": "Default"
+                    },
+                    "DataField::link": {
+                      "availability": "Default"
+                    },
+                    "DataField::firmaDigital": {
+                      "availability": "Default"
+                    },
+                    "DataField::pilar_ID": {
+                      "availability": "Default"
+                    },
+                    "DataField::pilar::nombre": {
+                      "availability": "Default"
+                    },
+                    "DataField::pilar::tipoPilar::nombre": {
+                      "availability": "Default"
+                    },
+                    "DataField::cliente::ID": {
                       "availability": "Default"
                     }
                   }
@@ -160,14 +203,14 @@
             }
           }
         },
-        "ReporteSemanalObjectPage": {
+        "CartaPCCPObjectPage": {
           "type": "Component",
-          "id": "ReporteSemanalObjectPage",
+          "id": "CartaPCCPObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/ReporteSemanal"
+              "contextPath": "/CartaPCCP"
             }
           }
         }

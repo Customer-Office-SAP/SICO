@@ -39,6 +39,14 @@
             "parameters": {},
             "additionalParameters": "allowed"
           }
+        },
+        "solicitudpccp-display": {
+          "semanticObject": "solicitudpccp",
+          "action": "display",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
         }
       }
     }

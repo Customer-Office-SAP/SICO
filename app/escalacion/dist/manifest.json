@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "reportesemanal",
+    "id": "escalacion",
     "type": "application",
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
@@ -18,7 +18,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "7314f3a3-6182-4d3b-a6ab-ea980e44b306"
+      "toolsId": "c995c23f-8eb8-42fa-91d2-82ca03f66e3f"
     },
     "dataSources": {
       "mainService": {
@@ -77,7 +77,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "reportesemanal.i18n.i18n",
+          "bundleName": "escalacion.i18n.i18n",
           "supportedLocales": [
             ""
           ]
@@ -110,28 +110,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "ReporteSemanalList",
-          "target": "ReporteSemanalList"
+          "name": "EscalacionList",
+          "target": "EscalacionList"
         },
         {
-          "pattern": "ReporteSemanal({key}):?query:",
-          "name": "ReporteSemanalObjectPage",
-          "target": "ReporteSemanalObjectPage"
+          "pattern": "Escalacion({key}):?query:",
+          "name": "EscalacionObjectPage",
+          "target": "EscalacionObjectPage"
         }
       ],
       "targets": {
-        "ReporteSemanalList": {
+        "EscalacionList": {
           "type": "Component",
-          "id": "ReporteSemanalList",
+          "id": "EscalacionList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/ReporteSemanal",
+              "contextPath": "/Escalacion",
               "variantManagement": "Page",
               "navigation": {
-                "ReporteSemanal": {
+                "Escalacion": {
                   "detail": {
-                    "route": "ReporteSemanalObjectPage"
+                    "route": "EscalacionObjectPage"
                   }
                 }
               },
@@ -139,20 +139,6 @@
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
                     "type": "ResponsiveTable"
-                  },
-                  "columns": {
-                    "DataField::incidenciasRelevantes": {
-                      "availability": "Default"
-                    },
-                    "DataField::otrosTemasRelacionados": {
-                      "availability": "Default"
-                    },
-                    "DataField::recomendaciones": {
-                      "availability": "Default"
-                    },
-                    "DataField::resumen": {
-                      "availability": "Default"
-                    }
                   }
                 }
               },
@@ -160,14 +146,14 @@
             }
           }
         },
-        "ReporteSemanalObjectPage": {
+        "EscalacionObjectPage": {
           "type": "Component",
-          "id": "ReporteSemanalObjectPage",
+          "id": "EscalacionObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/ReporteSemanal"
+              "contextPath": "/Escalacion"
             }
           }
         }
