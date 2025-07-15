@@ -5,7 +5,7 @@
     {
       "source": "^/odata/(.*)$",
       "target": "/odata/$1",
-      "destination": "sico-srv-api",
+      "destination": "srv-api",
       "authenticationType": "none",
       "csrfProtection": false
     },
