@@ -341,7 +341,7 @@ entity Condicion : CodeList {
 }
 
 entity Fase : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
