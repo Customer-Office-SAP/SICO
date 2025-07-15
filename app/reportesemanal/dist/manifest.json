@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "contacto",
+    "id": "reportesemanal",
     "type": "application",
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
@@ -18,7 +18,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "a34a1941-07e4-47ed-8d7b-5b4d0d59ed2c"
+      "toolsId": "7314f3a3-6182-4d3b-a6ab-ea980e44b306"
     },
     "dataSources": {
       "mainService": {
@@ -27,18 +27,6 @@
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
-        }
-      }
-    },
-    "crossNavigation": {
-      "inbounds": {
-        "reportesemanal-display": {
-          "semanticObject": "reportesemanal",
-          "action": "display",
-          "signature": {
-            "parameters": {},
-            "additionalParameters": "allowed"
-          }
         }
       }
     }
@@ -77,7 +65,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "contacto.i18n.i18n",
+          "bundleName": "reportesemanal.i18n.i18n",
           "supportedLocales": [
             ""
           ]
@@ -110,28 +98,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "ContactoList",
-          "target": "ContactoList"
+          "name": "ReporteSemanalList",
+          "target": "ReporteSemanalList"
         },
         {
-          "pattern": "Contacto({key}):?query:",
-          "name": "ContactoObjectPage",
-          "target": "ContactoObjectPage"
+          "pattern": "ReporteSemanal({key}):?query:",
+          "name": "ReporteSemanalObjectPage",
+          "target": "ReporteSemanalObjectPage"
         }
       ],
       "targets": {
-        "ContactoList": {
+        "ReporteSemanalList": {
           "type": "Component",
-          "id": "ContactoList",
+          "id": "ReporteSemanalList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/Contacto",
+              "contextPath": "/ReporteSemanal",
               "variantManagement": "Page",
               "navigation": {
-                "Contacto": {
+                "ReporteSemanal": {
                   "detail": {
-                    "route": "ContactoObjectPage"
+                    "route": "ReporteSemanalObjectPage"
                   }
                 }
               },
@@ -139,6 +127,20 @@
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
                     "type": "ResponsiveTable"
+                  },
+                  "columns": {
+                    "DataField::incidenciasRelevantes": {
+                      "availability": "Default"
+                    },
+                    "DataField::otrosTemasRelacionados": {
+                      "availability": "Default"
+                    },
+                    "DataField::recomendaciones": {
+                      "availability": "Default"
+                    },
+                    "DataField::resumen": {
+                      "availability": "Default"
+                    }
                   }
                 }
               },
@@ -146,14 +148,14 @@
             }
           }
         },
-        "ContactoObjectPage": {
+        "ReporteSemanalObjectPage": {
           "type": "Component",
-          "id": "ContactoObjectPage",
+          "id": "ReporteSemanalObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Contacto"
+              "contextPath": "/ReporteSemanal"
             }
           }
         }

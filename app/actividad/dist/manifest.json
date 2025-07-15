@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "contacto",
+    "id": "actividad",
     "type": "application",
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
@@ -18,7 +18,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "a34a1941-07e4-47ed-8d7b-5b4d0d59ed2c"
+      "toolsId": "d2b3fc99-c136-46e8-a4ba-47d257783ef8"
     },
     "dataSources": {
       "mainService": {
@@ -27,18 +27,6 @@
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
-        }
-      }
-    },
-    "crossNavigation": {
-      "inbounds": {
-        "reportesemanal-display": {
-          "semanticObject": "reportesemanal",
-          "action": "display",
-          "signature": {
-            "parameters": {},
-            "additionalParameters": "allowed"
-          }
         }
       }
     }
@@ -77,7 +65,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "contacto.i18n.i18n",
+          "bundleName": "actividad.i18n.i18n",
           "supportedLocales": [
             ""
           ]
@@ -110,28 +98,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "ContactoList",
-          "target": "ContactoList"
+          "name": "ActividadList",
+          "target": "ActividadList"
         },
         {
-          "pattern": "Contacto({key}):?query:",
-          "name": "ContactoObjectPage",
-          "target": "ContactoObjectPage"
+          "pattern": "Actividad({key}):?query:",
+          "name": "ActividadObjectPage",
+          "target": "ActividadObjectPage"
         }
       ],
       "targets": {
-        "ContactoList": {
+        "ActividadList": {
           "type": "Component",
-          "id": "ContactoList",
+          "id": "ActividadList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/Contacto",
+              "contextPath": "/Actividad",
               "variantManagement": "Page",
               "navigation": {
-                "Contacto": {
+                "Actividad": {
                   "detail": {
-                    "route": "ContactoObjectPage"
+                    "route": "ActividadObjectPage"
                   }
                 }
               },
@@ -141,19 +129,18 @@
                     "type": "ResponsiveTable"
                   }
                 }
-              },
-              "initialLoad": "Enabled"
+              }
             }
           }
         },
-        "ContactoObjectPage": {
+        "ActividadObjectPage": {
           "type": "Component",
-          "id": "ContactoObjectPage",
+          "id": "ActividadObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Contacto"
+              "contextPath": "/Actividad"
             }
           }
         }

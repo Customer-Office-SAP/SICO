@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "contacto",
+    "id": "incidente",
     "type": "application",
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
@@ -18,7 +18,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "a34a1941-07e4-47ed-8d7b-5b4d0d59ed2c"
+      "toolsId": "0536847f-aa2f-418d-9190-57df4970521e"
     },
     "dataSources": {
       "mainService": {
@@ -27,18 +27,6 @@
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
-        }
-      }
-    },
-    "crossNavigation": {
-      "inbounds": {
-        "reportesemanal-display": {
-          "semanticObject": "reportesemanal",
-          "action": "display",
-          "signature": {
-            "parameters": {},
-            "additionalParameters": "allowed"
-          }
         }
       }
     }
@@ -77,7 +65,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "contacto.i18n.i18n",
+          "bundleName": "incidente.i18n.i18n",
           "supportedLocales": [
             ""
           ]
@@ -110,28 +98,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "ContactoList",
-          "target": "ContactoList"
+          "name": "IncidenteList",
+          "target": "IncidenteList"
         },
         {
-          "pattern": "Contacto({key}):?query:",
-          "name": "ContactoObjectPage",
-          "target": "ContactoObjectPage"
+          "pattern": "Incidente({key}):?query:",
+          "name": "IncidenteObjectPage",
+          "target": "IncidenteObjectPage"
         }
       ],
       "targets": {
-        "ContactoList": {
+        "IncidenteList": {
           "type": "Component",
-          "id": "ContactoList",
+          "id": "IncidenteList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/Contacto",
+              "contextPath": "/Incidente",
               "variantManagement": "Page",
               "navigation": {
-                "Contacto": {
+                "Incidente": {
                   "detail": {
-                    "route": "ContactoObjectPage"
+                    "route": "IncidenteObjectPage"
                   }
                 }
               },
@@ -146,14 +134,14 @@
             }
           }
         },
-        "ContactoObjectPage": {
+        "IncidenteObjectPage": {
           "type": "Component",
-          "id": "ContactoObjectPage",
+          "id": "IncidenteObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Contacto"
+              "contextPath": "/Incidente"
             }
           }
         }
