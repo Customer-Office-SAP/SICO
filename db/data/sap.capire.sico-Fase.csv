@@ -1,7 +1,7 @@
 code,nombre,name,descr
-fase-001,Discover,Discover,Fase Discover
-fase-002,Prepare,Prepare,Fase Prepare
-fase-003,Explore,Explore,Fase Explore
-fase-004,Realize,Realize,Fase Realize
-fase-005,Deploy,Deploy,Fase Deploy
-fase-006,Run,Run,Fase Run
+fase-001;Discover;Discover;Fase Discover
+fase-002;Prepare;Prepare;Fase Prepare
+fase-003;Explore;Explore;Fase Explore
+fase-004;Realize;Realize;Fase Realize
+fase-005;Deploy;Deploy;Fase Deploy
+fase-006;Run;Run;Fase Run

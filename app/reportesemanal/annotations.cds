@@ -192,6 +192,11 @@ annotate service.ReporteSemanal with @(
             Value : resumen,
             Label : '{i18n>Resumen}',
         },
+        {
+            $Type : 'UI.DataField',
+            Value : fase.fase.fase.code,
+            Label : 'code',
+        },
     ],
     UI.SelectionFields : [
         pilar_ID,

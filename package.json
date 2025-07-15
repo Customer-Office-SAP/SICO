@@ -24,7 +24,8 @@
     "app/escalacion",
     "app/solicitudpccp",
     "app/actividad",
-    "app/incidente"
+    "app/incidente",
+    "app/pilarco"
   ],
   "cds": {
     "requires": {

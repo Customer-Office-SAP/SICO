@@ -95,7 +95,7 @@ entity Accion : cuid, managed {
   actividad     : Association to Actividad;
   dueno         : Association to Contacto;
   descripcion   : String;
-  duracion      : Date;
+  duracion      : String;
   estado        : Association to EstadoAccion;
   observaciones : String;
 }
@@ -128,6 +128,7 @@ entity PilarCO : cuid, managed {
   implementadorSAP     : Association to Contacto;
   producto             : Association to Producto;
   tipoPilar            : Association to TipoPilar;
+  fase                  : Association to PilarFase;
   fechaInicio          : Date;
   fechaFin             : Date;
   fechaGoLivePlaneada  : Date;
@@ -151,7 +152,6 @@ entity ReporteSemanal : cuid, managed {
   fecha                   : Date;
   fase                   : Association to PilarCO;
   estado                   : Association to PilarCO;
-  nombre                   : Association to PilarCO;
   cliente                   : Association to PilarCO;
   descripcionFase           : String;
   fechaGoLiveActual          : Date;
@@ -225,14 +225,23 @@ entity Ticket : cuid, managed {
 }
 
 entity Incidente : cuid, managed {
-  estado       : Association to Estado;
-  evento       : Association to PilarCO;
-  responsable  : Composition of many Contacto on responsable.ID != '';
-  descripcion  : String;
-  fechaInicio  : Date;
-  fechaFin     : Date;
-  fechaCorte   : Date;
-  prioridad    : Association to Prioridad;
+  estado      : Association to Estado;
+  evento      : Association to PilarCO;
+  descripcion : String;
+  fechaInicio : Date;
+  fechaFin    : Date;
+  fechaCorte  : Date;
+
+// @Common.ValueList: {
+//   label: 'Prioridad',
+//   collectionPath: 'Prioridad',
+//   parameters: [
+//       { $Type: 'Common.ValueListParameterInOut', localDataProperty: 'prioridad_code', valueListProperty: 'code' }
+//     ]
+//   }
+  prioridad_code : String;
+
+  prioridad : Association to Prioridad on prioridad.code = $self.prioridad_code;
 }
 
 entity Escalacion : cuid, managed {
@@ -363,6 +372,5 @@ view vista_reporte_semanal as select from ReporteSemanal {
   matrizRiesgos,
   fase,
   estado,
-  nombre,
   cliente
 }

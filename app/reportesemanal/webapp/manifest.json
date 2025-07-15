@@ -24,6 +24,18 @@
           "odataVersion": "4.0"
         }
       }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "solicitudpccp-display": {
+          "semanticObject": "solicitudpccp",
+          "action": "display",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
     }
   },
   "sap.ui": {
@@ -126,6 +138,12 @@
                       "availability": "Default"
                     },
                     "DataField::resumen": {
+                      "availability": "Default"
+                    },
+                    "DataField::fase::fase_code": {
+                      "availability": "Default"
+                    },
+                    "DataField::fase::fase::name": {
                       "availability": "Default"
                     }
                   }

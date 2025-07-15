@@ -13,6 +13,7 @@ annotate service.Incidente with @(
             {
                 $Type : 'UI.DataField',
                 Value : estado.nombre,
+                Criticality : evento.matrizRiesgos.impactoCuantitativoDias,
             },
             {
                 $Type : 'UI.DataField',
@@ -21,37 +22,28 @@ annotate service.Incidente with @(
             },
             {
                 $Type : 'UI.DataField',
-                Value : evento.matrizRiesgos_ID,
-                Label : '{i18n>IdMatrizRiesgos}',
-            },
-            {
-                $Type : 'UI.DataField',
-                Value : responsable.nombre,
-                Label : '{i18n>NombreResponsable}',
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'descripcion',
+                Label : '{i18n>Descripcin}',
                 Value : descripcion,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'fechaInicio',
+                Label : '{i18n>FechaInicio1}',
                 Value : fechaInicio,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'fechaFin',
+                Label : '{i18n>FechaFin1}',
                 Value : fechaFin,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'fechaCorte',
+                Label : '{i18n>FechaCorte}',
                 Value : fechaCorte,
             },
             {
-                $Type : 'UI.DataField',
-                Value : prioridad.nombre,
+                $Type : 'UI.DataFieldForAnnotation',
+                Target : '@UI.ConnectedFields#connected',
+                Label : 'Prioridad',
             },
         ],
     },
@@ -71,10 +63,6 @@ annotate service.Incidente with @(
         },
         {
             $Type : 'UI.DataField',
-            Value : estado.nombre,
-        },
-        {
-            $Type : 'UI.DataField',
             Value : evento_ID,
             Label : 'ID Pilar',
         },
@@ -82,16 +70,6 @@ annotate service.Incidente with @(
             $Type : 'UI.DataField',
             Value : evento.nombre,
             Label : '{i18n>NombrePilar}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : evento.matrizRiesgos_ID,
-            Label : '{i18n>IdMatrizRiesgos}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : responsable.nombre,
-            Label : '{i18n>NombreResponsable}',
         },
         {
             $Type : 'UI.DataField',
@@ -115,7 +93,13 @@ annotate service.Incidente with @(
         },
         {
             $Type : 'UI.DataField',
-            Value : prioridad.nombre,
+            Value : estado_code,
+            Label : '{i18n>Estado}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : prioridad_code,
+            Label : 'Prioridad',
         },
     ],
     UI.SelectionFields : [
@@ -123,6 +107,21 @@ annotate service.Incidente with @(
         prioridad.nombre,
         fechaInicio,
     ],
+    UI.ConnectedFields #connected : {
+        $Type : 'UI.ConnectedFieldsType',
+        Template : '{prioridad_code} {prioridad_nombre}',
+        Data : {
+            $Type : 'Core.Dictionary',
+            prioridad_code : {
+                $Type : 'UI.DataField',
+                Value : prioridad_code,
+            },
+            prioridad_nombre : {
+                $Type : 'UI.DataField',
+                Value : prioridad.nombre,
+            },
+        },
+    },
 );
 
 annotate service.Incidente with {
@@ -156,11 +155,29 @@ annotate service.Incidente with {
 };
 
 annotate service.Estado with {
-    nombre @Common.Label : '{i18n>Estado}'
+    nombre @(
+        Common.Label : '{i18n>Estado}',
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Incidente',
+            Parameters : [
+                {
+                    $Type : 'Common.ValueListParameterInOut',
+                    LocalDataProperty : nombre,
+                    ValueListProperty : 'estado_code',
+                },
+            ],
+            Label : 'Estado',
+        },
+        Common.ValueListWithFixedValues : true,
+    )
 };
 
 annotate service.Prioridad with {
-    nombre @Common.Label : '{i18n>Prioridad}'
+    nombre @(
+        Common.Label : '{i18n>Prioridad}',
+        Common.Text : name,
+    )
 };
 
 annotate service.Incidente with {

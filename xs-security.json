@@ -2,14 +2,12 @@
   "xsappname": "sico",
   "tenant-mode": "dedicated",
   "description": "Security profile of the SICO application",
-
   "scopes": [
     {
       "name": "$XSAPPNAME.User",
       "description": "Acceso general de usuario"
     }
   ],
-
   "role-templates": [
     {
       "name": "User",
@@ -19,7 +17,6 @@
       ]
     }
   ],
-
   "role-collections": [
     {
       "name": "SICO_User",
@@ -28,5 +25,6 @@
         "$XSAPPNAME.User"
       ]
     }
-  ]
+  ],
+  "attributes": []
 }

@@ -24,6 +24,18 @@
           "odataVersion": "4.0"
         }
       }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "solicitudpccp-display": {
+          "semanticObject": "solicitudpccp",
+          "action": "display",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
     }
   },
   "sap.ui": {
@@ -114,6 +126,23 @@
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
                     "type": "ResponsiveTable"
+                  },
+                  "columns": {
+                    "DataField::prioridad::nombre": {
+                      "availability": "Hidden"
+                    },
+                    "DataField::estado::nombre": {
+                      "availability": "Hidden"
+                    },
+                    "DataField::evento::nombre": {
+                      "availability": "Hidden"
+                    },
+                    "DataField::estado_code": {
+                      "availability": "Default"
+                    },
+                    "DataField::prioridad_code": {
+                      "availability": "Default"
+                    }
                   }
                 }
               },
@@ -128,7 +157,9 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Incidente"
+              "contextPath": "/Incidente",
+              "sectionLayout": "Tabs",
+              "showRelatedApps": true
             }
           }
         }

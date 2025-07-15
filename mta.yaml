@@ -13,6 +13,7 @@ modules:
   requires:
   - name: sico-destination
   - name: sico-db
+  - name: sico-auth
   provides:
   - name: srv-api
     properties:
@@ -50,6 +51,22 @@ modules:
     - artifacts:
       - incidente.zip
       name: incidente
+      target-path: resources/
+    - artifacts:
+      - cartapccp.zip
+      name: sicocartapccp
+      target-path: resources
+    - artifacts:
+      - escalacion.zip
+      name: sicoescalacion
+      target-path: resources
+    - artifacts:
+      - solicitudpccp.zip
+      name: sicosolicitudpccp
+      target-path: resources
+    - artifacts:
+      - pilarco.zip
+      name: pilarco
       target-path: resources/
 - name: sicocontacto
   type: html5
@@ -124,6 +141,46 @@ modules:
     - npm install
     - npm run build:cf
     supported-platforms: []
+- name: sicocartapccp
+  type: html5
+  path: app/cartapccp
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: sicoescalacion
+  type: html5
+  path: app/escalacion
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: sicosolicitudpccp
+  type: html5
+  path: app/solicitudpccp
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: pilarco
+  type: html5
+  path: app/pilarco
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
 resources:
 - name: sico-destination
   type: org.cloudfoundry.managed-service
@@ -177,6 +234,15 @@ resources:
   parameters:
     service: hana
     service-plan: hdi-shared
+- name: sico-auth
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      tenant-mode: dedicated
+      xsappname: sico-${org}-${space}
+    path: ./xs-security.json
+    service: xsuaa
+    service-plan: application
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true

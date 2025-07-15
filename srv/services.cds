@@ -1,7 +1,4 @@
 using { sap.capire.sico as my } from '../db/schema';
-
-annotate SICOService.Contacto with @odata.draft.enabled; 
-
 /**
  * Servicio para gestión operativa del sistema SICO.
  */
@@ -38,6 +35,7 @@ service SICOService {
     fechaGoLiveReal
   ]
 } 
+@odata.draft.enabled
 entity PilarCO as projection on my.PilarCO;
 
   @UI: {
@@ -82,6 +80,7 @@ entity PilarCO as projection on my.PilarCO;
       { Value: descripcion}
     ]
   }
+  @odata.draft.enabled
   entity Actividad as projection on my.Actividad;
 
   @UI: {
@@ -119,11 +118,27 @@ entity PilarCO as projection on my.PilarCO;
   @cds.redirection.target
   entity vista_reporte_semanal as projection on my.vista_reporte_semanal;
 
+  @UI: {
+    LineItem: [
+      { Value: estado_code, Label: 'Estado' },
+      { Value: evento_ID, Label: 'Pilar' },
+      { Value: prioridad_code, Label: 'Prioridad' },
+      { Value: descripcion, Label: 'Descripción' },
+      { Value: fechaInicio, Label: 'Fecha Inicio' },
+      { Value: fechaFin, Label: 'Fecha Fin' },
+      { Value: fechaCorte, Label: 'Fecha Corte' }
+    ],
+    SelectionFields: [ estado_code, evento_ID, prioridad_code, fechaInicio, fechaFin ]
+  }
+  @odata.draft.enabled
+  entity Incidente as projection on my.Incidente;
+
   // Las demás entidades las dejamos sin UI por simplicidad, pero puedes extenderlas si lo necesitas:
   entity Cliente            as projection on my.Cliente;
   entity Partner            as projection on my.Partner;
   entity SAP                as projection on my.SAP;
-  entity Incidente          as projection on my.Incidente;
+  //@odata.draft.enabled
+  //entity Incidente          as projection on my.Incidente;
   @odata.draft.enabled
   entity Escalacion         as projection on my.Escalacion;
   entity Plan               as projection on my.Plan;
@@ -135,6 +150,7 @@ entity PilarCO as projection on my.PilarCO;
   entity SolicitudPCCP      as projection on my.SolicitudPCCP;
   entity Servicios          as projection on my.Servicio;
   entity Antecedente        as projection on my.Antecedente;
+  //@odata.draft.enabled
   entity MatrizRiesgos      as projection on my.MatrizRiesgos;
   entity PilarFase          as projection on my.PilarFase;
   entity InformacionBasica  as projection on my.InformacionBasica;

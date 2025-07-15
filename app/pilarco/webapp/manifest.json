@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "escalacion",
+    "id": "pilarco",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "c995c23f-8eb8-42fa-91d2-82ca03f66e3f"
+      "toolsId": "697c34ee-6688-4d2a-a037-e52ad963209a"
     },
     "dataSources": {
       "mainService": {
@@ -22,18 +22,6 @@
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
-        }
-      }
-    },
-    "crossNavigation": {
-      "inbounds": {
-        "solicitudpccp-display": {
-          "semanticObject": "solicitudpccp",
-          "action": "display",
-          "signature": {
-            "parameters": {},
-            "additionalParameters": "allowed"
-          }
         }
       }
     }
@@ -72,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "escalacion.i18n.i18n"
+          "bundleName": "pilarco.i18n.i18n"
         }
       },
       "": {
@@ -97,28 +85,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "EscalacionList",
-          "target": "EscalacionList"
+          "name": "PilarCOList",
+          "target": "PilarCOList"
         },
         {
-          "pattern": "Escalacion({key}):?query:",
-          "name": "EscalacionObjectPage",
-          "target": "EscalacionObjectPage"
+          "pattern": "PilarCO({key}):?query:",
+          "name": "PilarCOObjectPage",
+          "target": "PilarCOObjectPage"
         }
       ],
       "targets": {
-        "EscalacionList": {
+        "PilarCOList": {
           "type": "Component",
-          "id": "EscalacionList",
+          "id": "PilarCOList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/Escalacion",
+              "contextPath": "/PilarCO",
               "variantManagement": "Page",
               "navigation": {
-                "Escalacion": {
+                "PilarCO": {
                   "detail": {
-                    "route": "EscalacionObjectPage"
+                    "route": "PilarCOObjectPage"
                   }
                 }
               },
@@ -133,14 +121,14 @@
             }
           }
         },
-        "EscalacionObjectPage": {
+        "PilarCOObjectPage": {
           "type": "Component",
-          "id": "EscalacionObjectPage",
+          "id": "PilarCOObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Escalacion"
+              "contextPath": "/PilarCO"
             }
           }
         }
