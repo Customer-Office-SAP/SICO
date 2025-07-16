@@ -276,67 +276,67 @@ entity PilarFase : cuid, managed {
 }
 
 entity Servicio : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity Producto : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity TipoPilar : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity TipoIntervencion : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity Estado : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity Relacion : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity TipoRiesgo : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity Prioridad : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity EstadoAccion : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity Flag : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity TipoActividad : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity PasosSiguientes : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
 entity Condicion : CodeList {
-  key code : String;
+  key code : UUID;
   nombre   : String;
 }
 
