@@ -1,11 +1,8 @@
 code,nombre,name,descr
-servicio-001,pilar-001,Ayuda inmediata,Atención rápida para resolver incidencias urgentes.
-servicio-002,pilar-002,Capacitación técnica,Sesiones formativas para mejorar habilidades técnicas.
-servicio-003,pilar-003,Soporte funcional,Apoyo en el uso correcto de sistemas y aplicaciones.
-servicio-004,pilar-001,Acompañamiento en pruebas,Asistencia durante el proceso de pruebas de sistemas.
-servicio-005,pilar-004,Gestión del cambio,Gestión de iniciativas para la adopción organizacional.
-servicio-006,pilar-002,Mesa de ayuda,Servicio de atención para reportes y solicitudes.
-servicio-007,pilar-003,Consultoría estratégica,Asesoramiento en decisiones de alto impacto.
-servicio-008,pilar-001,Automatización de procesos,Implementación de herramientas que optimizan tareas.
-servicio-009,pilar-004,Análisis de brechas,Identificación de diferencias entre estado actual y esperado.
-servicio-010,pilar-002,Definición de KPIs,Establecimiento de indicadores clave de rendimiento.
+de17c0a0-1c13-41c5-a88b-aacc20f5e1ab,Preferred Success PrS,Preferred Success PrS,Preferred Success PrS
+424b916b-f58a-4872-8072-f0d37b46b069,Premium Support Max Attention,Premium Support Max Attention,Premium Support Max Attention
+b4ce2c58-7d95-471e-bac4-770f4c000db2,Premium Support Active Attention,Premium Support Active Attention,Premium Support Active Attention
+3848e71c-0580-4108-85ce-ba31ea7c227c,Enterprise Support ES,Enterprise Support ES,Enterprise Support ES
+0c367299-b938-45a7-be33-dc89da093496,Enterprise Cloud Support ECS,Enterprise Cloud Support ECS,Enterprise Cloud Support ECS
+b8882e79-5901-4546-bc4c-7f968e299c17,Cloud Application Services CAS,Cloud Application Services CAS,Cloud Application Services CAS
+874fde64-401f-4973-acec-f7eac4169525,SAP Servicios,SAP Servicios,SAP Servicios

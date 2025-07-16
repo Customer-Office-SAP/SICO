@@ -1,6 +1,7 @@
 code,nombre,name,descr
-9d98fc40-4a8a-4f93-9f92-8a7c6fa17d18,Discover,Discover,Fase Discover
-34b0de0f-2a10-4c5b-9114-9244b764dab6,Prepare,Prepare,Fase Prepare
-6a5bfa36-77c7-46f4-a47f-7f4c8578e83c,Explore,Explore,Fase Explore
-171c5a67-b09b-44b1-8c8f-71a9bd0171f9,Deploy,Deploy,Fase Deploy
-a9467f12-165a-4f11-9b9b-c3559e843924,Run,Run,Fase Run
+efcb3b8c-3354-47d1-ab01-0f50da080af6,Descubrimiento,Descubrimiento,Descubrimiento
+31ae59d7-8a59-42dd-8cd4-43dca06e7a62,Preparacion,Preparacion,Preparacion
+867390e0-8d82-4b34-af3f-02c8f083ba7f,Exploracion,Exploracion,Exploracion
+6c23ed16-2804-4c55-b3a7-0f4df284fb49,Realizacion,Realizacion,Realizacion
+4b3a7a8b-9ccd-4fa5-a443-f7ff85aed471,Desarrollo,Desarrollo,Desarrollo
+375d609c-2eb6-4967-ac5d-41e62c18ce64,Produccion,Produccion,Produccion

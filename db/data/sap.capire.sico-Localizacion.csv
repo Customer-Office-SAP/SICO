@@ -1,11 +1,17 @@
 ID,region,ciudad,pais,direccion,createdAt,createdBy,modifiedAt,modifiedBy
-loc-001,América del Sur,Bogotá,Colombia,Cra 7 # 45-85,2025-06-29T00:00:00Z,maria.zapata,2025-06-30T00:00:00Z,juan.garcia
-loc-002,Norteamérica,Medellín,Colombia,Cll 10 # 20-30,2025-06-30T00:00:00Z,juan.garcia,2025-07-02T00:00:00Z,maria.zapata
-loc-003,Europa,Cali,Colombia,Av. Las Américas 123,2025-06-30T00:00:00Z,maria.zapata,2025-07-01T00:00:00Z,carlos.ramos
-loc-004,Asia,Cartagena,Colombia,Transversal 25 # 60-40,2025-06-30T00:00:00Z,maria.zapata,2025-07-01T00:00:00Z,juan.garcia
-loc-005,Oceanía,Barranquilla,Colombia,Calle 72 # 5-15,2025-07-01T00:00:00Z,maria.zapata,2025-07-02T00:00:00Z,ana.lopez
-loc-006,África,Quito,Ecuador,Av. Naciones Unidas 456,2025-06-30T00:00:00Z,carlos.ramos,2025-07-02T00:00:00Z,ana.lopez
-loc-007,Caribe,Lima,Perú,Av. Javier Prado 2301,2025-06-30T00:00:00Z,carlos.ramos,2025-07-02T00:00:00Z,ana.lopez
-loc-008,Centroamérica,Buenos Aires,Argentina,Florida 100,2025-06-29T00:00:00Z,juan.garcia,2025-07-01T00:00:00Z,ana.lopez
-loc-009,Andina,Montevideo,Uruguay,Av. 18 de Julio 2025,2025-06-29T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,ana.lopez
-loc-010,Cono Sur,Santiago,Chile,Providencia 1234,2025-06-30T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,ana.lopez
+faa1dbc8-5ea8-43c7-88a6-cb843cc8901d,MCLAC,Quito,Ecuador,Av. Amazonas 4560 y Pereira,,,,
+ecb107e4-994a-4251-b014-a5165517a703,MCLAC,Medellin,Colombia,"CR 42 #3 SUR 81, Ed Milla de Oro,To 1 Of 1005",,,,
+b1cbb235-5e47-4b3b-9349-f79b0fe3552f,MCLAC,Sao Paulo,Brasil,R Fidencio Ramos 308 São Paulo 04551-902 Vila Olimpia,,,,
+0e0f49a4-4b69-40d9-afba-1a2d321891da,MCLAC,Guaynabo,Puerto Rico,Metro Office Park 7 Street 1 Suite 204 Guaynabo 00968,,,,
+20682a74-8b66-44dd-b1b3-de266fa2a139,MCLAC,Guayaquil,Ecuador,Cedros 108 Guayaquil EC090112,,,,
+e74a27b8-e87e-4898-bdfc-5fa805d3dfab,MCLAC,Florida,Estados Unidos,1419 N Chapelcross Loop Crystal River 34429-5790 CITRUS,,,,
+27ac8702-411b-436a-a367-fb8f9ace742b,MCLAC,Ciudad de Mexico,Mexico,Insurgente Sur 949 piso 2 Benito Juarez 03810,,,,
+9d1e9fd1-34b2-45a8-ab2a-3d418e0042bb,MCLAC,Bogota,Colombia,"TV 23 97 73 OF 507 BOGOTÁ, D.C. 110111",,,,
+99c341ef-d6bc-40fb-b637-53486cbfc1b0,MCLAC,Bogota,Colombia,"Avenida Carrera 7 No. 156 10 BOGOTÁ, D.C. 110131",,,,
+a0c815f4-dcfb-4966-b49d-2504bd36b411,MCLAC,Bogota,Colombia,"Cra. 9 # 73-44 Piso 5 6, 8, 9 Y 10",,,,
+bb67390d-c531-4efc-80b3-455b2632cc64,MCLAC,Caracas,Venezuela,"Cl. Las Vegas. Edf. Clariant de Vzla, P-3",,,,
+2a806438-e64c-448a-9596-aa6f979ddc25,MCLAC,Bogota,Colombia,Carrera 11 93 A 20 Local 102,,,,
+97747516-f5b9-4443-90fe-96b68bb26eb7,MCLAC,Bayamon,Puerto Rico,Industrial Luchetti 300 Carr. 5,,,,
+0e401307-7937-4e68-97bf-d97edc0e69d3,MCLAC,Ciudad de Panama,Panama,"Calle 50, Edif. Credit Corp Bank",,,,
+217c4c8e-4765-4c10-96ac-50cbb294e57f,MCLAC,Bogota,Colombia,Cra. 11 No. 82-01 Piso 5,,,,
+2cbec5e3-441e-4cbe-a57b-7d82dbce1d09,MCLAC,Bogota,Colombia,Cll. 11A No. 34-50 Zn. Ind'l Pensilvania,,,,

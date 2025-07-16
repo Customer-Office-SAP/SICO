@@ -1,11 +1,11 @@
 ID,tipoSoporte,consultoriaSAP,createdAt,createdBy,modifiedAt,modifiedBy
-infoMin-001,Soporte Técnico,True,2025-06-29T00:00:00Z,carlos.ramos,2025-06-30T00:00:00Z,carlos.ramos
-infoMin-002,Consultoría Funcional,True,2025-07-01T00:00:00Z,juan.garcia,2025-07-02T00:00:00Z,carlos.ramos
-infoMin-003,Capacitación,True,2025-06-30T00:00:00Z,juan.garcia,2025-07-02T00:00:00Z,ana.lopez
-infoMin-004,Mantenimiento,False,2025-06-28T00:00:00Z,maria.zapata,2025-06-30T00:00:00Z,maria.zapata
-infoMin-005,Soporte 24/7,False,2025-06-28T00:00:00Z,ana.lopez,2025-06-30T00:00:00Z,maria.zapata
-infoMin-006,Desarrollo a Medida,True,2025-06-29T00:00:00Z,ana.lopez,2025-06-30T00:00:00Z,juan.garcia
-infoMin-007,Mejoras Continuas,False,2025-06-30T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,ana.lopez
-infoMin-008,Migración de Datos,True,2025-06-28T00:00:00Z,juan.garcia,2025-06-30T00:00:00Z,juan.garcia
-infoMin-009,Infraestructura,False,2025-06-29T00:00:00Z,maria.zapata,2025-07-01T00:00:00Z,carlos.ramos
-infoMin-010,Actualización de Versiones,True,2025-06-30T00:00:00Z,ana.lopez,2025-07-01T00:00:00Z,ana.lopez
+df0a1de7-5bf0-4e4e-a82a-1901c6fa0981,Soporte Técnico,True,2025-06-29T00:00:00Z,carlos.ramos,2025-06-30T00:00:00Z,carlos.ramos
+40bad5f2-6398-4c89-84a0-5b90619c0e6a,Consultoría Funcional,True,2025-07-01T00:00:00Z,juan.garcia,2025-07-02T00:00:00Z,carlos.ramos
+9575f7db-977f-4821-aaac-04b08bdf24da,Capacitación,True,2025-06-30T00:00:00Z,juan.garcia,2025-07-02T00:00:00Z,ana.lopez
+cd4daf6d-5995-420e-9a7b-c004164df497,Mantenimiento,False,2025-06-28T00:00:00Z,maria.zapata,2025-06-30T00:00:00Z,maria.zapata
+11bc2bf8-3248-4d2b-8b75-ddeaac714f7a,Soporte 24/7,False,2025-06-28T00:00:00Z,ana.lopez,2025-06-30T00:00:00Z,maria.zapata
+01a561a3-bd7a-4a84-94af-85a128d1a39c,Desarrollo a Medida,True,2025-06-29T00:00:00Z,ana.lopez,2025-06-30T00:00:00Z,juan.garcia
+8d208c1e-bb12-41f5-a845-310048064855,Mejoras Continuas,False,2025-06-30T00:00:00Z,carlos.ramos,2025-07-01T00:00:00Z,ana.lopez
+1fee1dcf-ae29-4309-adcc-a0d00c1a6602,Migración de Datos,True,2025-06-28T00:00:00Z,juan.garcia,2025-06-30T00:00:00Z,juan.garcia
+45e6ca05-5053-403d-955b-59f09b7c21fd,Infraestructura,False,2025-06-29T00:00:00Z,maria.zapata,2025-07-01T00:00:00Z,carlos.ramos
+8fbd1163-4cc9-4fa9-b2cc-2e77d6d9c2f9,Actualización de Versiones,True,2025-06-30T00:00:00Z,ana.lopez,2025-07-01T00:00:00Z,ana.lopez

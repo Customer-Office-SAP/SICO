@@ -1,11 +1,40 @@
 ID,nombre,email,compania,rol,relacion_code,createdAt,createdBy,modifiedAt,modifiedBy
-contacto-001,"Ana María López","ana.lopez@acme.co","Acme Corp","Project Sponsor",relacion-002,2025-01-10T10:00:00Z,ana.lopez,2025-01-15T12:00:00Z,ana.lopez
-contacto-002,"Carlos Pérez","carlos.perez@acme.co","Acme Corp","Key User",relacion-001,2025-01-12T09:30:00Z,maria.zapata,2025-01-18T11:45:00Z,maria.zapata
-contacto-003,"Laura Gutiérrez","laura.gutierrez@globex.com","Globex Inc","Project Manager",relacion-002,2025-01-22T14:10:00Z,carlos.ortiz,2025-01-25T16:20:00Z,carlos.ortiz
-contacto-004,"Miguel Santos","miguel.santos@globex.com","Globex Inc","Business Analyst",relacion-001,2025-01-24T08:50:00Z,luisa.mendez,2025-01-30T10:05:00Z,luisa.mendez
-contacto-005,"Elena Ramírez","elena.ramirez@initech.io","Initech LLC","Technical Lead",relacion-002,2025-02-06T11:25:00Z,juan.suarez,2025-02-10T13:40:00Z,juan.suarez
-contacto-006,"José Martínez","jose.martinez@initech.io","Initech LLC","Key User",relacion-001,2025-02-08T10:15:00Z,ana.lopez,2025-02-12T12:30:00Z,ana.lopez
-contacto-007,"Valentina Silva","valentina.silva@hooli.tech","Hooli Technologies","CIO",relacion-003,2025-02-18T09:05:00Z,maria.zapata,2025-02-22T11:10:00Z,maria.zapata
-contacto-008,"Roberto Díaz","roberto.diaz@hooli.tech","Hooli Technologies","Project Coordinator",relacion-003,2025-02-20T13:35:00Z,carlos.ortiz,2025-02-26T15:25:00Z,carlos.ortiz
-contacto-009,"Isabela Ortega","isabela.ortega@soylent.mx","Soylent S.A.","Operations Manager",relacion-002,2025-03-02T08:40:00Z,luisa.mendez,2025-03-06T10:55:00Z,luisa.mendez
-contacto-010,"Pedro Rojas","pedro.rojas@soylent.mx","Soylent S.A.","IT Support",relacion-001,2025-03-04T14:45:00Z,juan.suarez,2025-03-08T16:00:00Z,juan.suarez 
+26e207aa-68c8-43f4-afcc-73d4c3a384a2,Juan Carlos Benitez LLore,jcbenite@pichincha.com,Banco Pichincha C.A.,PM Cliente,9fa67b26-fd57-4b59-8e4d-290e5dd0044c,,,,
+dc2b8e65-9d4f-4f8f-a1d0-4594573fd63d,Marcelo Navarro,marcelo.navarro@onbusinessconsulting.com,On Business Consulting S.A.S,PM Implementador,d390bb3b-fba9-472b-86a7-309ed4fff156,,,,
+677cae53-b0ac-41c8-803f-4acaf2e40dec,Pedro Santiesteban,pedro.santiesteban@sap.com,SAP,CSM BTP,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+314ed9ed-58e2-4650-826d-a32352e57b0b,Soraida Ledesma,soraida.ledesma@sap.com,SAP,Customer Office,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+87eb36be-e710-467b-ac7a-d44806f2cd0e,Jose Calet Prado Sanchez,jprado@geb.com.co,Grupo Energia Bogota S.A. ESP,PM Cliente,9fa67b26-fd57-4b59-8e4d-290e5dd0044c,,,,
+079991c6-aef1-49b8-8565-f5721bc86929,Fernando Otero,fernando.otero@msg-global.com,MSG,PM Implementador,d390bb3b-fba9-472b-86a7-309ed4fff156,,,,
+92d65b9c-4b9f-499e-8364-a91052f2d450,Laura Beltran,laura.beltran@bold.co,BOLD CO S A S,PM Cliente,9fa67b26-fd57-4b59-8e4d-290e5dd0044c,,,,
+6b3cdbee-1444-49ad-a4c8-3c29a12e9847,Helmut Hernández,hhernandez@csticorp.biz,CSTI,PM Implementador,d390bb3b-fba9-472b-86a7-309ed4fff156,,,,
+83e5bf99-e082-4d1c-aa37-625d695dd24c,Beatriz Fernandez,beatriz.fernandez@vsuarez.com,"V. Suarez & Co, Inc.",PM Cliente,9fa67b26-fd57-4b59-8e4d-290e5dd0044c,,,,
+025cf75e-c0e0-488d-9595-b32cb92ea1d7,Lucy Rivas,lucy.rivas@nbteamconsulting.com,N&B Team Consulting Inc.,PM Implementador,d390bb3b-fba9-472b-86a7-309ed4fff156,,,,
+1ebef355-5085-4fb7-b460-f3116f8f51d8,Richard Mayorga,richard.mayorga@itregencybrands.com,"Cuernavaca Business, S.A.",PM Cliente,9fa67b26-fd57-4b59-8e4d-290e5dd0044c,,,,
+6425fa00-7e0b-4b89-95ad-64a7b9ee77ca,Patricia Huertas,patricia.huertas@snpgroup.com,SNP Latam-Mexico S de RL de CV,PM Implementador,d390bb3b-fba9-472b-86a7-309ed4fff156,,,,
+8fbb74d2-68d8-4386-8a07-d695b35dc168,Alexander Moreno,alexander.moreno@spradling.group,Proquinal S.A.S.,PM Cliente,9fa67b26-fd57-4b59-8e4d-290e5dd0044c,,,,
+6b9cab21-40bc-44ab-9937-a78a7a97d974,Jorge Fuentes,jorge.fuentes@mqa-bc.com,MQA BUSINESS CONSULTANTS S.A.S.,PM Implementador,d390bb3b-fba9-472b-86a7-309ed4fff156,,,,
+11df55ff-082c-46ee-831b-768407134309,Lina Paola Pinzon Nieto,lppinzon@racafe.com,RACAFÉ & CIA S C A,PM Cliente,9fa67b26-fd57-4b59-8e4d-290e5dd0044c,,,,
+f2d13217-da15-4f0f-9304-a740d6e264bf,Nestor Damian Henriquez Vazquez,nestor.henriquez@softtek.com,Softtek Renovation SAS,PM Implementador,d390bb3b-fba9-472b-86a7-309ed4fff156,,,,
+958f9b41-665e-4c79-9f61-5e6065e0229d,Lazaro Prieto,lazaro.prieto@sap.com,SAP,Customer Office,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+d2b2423f-13ef-4de4-a6c9-36c683b04185,Horacio Seeber,horacio.seeber@sap.com,SAP,Enterprise Mg MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+e3ad3f4a-e913-4b1a-89c5-0b50466a3558,Catalina Manrique,catalina.manrique@sap.com,SAP,Enterprise Mg Colombia,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+c577c252-8c39-4b65-beb1-35cd361325e0,Fabio Aquino,f.aquino@sap.com,SAP,Customer Office LAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+8f02399f-2448-4fee-a72b-6ab7c1f017a4,Cludia Boeri,claudia.boeri@sap.com,SAP,Managing Director MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+78e4de8b-2f8e-4249-a44a-2ce3cc0184fe,Santiago Duque,santiago.duque@sap.com,SAP,LAC Integration Lead,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+a8cecc5a-d612-4759-8f61-1096ee2ec436,Felipe Velosa,felipe.velosa@sap.com,SAP,Enterprise,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+7b4ddcfc-4931-4a18-aa1d-3cee6f2dbf23,Juan Manuel Vargas,juan.manuel.vargas@sap.com,SAP,Enterprise Mg CAM/CAR,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+094c3a26-d218-44cc-b267-d840040c5cab,Daniel Castro,daniel.castro01@sap.com,SAP,Corporate Mg D/NNN CO/EC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+fc8a2f35-aa2c-40f6-83f2-caae4ac19b5c,Maria Muruzabal,maria.muruzabal@sap.com,SAP,Corporate Mg IB + NNN Top CA&CAR,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+aa59b870-8d6a-4f2a-bb13-1be4715283a2,Daniel Gallardo,daniel.gallardo@sap.com,SAP,Corporate Mg MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+aef8397b-4707-4c17-9e19-a5fd19a4ec81,Raiza Morales,raiza.morales@sap.com,SAP,Partner Driven Mg MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+50f3f18a-2346-4a8d-8e31-90dc444493fb,Luciano Tome,luciano.tome@sap.com,SAP,PES Mg MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+16ca1788-3ea1-4879-99a1-47091c1fbef9,Cristian Ali,cristian.ali@sap.com,SAP,PES Canales Mg MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+9b82e3d2-8a38-4783-9292-9eb152643d60,Cristina Bottolo,cristina.bottolo@sap.com,SAP,PES Delivery MG MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+f91afc85-6aeb-4fac-a936-c34591692b4e,Johan Solorzano,johan.solorzano@sap.com,SAP,DCSM MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+d723242c-30d7-49ff-9ed2-87f3cf48f25c,Lorena Torres,lorena.torres01@sap.com,SAP,Preferred Success Scale Delivery Mg MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+bf1c9b08-2f63-4086-966e-273fda363ffe,Gina Palacio,gina.palacio@sap.com,SAP,CDM Mg MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+5b7cfac6-23a0-4a48-9e32-db82a1c1d58c,Julio Restrepo,julio.restrepo@sap.com,SAP,Enterprise Architects Mg MCLAC,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+930e41cc-751e-4a6e-921c-4dad9798b4da,Romeo Najm,rnajm@gt99.com.ve,Grupo Total 99 C.A.,PM Cliente,9fa67b26-fd57-4b59-8e4d-290e5dd0044c,,,,
+13de3c7e-afc2-4f94-bfb9-34b495a45ee7,Yadira Castañeda,yadira.castaneda@sap.com,SAP,Corporate Field Account Executive,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+09ccee67-d55f-4660-b401-09246e6024f5,Julio Muñoz,julio.munoz@sap.com,SAP,SAP Servicios,4169f12d-2772-44af-8c83-8481e286d47e,,,,
+48e0f633-0183-4166-b208-476c00c13d62,Oswaldo Medina,oswaldo.medina@abside.com,"ABSIDE, INC",PM Implementador,d390bb3b-fba9-472b-86a7-309ed4fff156,,,,

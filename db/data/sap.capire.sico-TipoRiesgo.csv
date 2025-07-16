@@ -1,11 +1,17 @@
 code,nombre,name,descr
-tiporiesgo-001,Tecnológico,Technological,Riesgo asociado al uso-fallos o brechas tecnológicas.
-tiporiesgo-002,Operativo,Operational,Riesgo por fallas en procesos internos o humanos.
-tiporiesgo-003,Legal,Legal,Riesgo por incumplimiento de leyes o regulaciones.
-tiporiesgo-004,Financiero,Financial,Riesgo relacionado con pérdidas monetarias o fluctuaciones.
-tiporiesgo-005,Reputacional,Reputational,Riesgo que afecta la percepción pública de la organización.
-tiporiesgo-006,Estrategico,Strategic,Riesgo que impacta la dirección o metas del negocio.
-tiporiesgo-007,Regulatorio,Regulatory,Riesgo derivado de cambios o incumplimiento normativo.
-tiporiesgo-008,Ambiental,Environmental,Riesgo por factores ambientales o climáticos.
-tiporiesgo-009,De Seguridad,Security,Riesgo relacionado con accesos datos o infraestructura crítica.
-tiporiesgo-010,De Proveedores,Supplier,Riesgo por fallas o dependencia de terceros o proveedores.
+a42c9a6a-9daa-4330-aec2-bd5c79a4eecf,Issue Critico (abierto),Issue Critico (abierto),Issue Critico (abierto)
+c8f855d0-5224-4ba5-8bc5-ce9c4adfe941,Issue Alto (abierto),Issue Alto (abierto),Issue Alto (abierto)
+4714181d-0c5c-4996-bff6-fa417c016316,Issue Medio (abierto),Issue Medio (abierto),Issue Medio (abierto)
+09b4a39e-c20e-4d79-84db-0e22f7fd1582,Issue Bajo (abierto),Issue Bajo (abierto),Issue Bajo (abierto)
+f0e3aa37-408d-4b65-b9a0-059f1aad145a,Critico (abierto),Critico (abierto),Critico (abierto)
+1d4562f4-bdb9-4585-b68a-1f290cd53381,Alto (abierto),Alto (abierto),Alto (abierto)
+b8f2cf4a-bbdc-47fa-824f-749e9af639d4,Medio (abierto),Medio (abierto),Medio (abierto)
+1a4d54b4-6346-4d52-8d93-473f278ee4f2,Bajo (abierto),Bajo (abierto),Bajo (abierto)
+91f73b2b-96cf-41c8-a704-80b872d6227b,Issue Critico (cerrado),Issue Critico (cerrado),Issue Critico (cerrado)
+a5f3797b-af7d-42db-b3f9-0a68a5b01d3b,Issue Alto (cerrado),Issue Alto (cerrado),Issue Alto (cerrado)
+5d387830-ead5-4195-a2d8-97550f31db91,Issue Medio (cerrado),Issue Medio (cerrado),Issue Medio (cerrado)
+985bd573-8437-4b21-9551-812a2e0f9cc5,Issue Bajo (cerrado),Issue Bajo (cerrado),Issue Bajo (cerrado)
+8740f4ab-f59e-4b2c-9803-024558e8c55c,Critico (cerrado),Critico (cerrado),Critico (cerrado)
+4d4df44f-6aa9-4096-9a30-cf651988309b,Alto (cerrado),Alto (cerrado),Alto (cerrado)
+9be1d446-95d0-49de-9b44-2060b165fd78,Medio (cerrado),Medio (cerrado),Medio (cerrado)
+d20748a4-c0a2-4508-9280-e44ee0fa8ceb,Bajo (cerrado),Bajo (cerrado),Bajo (cerrado)

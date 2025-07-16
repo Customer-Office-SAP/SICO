@@ -1,11 +1,3 @@
 code,nombre,name,descr
-tipoactividad-001,Planeación,Planeación,Definición de objetivos - cronograma y recursos necesarios.
-tipoactividad-002,Ejecución,Ejecución,Implementación de las tareas planificadas.
-tipoactividad-003,Seguimiento,Seguimiento,Monitoreo del avance y cumplimiento de actividades.
-tipoactividad-004,Documentación,Documentación,Registro detallado de procesos - decisiones y entregables.
-tipoactividad-005,Capacitación,Capacitación,Formación del equipo en herramientas o procesos clave.
-tipoactividad-006,Validación,Validación,Verificación del cumplimiento de requisitos establecidos.
-tipoactividad-007,Revisión técnica,Revisión técnica,Evaluación experta de soluciones desde el punto de vista técnico.
-tipoactividad-008,Análisis funcional,Análisis funcional,Estudio de necesidades y requisitos del usuario final.
-tipoactividad-009,Acompañamiento,Acompañamiento,Soporte cercano durante la ejecución del proyecto.
-tipoactividad-010,Pruebas de usuario,Pruebas de usuario,Evaluación del sistema por parte de usuarios finales.
+67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,Remediacion,Remediacion,Remediacion
+eaa842b3-4e39-4038-9f23-0fc33258579f,Mitigacion,Mitigacion,Mitigacion

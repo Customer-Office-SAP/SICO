@@ -1,10 +1,25 @@
 code,nombre,name,descr
-producto-001,S/4HANA Cloud,S/4HANA Cloud,S/4HANA Cloud
-producto-002,S/4HANA,S/4HANA,S/4HANA
-producto-003,Costumer Experience,Costumer Experience,Costumer Experience
-producto-004,BTP,BTP,BTP
-producto-005,SuccessFactors,SuccessFactors,SuccessFactors
-producto-006,Ariba,Ariba,Ariba
-producto-007,Concur,Concur,Concur
-producto-008,Fieldglass,Fieldglass,Fieldglass
-producto-009,Otros,Otros,Otros
+ebb656ff-7d51-4195-a557-8390d6ff887f,S4HANA Private Cloud,S4HANA Private Cloud,S4HANA Private Cloud
+2072cd12-f154-43f0-a160-c672f079a7a3,S4HANA Public Cloud,S4HANA Public Cloud,S4HANA Public Cloud
+1c999e1b-f1aa-466f-8fbd-e4545bfc046b,SuccessFactors,SuccessFactors,SuccessFactors
+09bededc-99da-4282-ab63-b387cdd775e4,ARIBA,ARIBA,ARIBA
+c598afe0-d964-425e-8bca-18c8e33c4c32,Bussines Technology Plataform,Bussines Technology Plataform,Bussines Technology Plataform
+0ee78f64-6e65-4795-af2d-6e9d2885fb3d,FIELDGLASS,FIELDGLASS,FIELDGLASS
+7dc33aec-2a4e-4d41-b711-6ab504b3d7c9,CONCUR,CONCUR,CONCUR
+c5579a0b-9192-43ac-a081-aa841394ea90,Signavio,Signavio,Signavio
+d1180d67-9116-469b-94c1-0b9157674e4e,OpenText,OpenText,OpenText
+daf0012c-84f1-4c8a-b1a9-ba949a8eb06c,SAP Business Warehouse,SAP Business Warehouse,SAP Business Warehouse
+84e8892c-b962-45ff-8093-fcd461de3fdb,SAP Analytics Cloud,SAP Analytics Cloud,SAP Analytics Cloud
+6db3be31-8dfb-4aaf-be6f-22fb3fbda9c2,SAP Datasphere,SAP Datasphere,SAP Datasphere
+2ab10778-3945-4347-87ad-630fbc41e23a,SAP Databricks,SAP Databricks,SAP Databricks
+b12b5f6c-6a3e-450f-b8ad-910d492a92db,WalkMe,WalkMe,WalkMe
+bb9cef3b-6f98-4b44-b77f-feb8f85c6147,SAP LeanIX,SAP LeanIX,SAP LeanIX
+815f8dc7-95c5-4871-80ed-4c501579e9df,SAP Sustainability,SAP Sustainability,SAP Sustainability
+295656fd-81d5-4d2d-ac86-99758e9b9f78,SAP Emarsys,SAP Emarsys,SAP Emarsys
+011690f7-45cb-45a9-bae7-62f5c1fbb2db,SAP Commerce Cloud,SAP Commerce Cloud,SAP Commerce Cloud
+bd9e1d2b-b473-4582-bc3e-6e8a4e020c12,SAP Supply Chain Management,SAP Supply Chain Management,SAP Supply Chain Management
+4d733611-b86d-4182-bf31-b7e1160d785b,PLM,PLM,PLM
+a01719b2-9de9-423c-9fa6-4e6b0c0c3c71,IA y ML,IA y ML,IA y ML
+18f192af-6ceb-46a5-9463-9a76cde40d91,Aplicaciones inteligentes,Aplicaciones inteligentes,Aplicaciones inteligentes
+cbc3696a-0d5b-49e4-8c33-0bb3a289792f,SAP Integration Suite,SAP Integration Suite,SAP Integration Suite
+1e9dc8ca-5b95-4579-85eb-c4eee333d297,SAP Build,SAP Build,SAP Build

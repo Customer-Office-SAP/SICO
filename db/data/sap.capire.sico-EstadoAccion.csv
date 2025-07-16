@@ -1,5 +1,4 @@
 code,nombre,name,descr
-estadoaccion-001,Sin Iniciar,Sin Iniciar,Estado Sin iniciar
-estadoaccion-002,En Proceso,En Proceso,Estado En proceso
-estadoaccion-003,Cubierto,Cubierto,Estado Cubierto
-estadoaccion-004,Anulado,Anulado,Estado Anulado
+f40b6bea-f837-4a5b-b055-26e112f42796,Pendiente,Pendiente,Pendiente
+d2c29de3-b1f2-4d56-9408-7c6fb7ef0f88,En ejecución,En ejecución,En ejecución
+2d5a11b2-9473-4d67-802e-da2a1c2edba9,Finalizada,Finalizada,Finalizada

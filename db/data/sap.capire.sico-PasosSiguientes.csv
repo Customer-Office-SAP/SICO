@@ -1,11 +1,11 @@
 code,nombre,name,descr
-paso-001,Realizar reunión de seguimiento con cliente,Realizar reunión de seguimiento con cliente,Realizar reunión de seguimiento con cliente
-paso-002,Actualizar cronograma del proyecto,Actualizar cronograma del proyecto,Actualizar cronograma del proyecto
-paso-003,Enviar informe de avance,Enviar informe de avance,Enviar informe de avance
-paso-004,Definir plan de mitigación,Definir plan de mitigación,Definir plan de mitigación
-paso-005,Revisar feedback del equipo,Revisar feedback del equipo,Revisar feedback del equipo
-paso-006,Preparar próxima entrega,Preparar próxima entrega,Preparar próxima entrega
-paso-007,Validar entregables con el cliente,Validar entregables con el cliente,Validar entregables con el cliente
-paso-008,Organizar sesión de entrenamiento,Organizar sesión de entrenamiento,Organizar sesión de entrenamiento
-paso-009,Actualizar documentación técnica,Actualizar documentación técnica,Actualizar documentación técnica
-paso-010,Revisar presupuesto del proyecto,Revisar presupuesto del proyecto,Revisar presupuesto del proyecto
+5a70968b-4b07-49f9-856c-9ea3308f86ed,Realizar reunión de seguimiento con cliente,Realizar reunión de seguimiento con cliente,Realizar reunión de seguimiento con cliente
+3f78827e-5649-4667-a040-c2e97e1e4132,Actualizar cronograma del proyecto,Actualizar cronograma del proyecto,Actualizar cronograma del proyecto
+1d7fb692-9d3e-4c17-b60d-b233aacc401c,Enviar informe de avance,Enviar informe de avance,Enviar informe de avance
+86e75f05-7685-4bdc-9a21-aab924abef16,Definir plan de mitigación,Definir plan de mitigación,Definir plan de mitigación
+e8e427c0-bc47-4db0-85a6-0c6c2b5444b9,Revisar feedback del equipo,Revisar feedback del equipo,Revisar feedback del equipo
+9a05e18d-e88b-4019-b139-b181d51ddabe,Preparar próxima entrega,Preparar próxima entrega,Preparar próxima entrega
+b6af5f4d-49ed-4e14-a967-2875d2e3dcbe,Validar entregables con el cliente,Validar entregables con el cliente,Validar entregables con el cliente
+b7fa049f-5af4-438c-af03-1905e3da419b,Organizar sesión de entrenamiento,Organizar sesión de entrenamiento,Organizar sesión de entrenamiento
+0b98b9df-826a-42fc-b355-d724f61cfee9,Actualizar documentación técnica,Actualizar documentación técnica,Actualizar documentación técnica
+2bcb0df5-4ee5-4bf2-827f-c56ad02b4eef,Revisar presupuesto del proyecto,Revisar presupuesto del proyecto,Revisar presupuesto del proyecto

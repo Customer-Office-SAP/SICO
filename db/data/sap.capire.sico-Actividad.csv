@@ -1,11 +1,9 @@
 ID,nombre,flag_code,tipoActividad_code,fechaInicio,fechaFin,dueDate,descripcion
-actividad-001,"Definición de alcance Sprint 1",flag-002,tipoActividad-001,2025-01-20,2025-02-10,2025-02-05,"Reunir requerimientos y definir historias de usuario para el primer sprint"
-actividad-002,"Configuración ambiente de Desarrollo",flag-001,tipoActividad-002,2025-01-25,2025-02-03,2025-02-01,"Instalar y parametrizar instancias SAP S/4HANA para el equipo"
-actividad-003,"Carga inicial de datos maestros",flag-003,tipoActividad-002,2025-02-05,2025-02-20,2025-02-18,"Extraer y transformar datos para la migración inicial"
-actividad-004,"Diseño prototipo de interfaz",flag-004,tipoActividad-001,2025-02-08,2025-02-25,2025-02-22,"Crear wireframes y mock-ups para aprobación de UX"
-actividad-005,"Pruebas integradas Sprint 1",flag-002,tipoActividad-003,2025-02-12,2025-02-28,2025-02-26,"Ejecutar casos de prueba end-to-end y documentar defectos"
-actividad-006,"Capacitación usuarios clave",flag-003,tipoActividad-004,2025-03-02,2025-03-06,2025-03-05,"Entrenar usuarios en procesos core y nuevos flujos de SAP"
-actividad-007,"Ejecución Cut-Over",flag-001,tipoActividad-003,2025-04-28,2025-05-02,2025-04-30,"Realizar pasos de transición al entorno productivo"
-actividad-008,"Soporte post Go-Live – Semana 1",flag-002,tipoActividad-003,2025-05-03,2025-05-10,2025-05-10,"Monitorear incidencias y asegurar estabilización inicial"
-actividad-009,"Análisis de performance y optimización",flag-004,tipoActividad-002,2025-05-15,2025-05-25,2025-05-23,"Evaluar tiempos de respuesta y ajustar configuraciones"
-actividad-010,"Cierre administrativo del proyecto",flag-003,tipoActividad-001,2025-06-05,2025-06-12,2025-06-11,"Completar entregables, actas de aceptación y archivo documental"
+52ce04eb-7cfe-4115-88d1-58760775d758,Acciones de remediación Banco Pichincha.,047ece8f-0853-4235-be62-ce0bf492366a,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,2025-07-01,2025-07-31,2025-02-05,Reunir requerimientos y definir historias de usuario para el primer sprint
+94ee11c5-de8f-4c62-b451-f1ca1cdb39fc,Acciones de remediación Grupo Energia de Bogota GEB.,49395e0d-ad54-4672-8f79-7cfc93ddf752,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,2025-07-01,2025-07-31,2025-02-01,Instalar y parametrizar instancias SAP S/4HANA para el equipo
+cae78414-12be-4096-b232-acda68f09870,Acciones de remediación Grupo Total 99.,49395e0d-ad54-4672-8f79-7cfc93ddf752,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,2025-07-01,2025-07-31,2025-02-18,Extraer y transformar datos para la migración inicial
+7ee2b154-c08b-4654-9088-43da67934d44,Acciones de remediación BOLD CO S A S.,047ece8f-0853-4235-be62-ce0bf492366a,eaa842b3-4e39-4038-9f23-0fc33258579f,2025-07-01,2025-07-31,2025-02-22,Crear wireframes y mock-ups para aprobación de UX
+64a44df9-9abf-4a98-a4bb-28cc67088651,"Acciones de remediación V. Suarez & Co, Inc.",9c00b39c-6f3b-447c-b57a-1e17259a528b,eaa842b3-4e39-4038-9f23-0fc33258579f,2025-07-01,2025-07-31,2025-02-26,Ejecutar casos de prueba end-to-end y documentar defectos
+54504bcd-24be-4925-82e8-53fa2bed27f3,"Acciones de remediación Cuernavaca Business, S.A.",047ece8f-0853-4235-be62-ce0bf492366a,eaa842b3-4e39-4038-9f23-0fc33258579f,2025-07-01,2025-07-31,2025-03-05,Entrenar usuarios en procesos core y nuevos flujos de SAP
+f01cfbfe-8164-400f-9db2-6981b1f87a8d,Acciones de remediación RACAFÉ & CIA S C A,49395e0d-ad54-4672-8f79-7cfc93ddf752,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,2025-07-01,2025-07-31,2025-04-30,Realizar pasos de transición al entorno productivo
+c34ec62a-e168-4859-bd9e-9f50a084bf96,Acciones de remediación Proquinal S.A.S.,047ece8f-0853-4235-be62-ce0bf492366a,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,2025-07-01,2025-07-31,2025-05-10,Monitorear incidencias y asegurar estabilización inicial
