@@ -29,10 +29,6 @@ annotate service.ReporteSemanal with @(
             },
             {
                 $Type : 'UI.DataField',
-                Value : pilar.nombre,
-            },
-            {
-                $Type : 'UI.DataField',
                 Label : '{i18n>FechaGoliveActual}',
                 Value : fechaGoLiveActual,
             },
@@ -200,7 +196,6 @@ annotate service.ReporteSemanal with @(
     ],
     UI.SelectionFields : [
         pilar_ID,
-        pilar.nombre,
         fecha,
     ],
     UI.HeaderInfo : {
@@ -228,10 +223,6 @@ annotate service.ReporteSemanal with {
                 {
                     $Type : 'Common.ValueListParameterDisplayOnly',
                     ValueListProperty : 'tipoIntervencion_code',
-                },
-                {
-                    $Type : 'Common.ValueListParameterDisplayOnly',
-                    ValueListProperty : 'nombre',
                 },
                 {
                     $Type : 'Common.ValueListParameterDisplayOnly',
@@ -293,10 +284,6 @@ annotate service.ReporteSemanal with {
             },
             {
                 $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'nombre',
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
                 ValueListProperty : 'producto_code',
             },
             {
@@ -323,10 +310,6 @@ annotate service.ReporteSemanal with {
             },
             {
                 $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'nombre',
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
                 ValueListProperty : 'producto_code',
             },
             {
@@ -337,35 +320,6 @@ annotate service.ReporteSemanal with {
     }
 };
 
-annotate service.ReporteSemanal with {
-    nombre @Common.ValueList : {
-        $Type : 'Common.ValueListType',
-        CollectionPath : 'PilarCO',
-        Parameters : [
-            {
-                $Type : 'Common.ValueListParameterInOut',
-                LocalDataProperty : nombre_ID,
-                ValueListProperty : 'ID',
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'tipoIntervencion_code',
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'nombre',
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'producto_code',
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'tipoPilar_code',
-            },
-        ],
-    }
-};
 
 annotate service.ReporteSemanal with {
     cliente @Common.ValueList : {
@@ -383,10 +337,6 @@ annotate service.ReporteSemanal with {
             },
             {
                 $Type : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty : 'nombre',
-            },
-            {
-                $Type : 'Common.ValueListParameterDisplayOnly',
                 ValueListProperty : 'producto_code',
             },
             {
@@ -395,25 +345,6 @@ annotate service.ReporteSemanal with {
             },
         ],
     }
-};
-
-annotate service.PilarCO with {
-    nombre @(
-        Common.Label : '{i18n>Estado}',
-        Common.ValueList : {
-            $Type : 'Common.ValueListType',
-            CollectionPath : 'Estado',
-            Parameters : [
-                {
-                    $Type : 'Common.ValueListParameterInOut',
-                    LocalDataProperty : nombre,
-                    ValueListProperty : 'name',
-                },
-            ],
-            Label : 'Estado',
-        },
-        Common.ValueListWithFixedValues : true,
-    )
 };
 
 annotate service.ReporteSemanal with {
