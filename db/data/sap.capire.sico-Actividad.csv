@@ -1,4 +1,4 @@
-ID,nombre,flag_ID,tipoActividad_ID,fechaInicio,fechaFin,dueDate,descripcion
+ID,nombre,flag_code,tipoActividad_code,fechaInicio,fechaFin,dueDate,descripcion
 52ce04eb-7cfe-4115-88d1-58760775d758,Acciones de remediación Banco Pichincha.,047ece8f-0853-4235-be62-ce0bf492366a,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,2025-07-01,2025-07-31,2025-02-05,Reunir requerimientos y definir historias de usuario para el primer sprint
 94ee11c5-de8f-4c62-b451-f1ca1cdb39fc,Acciones de remediación Grupo Energia de Bogota GEB.,49395e0d-ad54-4672-8f79-7cfc93ddf752,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,2025-07-01,2025-07-31,2025-02-01,Instalar y parametrizar instancias SAP S/4HANA para el equipo
 cae78414-12be-4096-b232-acda68f09870,Acciones de remediación Grupo Total 99.,49395e0d-ad54-4672-8f79-7cfc93ddf752,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,2025-07-01,2025-07-31,2025-02-18,Extraer y transformar datos para la migración inicial

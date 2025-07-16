@@ -1,4 +1,4 @@
-ID,estado_ID,evento_ID,descripcion,fechaInicio,fechaFin,fechaCorte,prioridad_ID,createdAt,createdBy,modifiedAt,modifiedBy
+ID,estado_code,evento_ID,descripcion,fechaInicio,fechaFin,fechaCorte,prioridad_code,createdAt,createdBy,modifiedAt,modifiedBy
 90f65f52-7dab-4fbf-8179-f9011f64c185,3b17def2-9d28-4988-a2b2-c86262b11ce1,18302ef1-7e02-45cc-9831-f4f825b82c59,Error en integración con SuccessFactors,2025-07-02,2025-07-05,2025-07-07,83501a8e-fdc0-46a6-9bd3-41cf84dd1e80,2025-06-30T00:00:00Z,ana.lopez,2025-07-02T00:00:00Z,carlos.ramos
 0f06bdfa-3832-4b91-b75c-c150bb687b60,180f218d-2e17-4de4-bda0-6e7e889015c3,a5e6497e-1b19-40b7-b6f6-31be04e54855,Cliente reporta fallo en facturación,2025-07-04,2025-07-06,2025-07-07,fbaa0c09-78d8-4251-a4bb-a1d539708eb9,2025-07-03T00:00:00Z,maria.zapata,2025-07-04T00:00:00Z,carlos.ramos
 e8c6204b-2d92-44f3-a828-6a8dc6aedc30,3b17def2-9d28-4988-a2b2-c86262b11ce1,b974798b-e5a8-440d-a978-f7f7a571c835,Sistema no permite cierre de mes,2025-07-06,2025-07-08,2025-07-09,1bbedfdf-998b-43b6-9efb-dfc7469bcb95,2025-07-03T00:00:00Z,juan.garcia,2025-07-05T00:00:00Z,carlos.ramos
