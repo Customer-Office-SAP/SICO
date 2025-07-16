@@ -77,7 +77,6 @@ modules:
       commands:
         - npm install
         - npm run build
-        - npm ci
       supported-platforms:
         []
   - name: sicoreportesemanal
@@ -89,7 +88,6 @@ modules:
       commands:
         - npm install
         - npm run build
-        - npm ci
       supported-platforms:
         []
   - name: sico-destinations
@@ -134,7 +132,6 @@ modules:
       commands:
         - npm install
         - npm run build
-        - npm ci
       supported-platforms:
         []
   - name: incidente
@@ -146,7 +143,6 @@ modules:
       commands:
         - npm install
         - npm run build
-        - npm ci
       supported-platforms:
         []
   - name: sicocartapccp
@@ -156,7 +152,7 @@ modules:
       build-result: dist
       builder: custom
       commands:
-        - npm ci
+        - npm install
         - npm run build
       supported-platforms:
         []
@@ -167,7 +163,7 @@ modules:
       build-result: dist
       builder: custom
       commands:
-        - npm ci
+        - npm install
         - npm run build
       supported-platforms:
         []
@@ -178,7 +174,7 @@ modules:
       build-result: dist
       builder: custom
       commands:
-        - npm ci
+        - npm install
         - npm run build
       supported-platforms:
         []
@@ -189,7 +185,7 @@ modules:
       build-result: dist
       builder: custom
       commands:
-        - npm ci
+        - npm install
         - npm run build
       supported-platforms:
         []
