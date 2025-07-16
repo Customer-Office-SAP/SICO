@@ -11,8 +11,6 @@
     "mbt": "^1.2.29"
   },
   "sapux": [
-    "app/pilares",
-    "app/project1",
     "app/pilarco",
     "app/pilar",
     "app/contacto",

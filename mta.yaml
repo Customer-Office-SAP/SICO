@@ -13,7 +13,6 @@ modules:
     requires:
       - name: sico-destination
       - name: sico-db
-      - name: sico-auth
     provides:
       - name: srv-api
         properties:
@@ -43,10 +42,6 @@ modules:
         - artifacts:
             - reportesemanal.zip
           name: sicoreportesemanal
-          target-path: resources/
-        - artifacts:
-            - actividad.zip
-          name: actividad
           target-path: resources/
         - artifacts:
             - incidente.zip
@@ -123,17 +118,6 @@ modules:
       builder: custom
       commands:
         - npm run build
-  - name: actividad
-    type: html5
-    path: app/actividad
-    build-parameters:
-      build-result: dist
-      builder: custom
-      commands:
-        - npm install
-        - npm run build
-      supported-platforms:
-        []
   - name: incidente
     type: html5
     path: app/incidente
@@ -241,16 +225,7 @@ resources:
     type: com.sap.xs.hdi-container
     parameters:
       service: hana
-      service-plan: hdi-shared
-  - name: sico-auth
-    type: org.cloudfoundry.managed-service
-    parameters:
-      service: xsuaa
-      service-plan: application
-      path: ./xs-security.json
-      config:
-        xsappname: sico-${org}-${space}
-        tenant-mode: dedicated
+      service-plan: hdi-shared 
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true

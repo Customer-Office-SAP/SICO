@@ -1,9 +1,14 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "actividad",
+    "id": "pilarco",
     "type": "application",
-    "i18n": "i18n/i18n.properties",
+    "i18n": {
+      "bundleUrl": "i18n/i18n.properties",
+      "supportedLocales": [
+        ""
+      ]
+    },
     "applicationVersion": {
       "version": "0.0.1"
     },
@@ -13,7 +18,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.18.2",
-      "toolsId": "d2b3fc99-c136-46e8-a4ba-47d257783ef8"
+      "toolsId": "697c34ee-6688-4d2a-a037-e52ad963209a"
     },
     "dataSources": {
       "mainService": {
@@ -72,7 +77,10 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "actividad.i18n.i18n"
+          "bundleName": "pilarco.i18n.i18n",
+          "supportedLocales": [
+            ""
+          ]
         }
       },
       "": {
@@ -86,7 +94,12 @@
       },
       "@i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
-        "uri": "i18n/i18n.properties"
+        "uri": "i18n/i18n.properties",
+        "settings": {
+          "supportedLocales": [
+            ""
+          ]
+        }
       }
     },
     "resources": {
@@ -97,28 +110,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "ActividadList",
-          "target": "ActividadList"
+          "name": "PilarCOList",
+          "target": "PilarCOList"
         },
         {
-          "pattern": "Actividad({key}):?query:",
-          "name": "ActividadObjectPage",
-          "target": "ActividadObjectPage"
+          "pattern": "PilarCO({key}):?query:",
+          "name": "PilarCOObjectPage",
+          "target": "PilarCOObjectPage"
         }
       ],
       "targets": {
-        "ActividadList": {
+        "PilarCOList": {
           "type": "Component",
-          "id": "ActividadList",
+          "id": "PilarCOList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/Actividad",
+              "contextPath": "/PilarCO",
               "variantManagement": "Page",
               "navigation": {
-                "Actividad": {
+                "PilarCO": {
                   "detail": {
-                    "route": "ActividadObjectPage"
+                    "route": "PilarCOObjectPage"
                   }
                 }
               },
@@ -133,14 +146,14 @@
             }
           }
         },
-        "ActividadObjectPage": {
+        "PilarCOObjectPage": {
           "type": "Component",
-          "id": "ActividadObjectPage",
+          "id": "PilarCOObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Actividad"
+              "contextPath": "/PilarCO"
             }
           }
         }
