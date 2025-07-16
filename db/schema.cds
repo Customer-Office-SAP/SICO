@@ -68,7 +68,7 @@ entity SAP : cuid, managed {
 }
 
 entity TipoPlan : CodeList {
-    key code : String;
+    key code : UUID;
     nombre   : String;
 }
 
