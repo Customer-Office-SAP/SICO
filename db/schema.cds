@@ -38,7 +38,7 @@ entity Localizacion : cuid, managed {
 
 entity NPS : cuid, managed {
   anio         : Integer;
-  quarter      : Integer;
+  quarter      : String;
   calificacion : String;
 }
 
