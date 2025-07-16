@@ -39,11 +39,11 @@ modules:
         - artifacts:
             - contacto.zip
           name: sicocontacto
-          target-path: resources
+          target-path: resources/
         - artifacts:
             - reportesemanal.zip
           name: sicoreportesemanal
-          target-path: resources
+          target-path: resources/
         - artifacts:
             - actividad.zip
           name: actividad
@@ -55,19 +55,19 @@ modules:
         - name: sicocartapccp
           artifacts:
             - cartapccp.zip
-          target-path: resources
+          target-path: resources/
         - name: sicoescalacion
           artifacts:
             - escalacion.zip
-          target-path: resources
+          target-path: resources/
         - name: sicosolicitudpccp
           artifacts:
             - solicitudpccp.zip
-          target-path: resources
+          target-path: resources/
         - name: sicopilarco
           artifacts:
             - pilarco.zip
-          target-path: resources
+          target-path: resources/
   - name: sicocontacto
     type: html5
     path: app/contacto
