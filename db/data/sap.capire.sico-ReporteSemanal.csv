@@ -1,4 +1,4 @@
-iD,pilar_iD,matrizRiesgos_iD,fecha,fase_iD,estado_iD,cliente_iD,descripcionFase,fechaGoLiveActual,salidaProductivo,comentariosimplementador,resumen,estadoTopicosRelevantes,gestionRecursos,aspectosClaveActivate,consideracionesRelevantes,incidenciasRelevantes,recomendaciones,otrosTemasRelacionados,createdAt,createdBy,modifiedAt,modifiedBy
+ID,pilar_iD,matrizRiesgos_iD,fecha,fase_iD,estado_iD,cliente_iD,descripcionFase,fechaGoLiveActual,salidaProductivo,comentariosimplementador,resumen,estadoTopicosRelevantes,gestionRecursos,aspectosClaveActivate,consideracionesRelevantes,incidenciasRelevantes,recomendaciones,otrosTemasRelacionados,createdAt,createdBy,modifiedAt,modifiedBy
 85e017f9-75b7-4bd4-8f4b-3e8da6349c9a,18302ef1-7e02-45cc-9831-f4f825b82c59,e841b47f-758f-438f-83c5-f2dee0869b2a,2025-10-07,efcb3b8c-3354-47d1-ab01-0f50da080af6,3b17def2-9d28-4988-a2b2-c86262b11ce1,26e207aa-68c8-43f4-afcc-73d4c3a384a2,Fase de analisis,2025-11-11,true,Equipo tecnico solicito redefinicion de alcance,SemaSAP de cambios relevantes,"Customer Office
 ","Customer Office
 ","Customer Office
@@ -38,16 +38,3 @@ abc9ecfb-a103-44da-bbf8-b90b741eaaaf,e748c81a-ffeb-4fbe-aaa9-121e04aa858a,d39427
 13103014-bd26-430c-b267-b235a79b940d,1d24e73f-3c35-42e7-ab49-d22c64453a54,0accbbef-5909-4a3d-80bc-0f0a51d4db50,2025-10-07,867390e0-8d82-4b34-af3f-02c8f083ba7f,3b17def2-9d28-4988-a2b2-c86262b11ce1,26e207aa-68c8-43f4-afcc-73d4c3a384a2,Fase de configuracion,2025-11-11,true,Pruebas unitarias avanzan segun cronograma,SemaSAP tecnica,SAP,SAP,SAP,SAP, Sin incidentes abiertos escalados a la Customer Office.,SAP,SAP,,,,
 f6e3eba2-f010-482b-aadc-5ad3c2d40561,c3e888d0-b7f1-46d3-9887-1c9f752aff96,cc3723ba-ddc1-45c7-aede-c607ce5a56f1,2025-10-07,6c23ed16-2804-4c55-b3a7-0f4df284fb49,3b17def2-9d28-4988-a2b2-c86262b11ce1,dc2b8e65-9d4f-4f8f-a1d0-4594573fd63d,Fase de capacitacion,2025-11-11,false,Se requiere mayor disponibilidad del equipo cliente,Capacitacion en curso,SAP,SAP,SAP,SAP, Sin incidentes abiertos escalados a la Customer Office.,SAP,SAP,,,,
 89ed5d78-ef48-4f85-aeb4-5b177410c7ce,272adfb4-98b4-45d1-86cf-48ef092721e5,644c35e4-ba7e-4aa6-958b-58577cfb947d,2025-10-07,4b3a7a8b-9ccd-4fa5-a443-f7ff85aed471,3b17def2-9d28-4988-a2b2-c86262b11ce1,677cae53-b0ac-41c8-803f-4acaf2e40dec,Fase de integracion,2025-11-11,true,Bloqueos por dependencias exterSAPs aun sin resolver,SemaSAP critica,SAP,SAP,SAP,SAP, Sin incidentes abiertos escalados a la Customer Office.,SAP,SAP,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,

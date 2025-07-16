@@ -1,7 +1,7 @@
 _schema-version: 3.3.0
 ID: sico
 description: SICO
-version: 1.0.0-SNAPSHOT
+version: 4.2.0
 modules:
   - name: sico-srv
     type: java
