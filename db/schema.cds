@@ -68,7 +68,7 @@ entity SAP : cuid, managed {
 }
 
 entity TipoPlan : CodeList {
-    key code : UUID;
+    key code : String(40);
     nombre   : String;
 }
 
@@ -276,72 +276,72 @@ entity PilarFase : cuid, managed {
 }
 
 entity Servicio : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity Producto : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity TipoPilar : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity TipoIntervencion : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity Estado : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity Relacion : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity TipoRiesgo : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity Prioridad : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity EstadoAccion : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity Flag : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity TipoActividad : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity PasosSiguientes : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity Condicion : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
 entity Fase : CodeList {
-  key code : UUID;
+  key code : String(40);
   nombre   : String;
 }
 
