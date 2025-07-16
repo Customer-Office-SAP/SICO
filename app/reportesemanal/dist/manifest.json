@@ -152,6 +152,12 @@
                     },
                     "DataField::resumen": {
                       "availability": "Default"
+                    },
+                    "DataField::fase::fase_code": {
+                      "availability": "Default"
+                    },
+                    "DataField::fase::fase::name": {
+                      "availability": "Default"
                     }
                   }
                 }
