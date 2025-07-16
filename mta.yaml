@@ -13,6 +13,7 @@ modules:
     requires:
       - name: sico-destination
       - name: sico-db
+      - name: sico-auth
     provides:
       - name: srv-api
         properties:
@@ -63,6 +64,10 @@ modules:
           artifacts:
             - solicitudpccp.zip
           target-path: resources
+        - name: sicopilarco
+          artifacts:
+            - pilarco.zip
+          target-path: resources
   - name: sicocontacto
     type: html5
     path: app/contacto
@@ -72,6 +77,7 @@ modules:
       commands:
         - npm install
         - npm run build
+        - npm ci
       supported-platforms:
         []
   - name: sicoreportesemanal
@@ -83,6 +89,7 @@ modules:
       commands:
         - npm install
         - npm run build
+        - npm ci
       supported-platforms:
         []
   - name: sico-destinations
@@ -127,6 +134,7 @@ modules:
       commands:
         - npm install
         - npm run build
+        - npm ci
       supported-platforms:
         []
   - name: incidente
@@ -138,6 +146,7 @@ modules:
       commands:
         - npm install
         - npm run build
+        - npm ci
       supported-platforms:
         []
   - name: sicocartapccp
@@ -165,6 +174,17 @@ modules:
   - name: sicosolicitudpccp
     type: html5
     path: app/solicitudpccp
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm ci
+        - npm run build
+      supported-platforms:
+        []
+  - name: sicopilarco
+    type: html5
+    path: app/pilarco
     build-parameters:
       build-result: dist
       builder: custom
@@ -226,6 +246,15 @@ resources:
     parameters:
       service: hana
       service-plan: hdi-shared
+  - name: sico-auth
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      path: ./xs-security.json
+      config:
+        xsappname: sico-${org}-${space}
+        tenant-mode: dedicated
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true
