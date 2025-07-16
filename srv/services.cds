@@ -100,23 +100,23 @@ entity PilarCO as projection on my.PilarCO;
   @odata.draft.enabled
   entity CartaPCCP as projection on my.CartaPCCP;
 
-  @UI: {
-    LineItem: [
-      { Value: ID },
-      { Value: pilar_ID },
-      { Value: fecha },
-      { Value: fase_ID },
-      { Value: estado_ID },
-      { Value: salidaProductivo },
-      { Value: descripcionFase },
-      { Value: resumen }
-    ],
-    SelectionFields: [
-      ID, pilar_ID, fecha, fase_ID, estado_ID
-    ]
-  }
-  @cds.redirection.target
-  entity vista_reporte_semanal as projection on my.vista_reporte_semanal;
+  // @UI: {
+  //   LineItem: [
+  //     { Value: ID },
+  //     { Value: pilar_ID },
+  //     { Value: fecha },
+  //     { Value: fase_ID },
+  //     { Value: estado_ID },
+  //     { Value: salidaProductivo },
+  //     { Value: descripcionFase },
+  //     { Value: resumen }
+  //   ],
+  //   SelectionFields: [
+  //     ID, pilar_ID, fecha, fase_ID, estado_ID
+  //   ]
+  // }
+  // @cds.redirection.target
+  // entity vista_reporte_semanal as projection on my.vista_reporte_semanal;
 
   @UI: {
     LineItem: [
