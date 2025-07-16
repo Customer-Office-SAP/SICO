@@ -1,4 +1,4 @@
-ID,pilar_ID,fase_code,nombre,createdAt,createdBy,modifiedAt,modifiedBy
+ID,pilar_ID,fase_ID,nombre,createdAt,createdBy,modifiedAt,modifiedBy
 f3850ec5-e628-45c9-b029-7f0a866454bd,18302ef1-7e02-45cc-9831-f4f825b82c59,efcb3b8c-3354-47d1-ab01-0f50da080af6,BTP,2025-07-08T10:23:45Z,jorge.pena,2025-07-08T10:23:45Z,soraida.ledesma
 31ab890e-43cd-4949-ab12-9f384856f03a,a5e6497e-1b19-40b7-b6f6-31be04e54855,31ae59d7-8a59-42dd-8cd4-43dca06e7a62,SuccessFactors,2025-03-08T10:23:45Z,jorge.pena,2025-07-10T10:23:45Z,soraida.ledesma
 fccea4a3-d784-495f-bacc-1e22658ce914,b974798b-e5a8-440d-a978-f7f7a571c835,867390e0-8d82-4b34-af3f-02c8f083ba7f,Ariba,2025-03-12T10:23:45Z,raul.ruiz,2025-07-12T10:23:45Z,soraida.ledesma

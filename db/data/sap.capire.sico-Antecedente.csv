@@ -1,4 +1,4 @@
-ID,actividad_ID,descripcion,duracion,estado_code,observaciones,createdAt,createdBy,modifiedAt,modifiedBy
+ID,actividad_ID,descripcion,duracion,estado_ID,observaciones,createdAt,createdBy,modifiedAt,modifiedBy
 c80123c6-f44e-40a3-a5f2-4702c4c679f8,52ce04eb-7cfe-4115-88d1-58760775d758,Alcance definitorio generó gaps no previstos,2025-02-05,65bab436-7ede-4843-9746-44d77de4fcbd,Requiere ajustar historias de usuario,2025-01-22T11:15:00Z,ana.lopez,2025-01-22T12:00:00Z,ana.lopez
 4f7d3389-a808-4539-9ce3-007ef66edd27,94ee11c5-de8f-4c62-b451-f1ca1cdb39fc,Eficiente colaboración del equipo de requisitos,2025-01-30,580fda5f-f15a-41b6-bd7b-c64609256ec9,Buen uso de tableros Scrum,2025-01-23T09:40:00Z,maria.zapata,2025-01-23T10:30:00Z,maria.zapata
 d4c7fab2-4c55-4807-b0b5-efe57bd17e2d,cae78414-12be-4096-b232-acda68f09870,Plazo de entrega del ambiente no negociable,2025-02-01,2af67c04-d888-419a-a595-cc8876dcf959,Ajustar cronograma dependiente,2025-01-26T14:00:00Z,maria.zapata,2025-01-26T15:10:00Z,maria.zapata

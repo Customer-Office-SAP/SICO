@@ -1,4 +1,4 @@
-ID,tipoPlan_code,pilar_ID,riesgo_ID,createdAt,createdBy,modifiedAt,modifiedBy
+ID,tipoPlan_ID,pilar_ID,riesgo_ID,createdAt,createdBy,modifiedAt,modifiedBy
 2d881f1c-6d41-45f1-9959-064600cc5dad,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,18302ef1-7e02-45cc-9831-f4f825b82c59,e841b47f-758f-438f-83c5-f2dee0869b2a,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,juan.garcia
 9c78635b-d94e-45b6-9ebf-67142ba041a1,eaa842b3-4e39-4038-9f23-0fc33258579f,a5e6497e-1b19-40b7-b6f6-31be04e54855,295ded5c-ba40-4401-86ae-ab350f2edd0e,2025-07-01T00:00:00Z,juan.garcia,2025-07-06T00:00:00Z,carlos.ramos
 170ba58a-7069-4dc8-b03a-c8245b141bd2,67fa5f43-23ca-47cb-8d4d-aa0bd3ec1094,b974798b-e5a8-440d-a978-f7f7a571c835,3cdedbea-dfd8-4cfd-9301-fe7dc28b9e44,2025-07-01T00:00:00Z,ana.lopez,2025-07-06T00:00:00Z,maria.zapata

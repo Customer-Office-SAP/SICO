@@ -1,4 +1,4 @@
-ID,nombre,email,compania,rol,relacion_code,createdAt,createdBy,modifiedAt,modifiedBy
+ID,nombre,email,compania,rol,relacion_ID,createdAt,createdBy,modifiedAt,modifiedBy
 26e207aa-68c8-43f4-afcc-73d4c3a384a2,Juan Carlos Benitez LLore,jcbenite@pichincha.com,Banco Pichincha C.A.,PM Cliente,9fa67b26-fd57-4b59-8e4d-290e5dd0044c,,,,
 dc2b8e65-9d4f-4f8f-a1d0-4594573fd63d,Marcelo Navarro,marcelo.navarro@onbusinessconsulting.com,On Business Consulting S.A.S,PM Implementador,d390bb3b-fba9-472b-86a7-309ed4fff156,,,,
 677cae53-b0ac-41c8-803f-4acaf2e40dec,Pedro Santiesteban,pedro.santiesteban@sap.com,SAP,CSM BTP,4169f12d-2772-44af-8c83-8481e286d47e,,,,
