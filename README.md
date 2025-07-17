@@ -4,5 +4,5 @@ La base de datos está desplegada en HANA Cloud, conectada con el ambiente de de
 ## Integrantes del equipo: 
 - Eugenia Dayoub
 - Giuliana Volpi
-- Raul Ruiz
-- Andres Villota
+- Raúl Ruiz
+- Andrés Villota
